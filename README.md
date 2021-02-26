@@ -1,8 +1,4 @@
----
-typora-copy-images-to: images
----
-
-<img src="D:\Arif Syamsudin\Documents\SLiMS-9-Documentation\images\slims_logo_baru.png" alt="slims_logo_baru" style="zoom:48%;" />
+<img src="https://lh3.googleusercontent.com/ZQajqXGTK-OBSSQKJSDFa9fAcd3o_9kfxUNRXhgTGf9fJpZkqWPsQcKsBhJrXtUzfyTJquPi7fd8U02DH7hLOFSWZZGhlsMcLdJSZPEEPC1N5A5cUKwmmGX__w8gyNHiheenYl1N" alt="img" style="zoom: 50%;" />
 
 # SLiMS 9 Usage Documentation
 
