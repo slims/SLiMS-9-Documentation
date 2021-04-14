@@ -1,4 +1,4 @@
-<img src="https://lh3.googleusercontent.com/ZQajqXGTK-OBSSQKJSDFa9fAcd3o_9kfxUNRXhgTGf9fJpZkqWPsQcKsBhJrXtUzfyTJquPi7fd8U02DH7hLOFSWZZGhlsMcLdJSZPEEPC1N5A5cUKwmmGX__w8gyNHiheenYl1N" alt="img" style="zoom: 50%;" />
+![img](https://lh4.googleusercontent.com/4MJp7IjUQrM0Z-HzGZIKhFK1A2r17S3zHhf5j_sJzEJ3cmRUvEE6WOXJnwZZlzNAK6CCT25zk_yGHzJ70ynLAF2pc7zjnUi4T1-0fovwxOJBz0rBUAvRCJcwyWdzIENbT0bbkut5)
 
 # SLiMS 9  Documentation
 
