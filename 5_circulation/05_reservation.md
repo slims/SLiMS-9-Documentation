@@ -1,4 +1,4 @@
-This sub-menu is used to view the list of collections that are being reserved by members. Previously, this sub-menu only recording reservation coming from the reservation tab within user circulation process. And the previous meaning of "reservation" is to explain a reservation that has been done for collections that having the status of being loan.
+This sub-menu is used to view the list of collections that are being reserved by members. Previously, this sub-menu only recording reservation coming from the reservation tab within user circulation process. And the previous meaning of "reservation" is to explain a reservation made for items that having the status of being loan or on loan.
 
 Since SLiMS 9 Bulian release code 9.4.0, this sub-menu is also receiving data from reservation made by user from the OPAC's Member Area.
 
