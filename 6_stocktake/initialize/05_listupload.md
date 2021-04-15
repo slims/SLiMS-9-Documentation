@@ -6,5 +6,5 @@ Click on the "Browse" button to insert a previously created text file. Then clic
 
 ![img](https://lh4.googleusercontent.com/7CaOH5SsUW6hRx0m9600iNo-hRQR7d019SE5qTITvvNyZGKm8wpED2Zn61AV-H1noYGIFnUmI_OG4eMpl139R9b_AfaUT5ZGqB9pXa4vF3rIbuC6mbhPp_XqKUReUCnLeU004rEI)
 
-If the text file upload process goes well, the page will inform you that "Successfully upload stock take <upload file name>, <amount of data inputted> item codes scanned", as described in the image above.
+If the text file upload process goes well, the page will inform you that "Successfully upload stock take xxx.txt, xxx item codes scanned", as described in the image above.
 
