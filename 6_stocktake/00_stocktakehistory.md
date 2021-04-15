@@ -9,3 +9,6 @@ In this module, when the stock take process has not been activated, you will onl
 1. Stock Take History
 2. Initialize
 
+Endnotes:
+
+1. Saputra, A [s.a.], '*Petunjuk Teknis Stock opname Koleksi Perpustakaan Menggunakan Aplikasi SLiMS 7 Cendana*', UPT Perpustakaan Unand, Padang, Sumatera Barat.
