@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>biblio_list | API</title>
+
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="fonts/doctum-font.css">
+        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="doctum.js"></script>
+        <script async defer src="js/bootstrap.min.js"></script>
+        <script async defer src="js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:biblio_list" data-root-path="" data-search-index-url="doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="namespaces.html">Namespaces</a></li>
+                    <li><a href="interfaces.html">Interfaces</a></li>
+                    <li><a href="traits.html">Traits</a></li>
+                    <li><a href="doc-index.html">Index</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                            <div id="page-content">
+    <div class="page-header">
+        <h1>biblio_list    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>biblio_list</strong>        extends <a href="biblio_list_model.html">biblio_list_model</a>
+</p>
+
+        
+    
+        
+
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_num_rows">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$num_rows</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_num_rows">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_num2show">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$num2show</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_num2show">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_xml_detail">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$xml_detail</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_xml_detail">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_xml_result">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$xml_result</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_xml_result">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_only_promoted">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$only_promoted</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_only_promoted">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_show_labels">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$show_labels</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_show_labels">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_stop_words">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$stop_words</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_stop_words">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_query_time">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$query_time</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_query_time">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_disable_item_data">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$disable_item_data</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_disable_item_data">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_enable_mark">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$enable_mark</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_enable_mark">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_query_error">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$query_error</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_query_error">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_current_page">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$current_page</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_current_page">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_item_availability_message">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$item_availability_message</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_item_availability_message">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_words">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$words</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_words">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_obj_db">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$obj_db</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_obj_db">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_resultset">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$resultset</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_resultset">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_subquery">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$subquery</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_subquery">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_biblio_ids">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$biblio_ids</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_biblio_ids">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_emulate_short_word_search">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$emulate_short_word_search</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_emulate_short_word_search">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_queries_word_num_allowed">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$queries_word_num_allowed</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_queries_word_num_allowed">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_criteria">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$criteria</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_criteria">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_label_cache">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$label_cache</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_label_cache">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_custom_fields">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$custom_fields</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_custom_fields">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_enable_custom_frontpage">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$enable_custom_frontpage</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_enable_custom_frontpage">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_orig_query">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$orig_query</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_orig_query">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_searchable_fields">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$searchable_fields</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_searchable_fields">
+biblio_list_model</a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_field_join_type">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$field_join_type</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="biblio_list_model.html#property_field_join_type">
+biblio_list_model</a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(object $obj_db, int $int_num_show = 20)
+        
+                                            <p><p>Class Constructor</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setSQLcriteria">setSQLcriteria</a>(string $str_criteria)
+        
+                                            <p><p>Method to set search criteria
+Extend this method</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_compileSQL">compileSQL</a>()
+        
+                                            <p><p>Method to compile SQL statement based on criteria</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="biblio_list_model.html#method_compileSQL">
+biblio_list_model</a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getAuthors">getAuthors</a>(object $obj_db, int $int_biblio_id, bool $bool_return_array = false)
+        
+                                            <p><p>Method to get string of authors data of bibliographic record</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="biblio_list_model.html#method_getAuthors">
+biblio_list_model</a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDocumentIds">getDocumentIds</a>()
+        
+                                            <p><p>Method to get list of document IDs of result</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="biblio_list_model.html#method_getDocumentIds">
+biblio_list_model</a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDocumentList">getDocumentList</a>(bool $bool_return_output = true)
+        
+                                            <p><p>Method to print out document records</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_makeOutput">makeOutput</a>()
+        
+                                            <p><p>Method to make an output of document records</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_XMLresult">XMLresult</a>()
+        
+                                            <p><p>Method to make an output of document records in simple XML format</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="biblio_list_model.html#method_XMLresult">
+biblio_list_model</a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_JSONLDresult">JSONLDresult</a>()
+        
+                                            <p><p>Method to make an output of document records in JSON-LD format</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="biblio_list_model.html#method_JSONLDresult">
+biblio_list_model</a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_RSSresult">RSSresult</a>()
+        
+                                            <p><p>Method to make an output of document records in simple XML format</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="biblio_list_model.html#method_RSSresult">
+biblio_list_model</a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getClustering">getClustering</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 22</div>
+        <code>                    
+    <strong>__construct</strong>(object $obj_db, int $int_num_show = 20)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Class Constructor</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$obj_db</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$int_num_show</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSQLcriteria">
+        <div class="location">at line 32</div>
+        <code>                    void
+    <strong>setSQLcriteria</strong>(string $str_criteria)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Method to set search criteria
+Extend this method</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$str_criteria</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compileSQL">
+        <div class="location">in <a href="biblio_list_model.html#method_compileSQL">
+biblio_list_model</a> at line 93</div>
+        <code>            protected        void
+    <strong>compileSQL</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Method to compile SQL statement based on criteria</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAuthors">
+        <div class="location">in <a href="biblio_list_model.html#method_getAuthors">
+biblio_list_model</a> at line 104</div>
+        <code>        static            mixed
+    <strong>getAuthors</strong>(object $obj_db, int $int_biblio_id, bool $bool_return_array = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Method to get string of authors data of bibliographic record</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>object</td>
+                <td>$obj_db</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$int_biblio_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$bool_return_array</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDocumentIds">
+        <div class="location">in <a href="biblio_list_model.html#method_getDocumentIds">
+biblio_list_model</a> at line 134</div>
+        <code>                    mixed
+    <strong>getDocumentIds</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Method to get list of document IDs of result</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDocumentList">
+        <div class="location">at line 185</div>
+        <code>                    string
+    <strong>getDocumentList</strong>(bool $bool_return_output = true)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Method to print out document records</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$bool_return_output</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_makeOutput">
+        <div class="location">at line 241</div>
+        <code>            protected        string
+    <strong>makeOutput</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Method to make an output of document records</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_XMLresult">
+        <div class="location">in <a href="biblio_list_model.html#method_XMLresult">
+biblio_list_model</a> at line 243</div>
+        <code>                    string
+    <strong>XMLresult</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Method to make an output of document records in simple XML format</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_JSONLDresult">
+        <div class="location">in <a href="biblio_list_model.html#method_JSONLDresult">
+biblio_list_model</a> at line 386</div>
+        <code>                    string
+    <strong>JSONLDresult</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Method to make an output of document records in JSON-LD format</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_RSSresult">
+        <div class="location">in <a href="biblio_list_model.html#method_RSSresult">
+biblio_list_model</a> at line 442</div>
+        <code>                    string
+    <strong>RSSresult</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Method to make an output of document records in simple XML format</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getClustering">
+        <div class="location">at line 205</div>
+        <code>                    
+    <strong>getClustering</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

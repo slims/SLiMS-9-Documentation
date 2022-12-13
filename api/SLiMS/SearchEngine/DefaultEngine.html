@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>SLiMS\SearchEngine\DefaultEngine | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../doctum.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script async defer src="../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:SLiMS_SearchEngine_DefaultEngine" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../SLiMS.html">SLiMS</a></li><li class="backslash">\</li><li><a href="../../SLiMS/SearchEngine.html">SearchEngine</a></li><li class="backslash">\</li><li>DefaultEngine</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>DefaultEngine    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>DefaultEngine</strong>        extends <a href="../../SLiMS/SearchEngine/Contract.html"><abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a>
+</p>
+
+        
+    
+        
+
+            
+                <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../SLiMS/SearchEngine/SearchFilter.html"><abbr title="SLiMS\SearchEngine\SearchFilter">SearchFilter</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_customFilter">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$customFilter</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../SLiMS/SearchEngine/SearchFilter.html#property_customFilter">
+<abbr title="SLiMS\SearchEngine\SearchFilter">SearchFilter</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_page">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$page</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../SLiMS/SearchEngine/Contract.html#property_page">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_offset">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$offset</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../SLiMS/SearchEngine/Contract.html#property_offset">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_limit">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$limit</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../SLiMS/SearchEngine/Contract.html#property_limit">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_num_rows">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$num_rows</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../SLiMS/SearchEngine/Contract.html#property_num_rows">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_documents">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$documents</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../SLiMS/SearchEngine/Contract.html#property_documents">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_custom_fields">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$custom_fields</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../SLiMS/SearchEngine/Contract.html#property_custom_fields">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_criteria">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$criteria</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../SLiMS/SearchEngine/Contract.html#property_criteria">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_filter">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$filter</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../SLiMS/SearchEngine/Contract.html#property_filter">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_execute">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$execute</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../SLiMS/SearchEngine/Contract.html#property_execute">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_error">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$error</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../SLiMS/SearchEngine/Contract.html#property_error">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_query_time">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$query_time</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../SLiMS/SearchEngine/Contract.html#property_query_time">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_searchable_fields">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$searchable_fields</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_stop_words">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$stop_words</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../SLiMS/SearchEngine/Contract.html#property_stop_words">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setCustomFilter">setCustomFilter</a>($filter)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/SearchEngine/SearchFilter.html#method_setCustomFilter">
+<abbr title="SLiMS\SearchEngine\SearchFilter">SearchFilter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFilter">getFilter</a>($opac, $build = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/SearchEngine/SearchFilter.html#method_getFilter">
+<abbr title="SLiMS\SearchEngine\SearchFilter">SearchFilter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getYears">getYears</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/SearchEngine/SearchFilter.html#method_getYears">
+<abbr title="SLiMS\SearchEngine\SearchFilter">SearchFilter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCollectionType">getCollectionType</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/SearchEngine/SearchFilter.html#method_getCollectionType">
+<abbr title="SLiMS\SearchEngine\SearchFilter">SearchFilter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getGMD">getGMD</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/SearchEngine/SearchFilter.html#method_getGMD">
+<abbr title="SLiMS\SearchEngine\SearchFilter">SearchFilter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLocation">getLocation</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/SearchEngine/SearchFilter.html#method_getLocation">
+<abbr title="SLiMS\SearchEngine\SearchFilter">SearchFilter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLanguage">getLanguage</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/SearchEngine/SearchFilter.html#method_getLanguage">
+<abbr title="SLiMS\SearchEngine\SearchFilter">SearchFilter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_buildFilter">buildFilter</a>($opac, $filters)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/SearchEngine/SearchFilter.html#method_buildFilter">
+<abbr title="SLiMS\SearchEngine\SearchFilter">SearchFilter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_reOrder">reOrder</a>($filters)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/SearchEngine/SearchFilter.html#method_reOrder">
+<abbr title="SLiMS\SearchEngine\SearchFilter">SearchFilter</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/SearchEngine/Contract.html#method___construct">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setCriteria">setCriteria</a>(<a href="../../SLiMS/SearchEngine/Criteria.html"><abbr title="SLiMS\SearchEngine\Criteria">Criteria</abbr></a> $criteria)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/SearchEngine/Contract.html#method_setCriteria">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setFilter">setFilter</a>(<a href="../../SLiMS/SearchEngine/Criteria.html"><abbr title="SLiMS\SearchEngine\Criteria">Criteria</abbr></a> $criteria)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/SearchEngine/Contract.html#method_setFilter">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setLimit">setLimit</a>(int $limit)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/SearchEngine/Contract.html#method_setLimit">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLimit">getLimit</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/SearchEngine/Contract.html#method_getLimit">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getNumRows">getNumRows</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/SearchEngine/Contract.html#method_getNumRows">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getError">getError</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/SearchEngine/Contract.html#method_getError">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_dump">dump</a>(array $sql)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDocuments">getDocuments</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_toArray">toArray</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_toJSON">toJSON</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_toHTML">toHTML</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_toXML">toXML</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_toRSS">toRSS</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_buildSQL">buildSQL</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_buildCriteria">buildCriteria</a>($criteria)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_xmlAuthor">xmlAuthor</a>($xml, $biblio_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_xmlAttachment">xmlAttachment</a>($xml, $biblio_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_setCustomFilter">
+        <div class="location">in <a href="../../SLiMS/SearchEngine/SearchFilter.html#method_setCustomFilter">
+<abbr title="SLiMS\SearchEngine\SearchFilter">SearchFilter</abbr></a> at line 11</div>
+        <code>                    
+    <strong>setCustomFilter</strong>($filter)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$filter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFilter">
+        <div class="location">in <a href="../../SLiMS/SearchEngine/SearchFilter.html#method_getFilter">
+<abbr title="SLiMS\SearchEngine\SearchFilter">SearchFilter</abbr></a> at line 16</div>
+        <code>                    
+    <strong>getFilter</strong>($opac, $build = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$opac</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$build</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getYears">
+        <div class="location">in <a href="../../SLiMS/SearchEngine/SearchFilter.html#method_getYears">
+<abbr title="SLiMS\SearchEngine\SearchFilter">SearchFilter</abbr></a> at line 102</div>
+        <code>                    
+    <strong>getYears</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCollectionType">
+        <div class="location">in <a href="../../SLiMS/SearchEngine/SearchFilter.html#method_getCollectionType">
+<abbr title="SLiMS\SearchEngine\SearchFilter">SearchFilter</abbr></a> at line 108</div>
+        <code>                    
+    <strong>getCollectionType</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getGMD">
+        <div class="location">in <a href="../../SLiMS/SearchEngine/SearchFilter.html#method_getGMD">
+<abbr title="SLiMS\SearchEngine\SearchFilter">SearchFilter</abbr></a> at line 114</div>
+        <code>                    
+    <strong>getGMD</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLocation">
+        <div class="location">in <a href="../../SLiMS/SearchEngine/SearchFilter.html#method_getLocation">
+<abbr title="SLiMS\SearchEngine\SearchFilter">SearchFilter</abbr></a> at line 120</div>
+        <code>                    
+    <strong>getLocation</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLanguage">
+        <div class="location">in <a href="../../SLiMS/SearchEngine/SearchFilter.html#method_getLanguage">
+<abbr title="SLiMS\SearchEngine\SearchFilter">SearchFilter</abbr></a> at line 126</div>
+        <code>                    
+    <strong>getLanguage</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildFilter">
+        <div class="location">in <a href="../../SLiMS/SearchEngine/SearchFilter.html#method_buildFilter">
+<abbr title="SLiMS\SearchEngine\SearchFilter">SearchFilter</abbr></a> at line 132</div>
+        <code>                    string
+    <strong>buildFilter</strong>($opac, $filters)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$opac</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$filters</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reOrder">
+        <div class="location">in <a href="../../SLiMS/SearchEngine/SearchFilter.html#method_reOrder">
+<abbr title="SLiMS\SearchEngine\SearchFilter">SearchFilter</abbr></a> at line 226</div>
+        <code>                    
+    <strong>reOrder</strong>($filters)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$filters</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../SLiMS/SearchEngine/Contract.html#method___construct">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a> at line 44</div>
+        <code>                    
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCriteria">
+        <div class="location">in <a href="../../SLiMS/SearchEngine/Contract.html#method_setCriteria">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a> at line 55</div>
+        <code>                    void
+    <strong>setCriteria</strong>(<a href="../../SLiMS/SearchEngine/Criteria.html"><abbr title="SLiMS\SearchEngine\Criteria">Criteria</abbr></a> $criteria)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SLiMS/SearchEngine/Criteria.html"><abbr title="SLiMS\SearchEngine\Criteria">Criteria</abbr></a></td>
+                <td>$criteria</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setFilter">
+        <div class="location">in <a href="../../SLiMS/SearchEngine/Contract.html#method_setFilter">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a> at line 63</div>
+        <code>                    void
+    <strong>setFilter</strong>(<a href="../../SLiMS/SearchEngine/Criteria.html"><abbr title="SLiMS\SearchEngine\Criteria">Criteria</abbr></a> $criteria)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SLiMS/SearchEngine/Criteria.html"><abbr title="SLiMS\SearchEngine\Criteria">Criteria</abbr></a></td>
+                <td>$criteria</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLimit">
+        <div class="location">in <a href="../../SLiMS/SearchEngine/Contract.html#method_setLimit">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a> at line 71</div>
+        <code>                    void
+    <strong>setLimit</strong>(int $limit)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$limit</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLimit">
+        <div class="location">in <a href="../../SLiMS/SearchEngine/Contract.html#method_getLimit">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a> at line 79</div>
+        <code>                    int
+    <strong>getLimit</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNumRows">
+        <div class="location">in <a href="../../SLiMS/SearchEngine/Contract.html#method_getNumRows">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a> at line 87</div>
+        <code>                    int
+    <strong>getNumRows</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getError">
+        <div class="location">in <a href="../../SLiMS/SearchEngine/Contract.html#method_getError">
+<abbr title="SLiMS\SearchEngine\Contract">Contract</abbr></a> at line 95</div>
+        <code>                    string
+    <strong>getError</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dump">
+        <div class="location">at line 615</div>
+        <code>                    
+    <strong>dump</strong>(array $sql)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$sql</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDocuments">
+        <div class="location">at line 37</div>
+        <code>                    
+    <strong>getDocuments</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toArray">
+        <div class="location">at line 395</div>
+        <code>                    
+    <strong>toArray</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toJSON">
+        <div class="location">at line 400</div>
+        <code>                    
+    <strong>toJSON</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toHTML">
+        <div class="location">at line 451</div>
+        <code>                    
+    <strong>toHTML</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toXML">
+        <div class="location">at line 469</div>
+        <code>                    
+    <strong>toXML</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toRSS">
+        <div class="location">at line 610</div>
+        <code>                    
+    <strong>toRSS</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildSQL">
+        <div class="location">at line 67</div>
+        <code>                    array
+    <strong>buildSQL</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildCriteria">
+        <div class="location">at line 133</div>
+        <code>                    string
+    <strong>buildCriteria</strong>($criteria)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$criteria</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_xmlAuthor">
+        <div class="location">at line 568</div>
+        <code>                    
+    <strong>xmlAuthor</strong>($xml, $biblio_id)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$xml</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$biblio_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_xmlAttachment">
+        <div class="location">at line 589</div>
+        <code>                    
+    <strong>xmlAttachment</strong>($xml, $biblio_id)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$xml</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$biblio_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>
