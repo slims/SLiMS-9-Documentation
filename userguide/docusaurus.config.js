@@ -81,7 +81,7 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {to: '/learn', label: 'Learn', position: 'left'},
+          {to: '/learn/about', label: 'Learn', position: 'left'},
           {
             href: 'https://github.com/slims/',
             label: 'GitHub',

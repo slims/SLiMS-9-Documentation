@@ -1,4 +1,4 @@
-# Directory Structure
+# Struktur Direktori
 ```bash
 /your-slims-path/
 │ # Admin Area

@@ -1,0 +1,1 @@
+Sistem plugin merupakan inovasi yang dihadirkan mulai versi SLiMS Bulian 9.3.0 oleh Mas [Ido Alit](https://github.com/idoalit/). Tujuan dari inovasi ini yaitu untuk mempermudah kerja dari pengembang SLiMS (dari sisi pengguna atau pihak yang membantu pengguna) dalam melakukan proses upgrade SLiMS dari versi sekarang ke versi yang lebih mutakhir.
