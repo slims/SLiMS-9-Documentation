@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>phpseclib3\Crypt\EC\Formats\Keys\Common | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../fonts/doctum-font.css">
+        <script src="../../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../../doctum.js"></script>
+        <script async defer src="../../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:phpseclib3_Crypt_EC_Formats_Keys_Common" data-root-path="../../../../../" data-search-index-url="../../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">trait</span></li>
+                        <li><a href="../../../../../phpseclib3.html">phpseclib3</a></li><li class="backslash">\</li><li><a href="../../../../../phpseclib3/Crypt.html">Crypt</a></li><li class="backslash">\</li><li><a href="../../../../../phpseclib3/Crypt/EC.html">EC</a></li><li class="backslash">\</li><li><a href="../../../../../phpseclib3/Crypt/EC/Formats.html">Formats</a></li><li class="backslash">\</li><li><a href="../../../../../phpseclib3/Crypt/EC/Formats/Keys.html">Keys</a></li><li class="backslash">\</li><li>Common</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Common    
+            </h1>
+    </div>
+
+    
+    <p>        trait
+    <strong>Common</strong>
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>Generic EC Key Parsing Helper functions</p></p>                    </div>
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_childOIDsLoaded">
+                    static                    protected                                        bool
+                                                                                
+                                    </td>
+                <td>$childOIDsLoaded</td>
+                <td class="last"><p>Child OIDs loaded</p></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setImplicitCurve">setImplicitCurve</a>(<a href="../../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html"><abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a> $curve)
+        
+                                            <p><p>Explicitly set the curve</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html"><abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a>|false
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_loadCurveByParam">loadCurveByParam</a>(array $params)
+        
+                                            <p><p>Returns an instance of \phpseclib3\Crypt\EC\BaseCurves\Base based
+on the curve parameters</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;object[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_extractPoint">extractPoint</a>(string $str, <a href="../../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html"><abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a> $curve)
+        
+                                            <p><p>Extract points from a string</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_useSpecifiedCurve">useSpecifiedCurve</a>()
+        
+                                            <p><p>Use Specified Curve</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_useNamedCurve">useNamedCurve</a>()
+        
+                                            <p><p>Use Named Curve</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_setImplicitCurve">
+        <div class="location">at line 188</div>
+        <code>        static            
+    <strong>setImplicitCurve</strong>(<a href="../../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html"><abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a> $curve)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Explicitly set the curve</p></p>                <p><p>If the key contains an implicit curve phpseclib needs the curve
+to be explicitly provided</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html"><abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a></td>
+                <td>$curve</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadCurveByParam">
+        <div class="location">at line 200</div>
+        <code>        static    protected        <a href="../../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html"><abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a>|false
+    <strong>loadCurveByParam</strong>(array $params)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns an instance of \phpseclib3\Crypt\EC\BaseCurves\Base based
+on the curve parameters</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html"><abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a>|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extractPoint">
+        <div class="location">at line 275</div>
+        <code>        static            object[]
+    <strong>extractPoint</strong>(string $str, <a href="../../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html"><abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a> $curve)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Extract points from a string</p></p>                <p><p>Supports both compressed and uncompressed points</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$str</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html"><abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a></td>
+                <td>$curve</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_useSpecifiedCurve">
+        <div class="location">at line 533</div>
+        <code>        static            
+    <strong>useSpecifiedCurve</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Use Specified Curve</p></p>                <p><p>A specified curve has all the coefficients, the base points, etc, explicitely included.
+A specified curve is a more verbose way of representing a curve</p></p>        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_useNamedCurve">
+        <div class="location">at line 545</div>
+        <code>        static            
+    <strong>useNamedCurve</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Use Named Curve</p></p>                <p><p>A named curve does not include any parameters. It is up to the EC parameters to
+know what the coefficients, the base points, etc, are from the name of the curve.
+A named curve is a more concise way of representing a curve</p></p>        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

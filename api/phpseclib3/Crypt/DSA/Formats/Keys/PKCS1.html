@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>phpseclib3\Crypt\DSA\Formats\Keys\PKCS1 | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../fonts/doctum-font.css">
+        <script src="../../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../../doctum.js"></script>
+        <script async defer src="../../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:phpseclib3_Crypt_DSA_Formats_Keys_PKCS1" data-root-path="../../../../../" data-search-index-url="../../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../../phpseclib3.html">phpseclib3</a></li><li class="backslash">\</li><li><a href="../../../../../phpseclib3/Crypt.html">Crypt</a></li><li class="backslash">\</li><li><a href="../../../../../phpseclib3/Crypt/DSA.html">DSA</a></li><li class="backslash">\</li><li><a href="../../../../../phpseclib3/Crypt/DSA/Formats.html">Formats</a></li><li class="backslash">\</li><li><a href="../../../../../phpseclib3/Crypt/DSA/Formats/Keys.html">Keys</a></li><li class="backslash">\</li><li>PKCS1</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>PKCS1    
+            </h1>
+    </div>
+
+    
+    <p>    abstract     class
+    <strong>PKCS1</strong>        extends <a href="../../../../../phpseclib3/Crypt/Common/Formats/Keys/PKCS1.html"><abbr title="phpseclib3\Crypt\Common\Formats\Keys\PKCS1">PKCS1</abbr></a>
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>PKCS#1 Formatted DSA Key Handler</p></p>                    </div>
+            
+        
+            <h2>Constants</h2>    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                                                                                                        MODE_ANY
+                                    </td>
+                <td class="last">
+                    <p><em><p>Auto-detect the format</p></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        MODE_PEM
+                                    </td>
+                <td class="last">
+                    <p><em><p>Require base64-encoded PEM's be supplied</p></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        MODE_DER
+                                    </td>
+                <td class="last">
+                    <p><em><p>Require raw DER's be supplied</p></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_format">
+                    static                    protected                                        int
+                                                                                
+                                    </td>
+                <td>$format</td>
+                <td class="last"><p>Is the key a base-64 encoded PEM, DER or should it be auto-detected?</p></td>
+                <td><small>from&nbsp;<a href="../../../../../phpseclib3/Crypt/Common/Formats/Keys/PKCS.html#property_format">
+<abbr title="phpseclib3\Crypt\Common\Formats\Keys\PKCS">PKCS</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_requirePEM">requirePEM</a>()
+        
+                                            <p><p>Require base64-encoded PEM's be supplied</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Crypt/Common/Formats/Keys/PKCS.html#method_requirePEM">
+<abbr title="phpseclib3\Crypt\Common\Formats\Keys\PKCS">PKCS</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_requireDER">requireDER</a>()
+        
+                                            <p><p>Require raw DER's be supplied</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Crypt/Common/Formats/Keys/PKCS.html#method_requireDER">
+<abbr title="phpseclib3\Crypt\Common\Formats\Keys\PKCS">PKCS</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_requireAny">requireAny</a>()
+        
+                                            <p><p>Accept any format and auto detect the format</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Crypt/Common/Formats/Keys/PKCS.html#method_requireAny">
+<abbr title="phpseclib3\Crypt\Common\Formats\Keys\PKCS">PKCS</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setEncryptionAlgorithm">setEncryptionAlgorithm</a>(string $algo)
+        
+                                            <p><p>Sets the default encryption algorithm</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Crypt/Common/Formats/Keys/PKCS1.html#method_setEncryptionAlgorithm">
+<abbr title="phpseclib3\Crypt\Common\Formats\Keys\PKCS1">PKCS1</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_load">load</a>(string $key, string $password = &#039;&#039;)
+        
+                                            <p><p>Break a public or private key down into its constituent components</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_wrapPrivateKey">wrapPrivateKey</a>(string $key, string $type, string $password, array $options = [])
+        
+                                            <p><p>Wrap a private key appropriately</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Crypt/Common/Formats/Keys/PKCS1.html#method_wrapPrivateKey">
+<abbr title="phpseclib3\Crypt\Common\Formats\Keys\PKCS1">PKCS1</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_wrapPublicKey">wrapPublicKey</a>(string $key, string $type)
+        
+                                            <p><p>Wrap a public key appropriately</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Crypt/Common/Formats/Keys/PKCS1.html#method_wrapPublicKey">
+<abbr title="phpseclib3\Crypt\Common\Formats\Keys\PKCS1">PKCS1</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_saveParameters">saveParameters</a>(<a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $p, <a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $q, <a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $g)
+        
+                                            <p><p>Convert DSA parameters to the appropriate format</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_savePrivateKey">savePrivateKey</a>(<a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $p, <a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $q, <a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $g, <a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $y, <a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $x, string $password = &#039;&#039;, array $options = [])
+        
+                                            <p><p>Convert a private key to the appropriate format.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_savePublicKey">savePublicKey</a>(<a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $p, <a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $q, <a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $g, <a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $y)
+        
+                                            <p><p>Convert a public key to the appropriate format</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_requirePEM">
+        <div class="location">in <a href="../../../../../phpseclib3/Crypt/Common/Formats/Keys/PKCS.html#method_requirePEM">
+<abbr title="phpseclib3\Crypt\Common\Formats\Keys\PKCS">PKCS</abbr></a> at line 48</div>
+        <code>        static            
+    <strong>requirePEM</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Require base64-encoded PEM's be supplied</p></p>                        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_requireDER">
+        <div class="location">in <a href="../../../../../phpseclib3/Crypt/Common/Formats/Keys/PKCS.html#method_requireDER">
+<abbr title="phpseclib3\Crypt\Common\Formats\Keys\PKCS">PKCS</abbr></a> at line 57</div>
+        <code>        static            
+    <strong>requireDER</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Require raw DER's be supplied</p></p>                        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_requireAny">
+        <div class="location">in <a href="../../../../../phpseclib3/Crypt/Common/Formats/Keys/PKCS.html#method_requireAny">
+<abbr title="phpseclib3\Crypt\Common\Formats\Keys\PKCS">PKCS</abbr></a> at line 68</div>
+        <code>        static            
+    <strong>requireAny</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Accept any format and auto detect the format</p></p>                <p><p>This is the default setting</p></p>        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setEncryptionAlgorithm">
+        <div class="location">in <a href="../../../../../phpseclib3/Crypt/Common/Formats/Keys/PKCS1.html#method_setEncryptionAlgorithm">
+<abbr title="phpseclib3\Crypt\Common\Formats\Keys\PKCS1">PKCS1</abbr></a> at line 43</div>
+        <code>        static            
+    <strong>setEncryptionAlgorithm</strong>(string $algo)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the default encryption algorithm</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$algo</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_load">
+        <div class="location">at line 50</div>
+        <code>        static            array
+    <strong>load</strong>(string $key, string $password = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Break a public or private key down into its constituent components</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$password</td>
+                <td>optional</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_wrapPrivateKey">
+        <div class="location">in <a href="../../../../../phpseclib3/Crypt/Common/Formats/Keys/PKCS1.html#method_wrapPrivateKey">
+<abbr title="phpseclib3\Crypt\Common\Formats\Keys\PKCS1">PKCS1</abbr></a> at line 173</div>
+        <code>        static    protected        string
+    <strong>wrapPrivateKey</strong>(string $key, string $type, string $password, array $options = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Wrap a private key appropriately</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$password</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>optional</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_wrapPublicKey">
+        <div class="location">in <a href="../../../../../phpseclib3/Crypt/Common/Formats/Keys/PKCS1.html#method_wrapPublicKey">
+<abbr title="phpseclib3\Crypt\Common\Formats\Keys\PKCS1">PKCS1</abbr></a> at line 203</div>
+        <code>        static    protected        string
+    <strong>wrapPublicKey</strong>(string $key, string $type)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Wrap a public key appropriately</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_saveParameters">
+        <div class="location">at line 85</div>
+        <code>        static            string
+    <strong>saveParameters</strong>(<a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $p, <a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $q, <a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $g)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Convert DSA parameters to the appropriate format</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+                <td>$p</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+                <td>$q</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+                <td>$g</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_savePrivateKey">
+        <div class="location">at line 112</div>
+        <code>        static            string
+    <strong>savePrivateKey</strong>(<a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $p, <a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $q, <a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $g, <a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $y, <a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $x, string $password = &#039;&#039;, array $options = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Convert a private key to the appropriate format.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+                <td>$p</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+                <td>$q</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+                <td>$g</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+                <td>$y</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+                <td>$x</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$password</td>
+                <td>optional</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>optional</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_savePublicKey">
+        <div class="location">at line 137</div>
+        <code>        static            string
+    <strong>savePublicKey</strong>(<a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $p, <a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $q, <a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $g, <a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $y)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Convert a public key to the appropriate format</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+                <td>$p</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+                <td>$q</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+                <td>$g</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+                <td>$y</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,2109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>phpseclib3\Crypt\EC\PublicKey | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../doctum.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:phpseclib3_Crypt_EC_PublicKey" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../phpseclib3.html">phpseclib3</a></li><li class="backslash">\</li><li><a href="../../../phpseclib3/Crypt.html">Crypt</a></li><li class="backslash">\</li><li><a href="../../../phpseclib3/Crypt/EC.html">EC</a></li><li class="backslash">\</li><li>PublicKey</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>PublicKey    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>PublicKey</strong>        extends <a href="../../../phpseclib3/Crypt/EC.html"><abbr title="phpseclib3\Crypt\EC">EC</abbr></a>        implements        <a href="../../../phpseclib3/Crypt/Common/PublicKey.html"><abbr title="phpseclib3\Crypt\Common\PublicKey">PublicKey</abbr></a>
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>EC Public Key</p></p>                    </div>
+            
+                <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../../phpseclib3/Crypt/Common/Traits/Fingerprint.html"><abbr title="phpseclib3\Crypt\Common\Traits\Fingerprint">Fingerprint</abbr></a>    </div>
+                <div class="col-md-6"><p>Fingerprint Trait for Private Keys</p></div>
+            </div>
+            </div>
+    
+            <h2>Constants</h2>    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                                                                                                        ALGORITHM
+                                    </td>
+                <td class="last">
+                    <p><em><p>Algorithm Name</p></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_zero">
+                    static                    protected                                        <a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>
+                                                                                
+                                    </td>
+                <td>$zero</td>
+                <td class="last"><p>Precomputed Zero</p></td>
+                <td><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#property_zero">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_one">
+                    static                    protected                                        <a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>
+                                                                                
+                                    </td>
+                <td>$one</td>
+                <td class="last"><p>Precomputed One</p></td>
+                <td><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#property_one">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_format">
+                                        protected                                        string
+                                                                                
+                                    </td>
+                <td>$format</td>
+                <td class="last"><p>Signature Format</p></td>
+                <td><small>from&nbsp;<a href="../../../phpseclib3/Crypt/EC.html#property_format">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_hash">
+                                        protected                                        <a href="../../../phpseclib3/Crypt/Hash.html"><abbr title="phpseclib3\Crypt\Hash">Hash</abbr></a>
+                                                                                
+                                    </td>
+                <td>$hash</td>
+                <td class="last"><p>Hash function</p></td>
+                <td><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#property_hash">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_engines">
+                    static                    protected                                        bool[]
+                                                                                
+                                    </td>
+                <td>$engines</td>
+                <td class="last"><p>Available Engines</p></td>
+                <td><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#property_engines">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_QA">
+                                        protected                                        object[]
+                                                                                
+                                    </td>
+                <td>$QA</td>
+                <td class="last"><p>Public Key QA</p></td>
+                <td><small>from&nbsp;<a href="../../../phpseclib3/Crypt/EC.html#property_QA">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_curve">
+                                        protected                                        <a href="../../../phpseclib3/Crypt/EC/BaseCurves/Base.html"><abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a>
+                                                                                
+                                    </td>
+                <td>$curve</td>
+                <td class="last">Curve</td>
+                <td><small>from&nbsp;<a href="../../../phpseclib3/Crypt/EC.html#property_curve">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_shortFormat">
+                                        protected                                        string
+                                                                                
+                                    </td>
+                <td>$shortFormat</td>
+                <td class="last"><p>Signature Format (Short)</p></td>
+                <td><small>from&nbsp;<a href="../../../phpseclib3/Crypt/EC.html#property_shortFormat">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_q">
+                                        protected                                        <a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>
+                                                                                
+                                    </td>
+                <td>$q</td>
+                <td class="last"><p>Curve Order</p></td>
+                <td><small>from&nbsp;<a href="../../../phpseclib3/Crypt/EC.html#property_q">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_x">
+                                        protected                                        <a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>
+                                                                                
+                                    </td>
+                <td>$x</td>
+                <td class="last"><p>Alias for the private key</p></td>
+                <td><small>from&nbsp;<a href="../../../phpseclib3/Crypt/EC.html#property_x">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_context">
+                                        protected                                        string
+                                                                                
+                                    </td>
+                <td>$context</td>
+                <td class="last">Context</td>
+                <td><small>from&nbsp;<a href="../../../phpseclib3/Crypt/EC.html#property_context">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sigFormat">
+                                        protected                                        string
+                                                                                
+                                    </td>
+                <td>$sigFormat</td>
+                <td class="last"><p>Signature Format</p></td>
+                <td><small>from&nbsp;<a href="../../../phpseclib3/Crypt/EC.html#property_sigFormat">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_toString">toString</a>(string $type, array $options = [])
+        
+                                            <p><p>Returns the public key</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p>Constructor</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/EC.html#method___construct">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_initialize_static_variables">initialize_static_variables</a>()
+        
+                                            <p><p>Initialize static variables</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_initialize_static_variables">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html"><abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_load">load</a>(string $key, string $password = false)
+        
+                                            <p><p>Load the key</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_load">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../phpseclib3/Crypt/Common/PrivateKey.html"><abbr title="phpseclib3\Crypt\Common\PrivateKey">PrivateKey</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_loadPrivateKey">loadPrivateKey</a>(string|array $key, string $password = &#039;&#039;)
+        
+                                            <p><p>Loads a private key</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_loadPrivateKey">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../phpseclib3/Crypt/Common/PublicKey.html"><abbr title="phpseclib3\Crypt\Common\PublicKey">PublicKey</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_loadPublicKey">loadPublicKey</a>(string|array $key)
+        
+                                            <p><p>Loads a public key</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_loadPublicKey">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html"><abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_loadParameters">loadParameters</a>(string|array $key)
+        
+                                            <p><p>Loads parameters</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_loadParameters">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html"><abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_loadFormat">loadFormat</a>(string $type, string $key, string $password = false)
+        
+                                            <p><p>Load the key, assuming a specific format</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_loadFormat">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../phpseclib3/Crypt/Common/PrivateKey.html"><abbr title="phpseclib3\Crypt\Common\PrivateKey">PrivateKey</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_loadPrivateKeyFormat">loadPrivateKeyFormat</a>(string $type, string $key, string $password = false)
+        
+                                            <p><p>Loads a private key</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_loadPrivateKeyFormat">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../phpseclib3/Crypt/Common/PublicKey.html"><abbr title="phpseclib3\Crypt\Common\PublicKey">PublicKey</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_loadPublicKeyFormat">loadPublicKeyFormat</a>(string $type, string $key)
+        
+                                            <p><p>Loads a public key</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_loadPublicKeyFormat">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html"><abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_loadParametersFormat">loadParametersFormat</a>(string $type, string|array $key)
+        
+                                            <p><p>Loads parameters</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_loadParametersFormat">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_validatePlugin">validatePlugin</a>(string $format, string $type, string $method = null)
+        
+                                            <p><p>Validate Plugin</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_validatePlugin">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSupportedKeyFormats">getSupportedKeyFormats</a>()
+        
+                                            <p><p>Returns a list of supported formats.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_getSupportedKeyFormats">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addFileFormat">addFileFormat</a>(string $fullname)
+        
+                                            <p><p>Add a fileformat plugin</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_addFileFormat">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLoadedFormat">getLoadedFormat</a>()
+        
+                                            <p><p>Returns the format of the loaded key.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_getLoadedFormat">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    null|string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getComment">getComment</a>()
+        
+                                            <p><p>Returns the key's comment</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_getComment">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_useBestEngine">useBestEngine</a>()
+        
+                                            <p><p>Tests engine validity</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_useBestEngine">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_useInternalEngine">useInternalEngine</a>()
+        
+                                            <p><p>Flag to use internal engine only (useful for unit testing)</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_useInternalEngine">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___toString">__toString</a>()
+        
+                                            <p><p>__toString() magic method</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/EC.html#method___toString">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withHash">withHash</a>(string $hash)
+        
+                                            <p><p>Determines which hashing function should be used</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/EC.html#method_withHash">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getHash">getHash</a>()
+        
+                                            <p><p>Returns the hash algorithm currently being used</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_getHash">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_computek">computek</a>(string $h1)
+        
+                                            <p><p>Compute the pseudorandom k for signature generation,
+using the process specified for deterministic DSA.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_computek">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_bits2int">bits2int</a>(string $in)
+        
+                                            <p><p>Bit String to Integer</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_bits2int">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../phpseclib3/Crypt/EC/PrivateKey.html"><abbr title="phpseclib3\Crypt\EC\PrivateKey">PrivateKey</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_createKey">createKey</a>(string $curve)
+        
+                                            <p><p>Create public / private key pair.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/EC.html#method_createKey">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_onLoad">onLoad</a>(array $components)
+        
+                                            <p><p>OnLoad Handler</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/EC.html#method_onLoad">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCurve">getCurve</a>()
+        
+                                            <p><p>Returns the curve</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/EC.html#method_getCurve">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLength">getLength</a>()
+        
+                                            <p><p>Returns the key size</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/EC.html#method_getLength">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getEngine">getEngine</a>()
+        
+                                            <p><p>Returns the current engine being used</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/EC.html#method_getEngine">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getEncodedCoordinates">getEncodedCoordinates</a>()
+        
+                                            <p><p>Returns the public key coordinates as a string</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/EC.html#method_getEncodedCoordinates">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getParameters">getParameters</a>(string $type = &#039;PKCS1&#039;)
+        
+                                            <p><p>Returns the parameters</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/EC.html#method_getParameters">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withSignatureFormat">withSignatureFormat</a>(string $format)
+        
+                                            <p><p>Determines the signature padding mode</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/EC.html#method_withSignatureFormat">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSignatureFormat">getSignatureFormat</a>()
+        
+                                            <p><p>Returns the signature format currently being used</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/EC.html#method_getSignatureFormat">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_withContext">withContext</a>(string $context = null)
+        
+                                            <p><p>Sets the context</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/EC.html#method_withContext">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getContext">getContext</a>()
+        
+                                            <p><p>Returns the signature format currently being used</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/EC.html#method_getContext">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFingerprint">getFingerprint</a>(string $algorithm = &#039;md5&#039;)
+        
+                                            <p><p>Returns the public key's fingerprint</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Crypt/Common/Traits/Fingerprint.html#method_getFingerprint">
+<abbr title="phpseclib3\Crypt\Common\Traits\Fingerprint">Fingerprint</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_verify">verify</a>($message, $signature)
+        
+                                            <p><p>Verify a signature</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_toString">
+        <div class="location">at line 166</div>
+        <code>                    string
+    <strong>toString</strong>(string $type, array $options = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the public key</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/EC.html#method___construct">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a> at line 251</div>
+        <code>            protected        
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p>Constructor</p>                <p><p>PublicKey and PrivateKey objects can only be created from abstract RSA class</p></p>        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_initialize_static_variables">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_initialize_static_variables">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a> at line 115</div>
+        <code>        static    protected        
+    <strong>initialize_static_variables</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Initialize static variables</p></p>                        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_load">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_load">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a> at line 135</div>
+        <code>        static            <a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html"><abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a>
+    <strong>load</strong>(string $key, string $password = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Load the key</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$password</td>
+                <td>optional</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html"><abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadPrivateKey">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_loadPrivateKey">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a> at line 176</div>
+        <code>        static            <a href="../../../phpseclib3/Crypt/Common/PrivateKey.html"><abbr title="phpseclib3\Crypt\Common\PrivateKey">PrivateKey</abbr></a>
+    <strong>loadPrivateKey</strong>(string|array $key, string $password = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Loads a private key</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$password</td>
+                <td>optional</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../phpseclib3/Crypt/Common/PrivateKey.html"><abbr title="phpseclib3\Crypt\Common\PrivateKey">PrivateKey</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadPublicKey">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_loadPublicKey">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a> at line 191</div>
+        <code>        static            <a href="../../../phpseclib3/Crypt/Common/PublicKey.html"><abbr title="phpseclib3\Crypt\Common\PublicKey">PublicKey</abbr></a>
+    <strong>loadPublicKey</strong>(string|array $key)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Loads a public key</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../phpseclib3/Crypt/Common/PublicKey.html"><abbr title="phpseclib3\Crypt\Common\PublicKey">PublicKey</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadParameters">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_loadParameters">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a> at line 206</div>
+        <code>        static            <a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html"><abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a>
+    <strong>loadParameters</strong>(string|array $key)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Loads parameters</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html"><abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadFormat">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_loadFormat">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a> at line 223</div>
+        <code>        static            <a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html"><abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a>
+    <strong>loadFormat</strong>(string $type, string $key, string $password = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Load the key, assuming a specific format</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$password</td>
+                <td>optional</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html"><abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadPrivateKeyFormat">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_loadPrivateKeyFormat">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a> at line 256</div>
+        <code>        static            <a href="../../../phpseclib3/Crypt/Common/PrivateKey.html"><abbr title="phpseclib3\Crypt\Common\PrivateKey">PrivateKey</abbr></a>
+    <strong>loadPrivateKeyFormat</strong>(string $type, string $key, string $password = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Loads a private key</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$password</td>
+                <td>optional</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../phpseclib3/Crypt/Common/PrivateKey.html"><abbr title="phpseclib3\Crypt\Common\PrivateKey">PrivateKey</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadPublicKeyFormat">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_loadPublicKeyFormat">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a> at line 272</div>
+        <code>        static            <a href="../../../phpseclib3/Crypt/Common/PublicKey.html"><abbr title="phpseclib3\Crypt\Common\PublicKey">PublicKey</abbr></a>
+    <strong>loadPublicKeyFormat</strong>(string $type, string $key)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Loads a public key</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../phpseclib3/Crypt/Common/PublicKey.html"><abbr title="phpseclib3\Crypt\Common\PublicKey">PublicKey</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_loadParametersFormat">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_loadParametersFormat">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a> at line 288</div>
+        <code>        static            <a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html"><abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a>
+    <strong>loadParametersFormat</strong>(string $type, string|array $key)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Loads parameters</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|array</td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html"><abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_validatePlugin">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_validatePlugin">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a> at line 305</div>
+        <code>        static    protected        mixed
+    <strong>validatePlugin</strong>(string $format, string $type, string $method = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Validate Plugin</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td>optional</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSupportedKeyFormats">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_getSupportedKeyFormats">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a> at line 354</div>
+        <code>        static            array
+    <strong>getSupportedKeyFormats</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns a list of supported formats.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addFileFormat">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_addFileFormat">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a> at line 371</div>
+        <code>        static            bool
+    <strong>addFileFormat</strong>(string $fullname)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add a fileformat plugin</p></p>                <p><p>The plugin needs to either already be loaded or be auto-loadable.
+Loading a plugin whose shortname overwrite an existing shortname will overwrite the old plugin.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$fullname</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            \phpseclib3\Crypt\Common\self::load()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLoadedFormat">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_getLoadedFormat">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a> at line 394</div>
+        <code>                    mixed
+    <strong>getLoadedFormat</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the format of the loaded key.</p></p>                <p><p>If the key that was loaded wasn't in a valid or if the key was auto-generated
+with RSA::createKey() then this will throw an exception.</p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            \phpseclib3\Crypt\Common\self::load()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getComment">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_getComment">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a> at line 411</div>
+        <code>                    null|string
+    <strong>getComment</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the key's comment</p></p>                <p><p>Not all key formats support comments. If you want to set a comment use toString()</p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_useBestEngine">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_useBestEngine">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a> at line 420</div>
+        <code>        static            
+    <strong>useBestEngine</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Tests engine validity</p></p>                        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_useInternalEngine">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_useInternalEngine">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a> at line 438</div>
+        <code>        static            
+    <strong>useInternalEngine</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Flag to use internal engine only (useful for unit testing)</p></p>                        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/EC.html#method___toString">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a> at line 467</div>
+        <code>                    string
+    <strong>__toString</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>__toString() magic method</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withHash">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/EC.html#method_withHash">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a> at line 447</div>
+        <code>                    
+    <strong>withHash</strong>(string $hash)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determines which hashing function should be used</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$hash</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHash">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_getHash">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a> at line 476</div>
+        <code>                    
+    <strong>getHash</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the hash algorithm currently being used</p></p>                        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_computek">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_computek">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a> at line 488</div>
+        <code>            protected        string
+    <strong>computek</strong>(string $h1)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Compute the pseudorandom k for signature generation,
+using the process specified for deterministic DSA.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$h1</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bits2int">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/Common/AsymmetricKey.html#method_bits2int">
+<abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a> at line 551</div>
+        <code>            protected        <a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>
+    <strong>bits2int</strong>(string $in)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Bit String to Integer</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$in</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createKey">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/EC.html#method_createKey">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a> at line 139</div>
+        <code>        static            <a href="../../../phpseclib3/Crypt/EC/PrivateKey.html"><abbr title="phpseclib3\Crypt\EC\PrivateKey">PrivateKey</abbr></a>
+    <strong>createKey</strong>(string $curve)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create public / private key pair.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$curve</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../phpseclib3/Crypt/EC/PrivateKey.html"><abbr title="phpseclib3\Crypt\EC\PrivateKey">PrivateKey</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_onLoad">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/EC.html#method_onLoad">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a> at line 216</div>
+        <code>        static    protected        bool
+    <strong>onLoad</strong>(array $components)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>OnLoad Handler</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$components</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCurve">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/EC.html#method_getCurve">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a> at line 266</div>
+        <code>                    string|array
+    <strong>getCurve</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the curve</p></p>                <p><p>Returns a string if it's a named curve, an array if not</p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLength">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/EC.html#method_getLength">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a> at line 313</div>
+        <code>                    int
+    <strong>getLength</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the key size</p></p>                <p><p>Quoting <a href="https://tools.ietf.org/html/rfc5656#section-2">https://tools.ietf.org/html/rfc5656#section-2</a>,</p>
+<p>&quot;The size of a set of elliptic curve domain parameters on a prime
+curve is defined as the number of bits in the binary representation
+of the field order, commonly denoted by p.  Size on a
+characteristic-2 curve is defined as the number of bits in the binary
+representation of the field, commonly denoted by m.  A set of
+elliptic curve domain parameters defines a group of order n generated
+by a base point P&quot;</p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEngine">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/EC.html#method_getEngine">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a> at line 325</div>
+        <code>                    string
+    <strong>getEngine</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the current engine being used</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            \phpseclib3\Crypt\self::useInternalEngine()
+                                    </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+                                            \phpseclib3\Crypt\self::useBestEngine()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEncodedCoordinates">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/EC.html#method_getEncodedCoordinates">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a> at line 346</div>
+        <code>                    string
+    <strong>getEncodedCoordinates</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the public key coordinates as a string</p></p>                <p><p>Used by ECDH</p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getParameters">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/EC.html#method_getParameters">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a> at line 364</div>
+        <code>                    mixed
+    <strong>getParameters</strong>(string $type = &#039;PKCS1&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the parameters</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td>optional</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            \phpseclib3\Crypt\self::getPublicKey()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withSignatureFormat">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/EC.html#method_withSignatureFormat">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a> at line 382</div>
+        <code>                    
+    <strong>withSignatureFormat</strong>(string $format)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Determines the signature padding mode</p></p>                <p><p>Valid values are: ASN1, SSH2, Raw</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSignatureFormat">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/EC.html#method_getSignatureFormat">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a> at line 398</div>
+        <code>                    
+    <strong>getSignatureFormat</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the signature format currently being used</p></p>                        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_withContext">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/EC.html#method_withContext">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a> at line 412</div>
+        <code>                    
+    <strong>withContext</strong>(string $context = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the context</p></p>                <p><p>Used by Ed25519 / Ed448.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$context</td>
+                <td>optional</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            \phpseclib3\Crypt\self::sign()
+                                    </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+                                            \phpseclib3\Crypt\self::verify()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getContext">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/EC.html#method_getContext">
+<abbr title="phpseclib3\Crypt\EC">EC</abbr></a> at line 437</div>
+        <code>                    
+    <strong>getContext</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the signature format currently being used</p></p>                        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFingerprint">
+        <div class="location">in <a href="../../../phpseclib3/Crypt/Common/Traits/Fingerprint.html#method_getFingerprint">
+<abbr title="phpseclib3\Crypt\Common\Traits\Fingerprint">Fingerprint</abbr></a> at line 36</div>
+        <code>                    mixed
+    <strong>getFingerprint</strong>(string $algorithm = &#039;md5&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the public key's fingerprint</p></p>                <p><p>The public key's fingerprint is returned, which is equivalent to running <code>ssh-keygen -lf rsa.pub</code>. If there is
+no public key currently loaded, false is returned.
+Example output (md5): &quot;c1:b1:30:29:d7:b8:de:6c:97:77:10:d7:46:41:63:87&quot; (as specified by RFC 4716)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$algorithm</td>
+                <td><p>The hashing algorithm to be used. Valid options are 'md5' and 'sha256'. False is returned
+for invalid values.</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_verify">
+        <div class="location">at line 43</div>
+        <code>                    
+    <strong>verify</strong>($message, $signature)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Verify a signature</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$signature</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            \phpseclib3\Crypt\EC\self::verify()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

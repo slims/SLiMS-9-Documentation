@@ -103,9 +103,28 @@
                     <a href="../../SLiMS/Table/Utils.html"><abbr title="SLiMS\Table\Utils">Utils</abbr></a>    </div>
                 <div class="col-md-6"></div>
             </div>
+                    <div class="row">
+                <div class="col-md-6">
+                    <a href="../../SLiMS/Table/Detail.html"><abbr title="SLiMS\Table\Detail">Detail</abbr></a>    </div>
+                <div class="col-md-6"></div>
+            </div>
             </div>
     
     
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_debug">
+                    static                                                            
+                                                                                
+                                    </td>
+                <td>$debug</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
     
             <h2>Methods</h2>
 
@@ -184,6 +203,230 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_checkTable">checkTable</a>(string $tableName)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/Table/Utils.html#method_checkTable">
+<abbr title="SLiMS\Table\Utils">Utils</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_repairTable">repairTable</a>(string $tableName)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/Table/Utils.html#method_repairTable">
+<abbr title="SLiMS\Table\Utils">Utils</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="SLiMS\Table\PDOStatement">PDOStatement</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getTableDetail">getTableDetail</a>(string $tableName)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/Table/Detail.html#method_getTableDetail">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="SLiMS\Table\PDOStatement">PDOStatement</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getColumnDetail">getColumnDetail</a>(string $tableName, string $columnName)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/Table/Detail.html#method_getColumnDetail">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getTableColumn">getTableColumn</a>(string $tableName, bool $fetchAll = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/Table/Detail.html#method_getTableColumn">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_hasTable">hasTable</a>(string $tableName)
+        
+                                            <p><p>CHeck if table is exists or not</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/Table/Detail.html#method_hasTable">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_hasColumn">hasColumn</a>(string $tableName, string $columnName)
+        
+                                            <p><p>Check if column exists or not</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/Table/Detail.html#method_hasColumn">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../SLiMS/Table/Schema.html"><abbr title="SLiMS\Table\Schema">Schema</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_column">column</a>(string $column)
+        
+                                            <p><p>This method relate with Schema::table('<table_name>')</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/Table/Detail.html#method_column">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_columns">columns</a>(bool $fetchAll = false)
+        
+                                            <p><p>Same as column, but this
+method will give you more raw information
+about column in some table</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/Table/Detail.html#method_columns">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_tables">tables</a>()
+        
+                                            <p><p>Get all table data from current database</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/Table/Detail.html#method_tables">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isAutoIncrement">isAutoIncrement</a>()
+        
+                                            <p><p>Get boolean result about
+table and column Auto Increment status</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/Table/Detail.html#method_isAutoIncrement">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isTemporary">isTemporary</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/Table/Detail.html#method_isTemporary">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isEmpty">isEmpty</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/Table/Detail.html#method_isEmpty">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isNull">isNull</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/Table/Detail.html#method_isNull">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isUnique">isUnique</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/Table/Detail.html#method_isUnique">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isPrimary">isPrimary</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/Table/Detail.html#method_isPrimary">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isFullText">isFullText</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/Table/Detail.html#method_isFullText">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isExists">isExists</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/Table/Detail.html#method_isExists">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___call">__call</a>($method, $arguments)
+        
+                                            <p><p>Magic method to call data via scoped property</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/Table/Detail.html#method___call">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     static&nbsp;void
                 </div>
                 <div class="col-md-8">
@@ -206,10 +449,10 @@ rdbms grammar</p></p>                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;void
+                    static&nbsp;<a href="../../SLiMS/Table/Schema.html"><abbr title="SLiMS\Table\Schema">Schema</abbr></a>|string
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_table">table</a>(string $tableName, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callBack)
+                    <a href="#method_table">table</a>(string $tableName, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callBack = &#039;&#039;)
         
                                             <p><p>Modify existing table</p></p>                </div>
                 <div class="col-md-2"></div>
@@ -230,29 +473,20 @@ just type table name and drop it.</p></p>                </div>
                     static&nbsp;void
                 </div>
                 <div class="col-md-8">
+                    <a href="#method_dropColumn">dropColumn</a>(string $tableName, string $columnName)
+        
+                                            <p><p>Drop column table
+just type table and column name then drop it.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
                     <a href="#method_truncate">truncate</a>(string $tableName)
         
                                             <p><p>Emptying table</p></p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    static&nbsp;bool
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_hasTable">hasTable</a>(string $tableName)
-        
-                                            <p><p>CHeck if table is exists or not</p></p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    static&nbsp;bool
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_hasColumn">hasColumn</a>(string $tableName, string $columnName)
-        
-                                            <p><p>Check if column exists or not</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -442,8 +676,752 @@ just type table name and drop it.</p></p>                </div>
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_checkTable">
+        <div class="location">in <a href="../../SLiMS/Table/Utils.html#method_checkTable">
+<abbr title="SLiMS\Table\Utils">Utils</abbr></a> at line 61</div>
+        <code>        static            
+    <strong>checkTable</strong>(string $tableName)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_repairTable">
+        <div class="location">in <a href="../../SLiMS/Table/Utils.html#method_repairTable">
+<abbr title="SLiMS\Table\Utils">Utils</abbr></a> at line 69</div>
+        <code>        static            
+    <strong>repairTable</strong>(string $tableName)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTableDetail">
+        <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_getTableDetail">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 58</div>
+        <code>                    <abbr title="SLiMS\Table\PDOStatement">PDOStatement</abbr>
+    <strong>getTableDetail</strong>(string $tableName)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="SLiMS\Table\PDOStatement">PDOStatement</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getColumnDetail">
+        <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_getColumnDetail">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 75</div>
+        <code>                    <abbr title="SLiMS\Table\PDOStatement">PDOStatement</abbr>
+    <strong>getColumnDetail</strong>(string $tableName, string $columnName)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$columnName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="SLiMS\Table\PDOStatement">PDOStatement</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTableColumn">
+        <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_getTableColumn">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 92</div>
+        <code>                    array
+    <strong>getTableColumn</strong>(string $tableName, bool $fetchAll = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$fetchAll</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasTable">
+        <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_hasTable">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 115</div>
+        <code>        static            bool
+    <strong>hasTable</strong>(string $tableName)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>CHeck if table is exists or not</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasColumn">
+        <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_hasColumn">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 127</div>
+        <code>        static            bool
+    <strong>hasColumn</strong>(string $tableName, string $columnName)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Check if column exists or not</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$columnName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_column">
+        <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_column">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 138</div>
+        <code>                    <a href="../../SLiMS/Table/Schema.html"><abbr title="SLiMS\Table\Schema">Schema</abbr></a>
+    <strong>column</strong>(string $column)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>This method relate with Schema::table('<table_name>')</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../SLiMS/Table/Schema.html"><abbr title="SLiMS\Table\Schema">Schema</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_columns">
+        <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_columns">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 152</div>
+        <code>                    array
+    <strong>columns</strong>(bool $fetchAll = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Same as column, but this
+method will give you more raw information
+about column in some table</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$fetchAll</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_tables">
+        <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_tables">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 162</div>
+        <code>        static            array
+    <strong>tables</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get all table data from current database</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isAutoIncrement">
+        <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_isAutoIncrement">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 185</div>
+        <code>                    bool
+    <strong>isAutoIncrement</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get boolean result about
+table and column Auto Increment status</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isTemporary">
+        <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_isTemporary">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 194</div>
+        <code>                    bool
+    <strong>isTemporary</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isEmpty">
+        <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_isEmpty">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 202</div>
+        <code>                    bool
+    <strong>isEmpty</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isNull">
+        <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_isNull">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 210</div>
+        <code>                    bool
+    <strong>isNull</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isUnique">
+        <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_isUnique">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 218</div>
+        <code>                    bool
+    <strong>isUnique</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isPrimary">
+        <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_isPrimary">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 226</div>
+        <code>                    bool
+    <strong>isPrimary</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isFullText">
+        <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_isFullText">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 234</div>
+        <code>                    bool
+    <strong>isFullText</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isExists">
+        <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_isExists">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 242</div>
+        <code>                    bool
+    <strong>isExists</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">in <a href="../../SLiMS/Table/Detail.html#method___call">
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 255</div>
+        <code>                    string
+    <strong>__call</strong>($method, $arguments)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Magic method to call data via scoped property</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getInstance">
-        <div class="location">at line 42</div>
+        <div class="location">at line 48</div>
         <code>        static            void
     <strong>getInstance</strong>()
         </code>
@@ -475,7 +1453,7 @@ just type table name and drop it.</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_create">
-        <div class="location">at line 58</div>
+        <div class="location">at line 64</div>
         <code>        static            void
     <strong>create</strong>(string $tableName, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callBack)
         </code>
@@ -524,9 +1502,9 @@ rdbms grammar</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_table">
-        <div class="location">at line 84</div>
-        <code>        static            void
-    <strong>table</strong>(string $tableName, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callBack)
+        <div class="location">at line 90</div>
+        <code>        static            <a href="../../SLiMS/Table/Schema.html"><abbr title="SLiMS\Table\Schema">Schema</abbr></a>|string
+    <strong>table</strong>(string $tableName, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callBack = &#039;&#039;)
         </code>
     </h3>
     <div class="details">    
@@ -557,7 +1535,7 @@ rdbms grammar</p></p>
 
                     <table class="table table-condensed">
         <tr>
-            <td>void</td>
+            <td><a href="../../SLiMS/Table/Schema.html"><abbr title="SLiMS\Table\Schema">Schema</abbr></a>|string</td>
             <td></td>
         </tr>
     </table>
@@ -571,7 +1549,7 @@ rdbms grammar</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_drop">
-        <div class="location">at line 110</div>
+        <div class="location">at line 119</div>
         <code>        static            void
     <strong>drop</strong>(string $tableName)
         </code>
@@ -613,8 +1591,56 @@ just type table name and drop it.</p></p>
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_dropColumn">
+        <div class="location">at line 131</div>
+        <code>        static            void
+    <strong>dropColumn</strong>(string $tableName, string $columnName)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Drop column table
+just type table and column name then drop it.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$columnName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_truncate">
-        <div class="location">at line 121</div>
+        <div class="location">at line 142</div>
         <code>        static            void
     <strong>truncate</strong>(string $tableName)
         </code>
@@ -643,95 +1669,6 @@ just type table name and drop it.</p></p>
                     <table class="table table-condensed">
         <tr>
             <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_hasTable">
-        <div class="location">at line 132</div>
-        <code>        static            bool
-    <strong>hasTable</strong>(string $tableName)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>CHeck if table is exists or not</p></p>                        
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$tableName</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>bool</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_hasColumn">
-        <div class="location">at line 151</div>
-        <code>        static            bool
-    <strong>hasColumn</strong>(string $tableName, string $columnName)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Check if column exists or not</p></p>                        
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$tableName</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$columnName</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>bool</td>
             <td></td>
         </tr>
     </table>

@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>phpseclib3\Math\PrimeField\Integer | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../fonts/doctum-font.css">
+        <script src="../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../doctum.js"></script>
+        <script async defer src="../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:phpseclib3_Math_PrimeField_Integer" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                    <li><a href="../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../phpseclib3.html">phpseclib3</a></li><li class="backslash">\</li><li><a href="../../../phpseclib3/Math.html">Math</a></li><li class="backslash">\</li><li><a href="../../../phpseclib3/Math/PrimeField.html">PrimeField</a></li><li class="backslash">\</li><li>Integer</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Integer    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>Integer</strong>        extends <a href="../../../phpseclib3/Math/Common/FiniteField/Integer.html"><abbr title="phpseclib3\Math\Common\FiniteField\Integer">Integer</abbr></a>
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>Prime Finite Fields</p></p>                    </div>
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_value">
+                                        protected                                        <a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>
+                                                                                
+                                    </td>
+                <td>$value</td>
+                <td class="last"><p>Holds the PrimeField's value</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_instanceID">
+                                        protected                                        int
+                                                                                
+                                    </td>
+                <td>$instanceID</td>
+                <td class="last"><p>Keeps track of current instance</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_modulo">
+                    static                    protected                                        <abbr title="phpseclib3\Math\PrimeField\array&lt;int,\phpseclib3\Math\BigInteger&gt;">BigInteger&gt;</abbr>
+                                                                                
+                                    </td>
+                <td>$modulo</td>
+                <td class="last"><p>Holds the PrimeField's modulo</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_reduce">
+                    static                    protected                                        
+                                                                                
+                                    </td>
+                <td>$reduce</td>
+                <td class="last"><p>Holds a pre-generated function to perform modulo reductions</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_zero">
+                    static                    protected                                        <a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>
+                                                                                
+                                    </td>
+                <td>$zero</td>
+                <td class="last">Zero</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_jsonSerialize">jsonSerialize</a>()
+        
+                                            <p><p>JSON Serialize</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../phpseclib3/Math/Common/FiniteField/Integer.html#method_jsonSerialize">
+<abbr title="phpseclib3\Math\Common\FiniteField\Integer">Integer</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_toHex">toHex</a>()
+        
+                                            <p><p>Converts an Integer to a hex string (eg. base-16).</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(int $instanceID, <a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $num = null)
+        
+                                            <p><p>Default constructor</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setModulo">setModulo</a>(int $instanceID, <a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $modulo)
+        
+                                            <p><p>Set the modulo for a given instance</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setRecurringModuloFunction">setRecurringModuloFunction</a>(int $instanceID, callable $function)
+        
+                                            <p><p>Set the modulo for a given instance</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_cleanupCache">cleanupCache</a>($instanceID)
+        
+                                            <p><p>Delete the modulo for a given instance</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getModulo">getModulo</a>(int $instanceID)
+        
+                                            <p><p>Returns the modulo</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_checkInstance">checkInstance</a>(<a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a> $x, <a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a> $y)
+        
+                                            <p><p>Tests a parameter to see if it's of the right instance</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_equals">equals</a>(<a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a> $x)
+        
+                                            <p><p>Tests the equality of two numbers.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_compare">compare</a>(<a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a> $x)
+        
+                                            <p><p>Compares two numbers.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_add">add</a>(<a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a> $x)
+        
+                                            <p><p>Adds two PrimeFieldIntegers.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_subtract">subtract</a>(<a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a> $x)
+        
+                                            <p><p>Subtracts two PrimeFieldIntegers.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_multiply">multiply</a>(<a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a> $x)
+        
+                                            <p><p>Multiplies two PrimeFieldIntegers.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_divide">divide</a>(<a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a> $x)
+        
+                                            <p><p>Divides two PrimeFieldIntegers.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_pow">pow</a>(<a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $x)
+        
+                                            <p><p>Performs power operation on a PrimeFieldInteger.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a>|false
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_squareRoot">squareRoot</a>()
+        
+                                            <p><p>Calculates the square root</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isOdd">isOdd</a>()
+        
+                                            <p><p>Is Odd?</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_negate">negate</a>()
+        
+                                            <p>Negate</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_toBytes">toBytes</a>()
+        
+                                            <p><p>Converts an Integer to a byte string (eg. base-256).</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_toBits">toBits</a>()
+        
+                                            <p><p>Converts an Integer to a bit string (eg. base-2).</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="phpseclib3\Math\PrimeField\array&lt;int,int&gt;">array&lt;int,int&gt;</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getNAF">getNAF</a>(int $w = 1)
+        
+                                            <p><p>Returns the w-ary non-adjacent form (wNAF)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_toBigInteger">toBigInteger</a>()
+        
+                                            <p><p>Converts an Integer to a BigInteger</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___toString">__toString</a>()
+        
+                                            <p><p>__toString() magic method</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___debugInfo">__debugInfo</a>()
+        
+                                            <p><p>__debugInfo() magic method</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_jsonSerialize">
+        <div class="location">in <a href="../../../phpseclib3/Math/Common/FiniteField/Integer.html#method_jsonSerialize">
+<abbr title="phpseclib3\Math\Common\FiniteField\Integer">Integer</abbr></a> at line 30</div>
+        <code>                    
+    <strong>jsonSerialize</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>JSON Serialize</p></p>                <p><p>Will be called, automatically, when json_encode() is called on a BigInteger object.</p>
+<p>PHP Serialize isn't supported because unserializing would require the factory be
+serialized as well and that just sounds like too much</p></p>        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toHex">
+        <div class="location">at line 324</div>
+        <code>                    string
+    <strong>toHex</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Converts an Integer to a hex string (eg. base-16).</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 66</div>
+        <code>                    
+    <strong>__construct</strong>(int $instanceID, <a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $num = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Default constructor</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$instanceID</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+                <td>$num</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setModulo">
+        <div class="location">at line 83</div>
+        <code>        static            void
+    <strong>setModulo</strong>(int $instanceID, <a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $modulo)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set the modulo for a given instance</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$instanceID</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+                <td>$modulo</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setRecurringModuloFunction">
+        <div class="location">at line 94</div>
+        <code>        static            void
+    <strong>setRecurringModuloFunction</strong>(int $instanceID, callable $function)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set the modulo for a given instance</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$instanceID</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$function</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cleanupCache">
+        <div class="location">at line 105</div>
+        <code>        static            
+    <strong>cleanupCache</strong>($instanceID)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Delete the modulo for a given instance</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$instanceID</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getModulo">
+        <div class="location">at line 117</div>
+        <code>        static            <a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>
+    <strong>getModulo</strong>(int $instanceID)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the modulo</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$instanceID</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_checkInstance">
+        <div class="location">at line 129</div>
+        <code>        static            void
+    <strong>checkInstance</strong>(<a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a> $x, <a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a> $y)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Tests a parameter to see if it's of the right instance</p></p>                <p><p>Throws an exception if the incorrect class is being utilized</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a></td>
+                <td>$x</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a></td>
+                <td>$y</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_equals">
+        <div class="location">at line 141</div>
+        <code>                    bool
+    <strong>equals</strong>(<a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a> $x)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Tests the equality of two numbers.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a></td>
+                <td>$x</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compare">
+        <div class="location">at line 153</div>
+        <code>                    int
+    <strong>compare</strong>(<a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a> $x)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Compares two numbers.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a></td>
+                <td>$x</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_add">
+        <div class="location">at line 165</div>
+        <code>                    <a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a>
+    <strong>add</strong>(<a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a> $x)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Adds two PrimeFieldIntegers.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a></td>
+                <td>$x</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_subtract">
+        <div class="location">at line 183</div>
+        <code>                    <a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a>
+    <strong>subtract</strong>(<a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a> $x)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Subtracts two PrimeFieldIntegers.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a></td>
+                <td>$x</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_multiply">
+        <div class="location">at line 201</div>
+        <code>                    <a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a>
+    <strong>multiply</strong>(<a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a> $x)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Multiplies two PrimeFieldIntegers.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a></td>
+                <td>$x</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_divide">
+        <div class="location">at line 213</div>
+        <code>                    <a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a>
+    <strong>divide</strong>(<a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a> $x)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Divides two PrimeFieldIntegers.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a></td>
+                <td>$x</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pow">
+        <div class="location">at line 226</div>
+        <code>                    <a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a>
+    <strong>pow</strong>(<a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $x)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Performs power operation on a PrimeFieldInteger.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+                <td>$x</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_squareRoot">
+        <div class="location">at line 240</div>
+        <code>                    <a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a>|false
+    <strong>squareRoot</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Calculates the square root</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a>|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isOdd">
+        <div class="location">at line 290</div>
+        <code>                    bool
+    <strong>isOdd</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Is Odd?</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_negate">
+        <div class="location">at line 303</div>
+        <code>                    <a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a>
+    <strong>negate</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p>Negate</p>                <p><p>A negative number can be written as 0-12. With modulos, 0 is the same thing as the modulo
+so 0-12 is the same thing as modulo-12</p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toBytes">
+        <div class="location">at line 313</div>
+        <code>                    string
+    <strong>toBytes</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Converts an Integer to a byte string (eg. base-256).</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toBits">
+        <div class="location">at line 334</div>
+        <code>                    string
+    <strong>toBits</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Converts an Integer to a bit string (eg. base-2).</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNAF">
+        <div class="location">at line 351</div>
+        <code>                    <abbr title="phpseclib3\Math\PrimeField\array&lt;int,int&gt;">array&lt;int,int&gt;</abbr>
+    <strong>getNAF</strong>(int $w = 1)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the w-ary non-adjacent form (wNAF)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$w</td>
+                <td>optional</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="phpseclib3\Math\PrimeField\array&lt;int,int&gt;">array&lt;int,int&gt;</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toBigInteger">
+        <div class="location">at line 392</div>
+        <code>                    <a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>
+    <strong>toBigInteger</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Converts an Integer to a BigInteger</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location">at line 402</div>
+        <code>                    string
+    <strong>__toString</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>__toString() magic method</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___debugInfo">
+        <div class="location">at line 412</div>
+        <code>                    array
+    <strong>__debugInfo</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>__debugInfo() magic method</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

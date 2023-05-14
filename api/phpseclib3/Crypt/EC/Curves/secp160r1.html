@@ -1,0 +1,1860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>phpseclib3\Crypt\EC\Curves\secp160r1 | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:phpseclib3_Crypt_EC_Curves_secp160r1" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../phpseclib3.html">phpseclib3</a></li><li class="backslash">\</li><li><a href="../../../../phpseclib3/Crypt.html">Crypt</a></li><li class="backslash">\</li><li><a href="../../../../phpseclib3/Crypt/EC.html">EC</a></li><li class="backslash">\</li><li><a href="../../../../phpseclib3/Crypt/EC/Curves.html">Curves</a></li><li class="backslash">\</li><li>secp160r1</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>secp160r1    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>secp160r1</strong>        extends <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html"><abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a>
+</p>
+
+        
+    
+        
+
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_order">
+                                        protected                                        <a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>
+                                                                                
+                                    </td>
+                <td>$order</td>
+                <td class="last"><p>The Order</p></td>
+                <td><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#property_order">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_factory">
+                                        protected                                        <abbr title="phpseclib3\Math\PrimeFields">PrimeFields</abbr>
+                                                                                
+                                    </td>
+                <td>$factory</td>
+                <td class="last"><p>Prime Field Integer factory</p></td>
+                <td><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#property_factory">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_a">
+                                        protected                                        object
+                                                                                
+                                    </td>
+                <td>$a</td>
+                <td class="last"><p>Cofficient for x^1</p></td>
+                <td><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#property_a">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_b">
+                                        protected                                        object
+                                                                                
+                                    </td>
+                <td>$b</td>
+                <td class="last"><p>Cofficient for x^0</p></td>
+                <td><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#property_b">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_p">
+                                        protected                                        object
+                                                                                
+                                    </td>
+                <td>$p</td>
+                <td class="last"><p>Base Point</p></td>
+                <td><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#property_p">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_one">
+                                        protected                                        object
+                                                                                
+                                    </td>
+                <td>$one</td>
+                <td class="last"><p>The number one over the specified finite field</p></td>
+                <td><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#property_one">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_two">
+                                        protected                                        object
+                                                                                
+                                    </td>
+                <td>$two</td>
+                <td class="last"><p>The number two over the specified finite field</p></td>
+                <td><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#property_two">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_three">
+                                        protected                                        object
+                                                                                
+                                    </td>
+                <td>$three</td>
+                <td class="last"><p>The number three over the specified finite field</p></td>
+                <td><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#property_three">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_four">
+                                        protected                                        object
+                                                                                
+                                    </td>
+                <td>$four</td>
+                <td class="last"><p>The number four over the specified finite field</p></td>
+                <td><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#property_four">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_eight">
+                                        protected                                        object
+                                                                                
+                                    </td>
+                <td>$eight</td>
+                <td class="last"><p>The number eight over the specified finite field</p></td>
+                <td><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#property_eight">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_modulo">
+                                        protected                                        <a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>
+                                                                                
+                                    </td>
+                <td>$modulo</td>
+                <td class="last"><p>The modulo</p></td>
+                <td><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#property_modulo">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_randomInteger">randomInteger</a>()
+        
+                                            <p><p>Returns a random integer</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html#method_randomInteger">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_convertInteger">convertInteger</a>(<a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $x)
+        
+                                            <p><p>Converts a BigInteger to a \phpseclib3\Math\FiniteField\Integer integer</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html#method_convertInteger">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLengthInBytes">getLengthInBytes</a>()
+        
+                                            <p><p>Returns the length, in bytes, of the modulo</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html#method_getLengthInBytes">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLength">getLength</a>()
+        
+                                            <p><p>Returns the length, in bits, of the modulo</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html#method_getLength">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_multiplyPoint">multiplyPoint</a>(array $p, <a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $d)
+        
+                                            <p><p>Multiply a point on the curve by a scalar</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html#method_multiplyPoint">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_createRandomMultiplier">createRandomMultiplier</a>()
+        
+                                            <p><p>Creates a random scalar multiplier</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html#method_createRandomMultiplier">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_rangeCheck">rangeCheck</a>(<a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $x)
+        
+                                            <p><p>Performs range check</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html#method_rangeCheck">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setOrder">setOrder</a>(<a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $order)
+        
+                                            <p><p>Sets the Order</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html#method_setOrder">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getOrder">getOrder</a>()
+        
+                                            <p><p>Returns the Order</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html#method_getOrder">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setReduction">setReduction</a>(callable $func)
+        
+                                            <p><p>Use a custom defined modular reduction function</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html#method_setReduction">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_convertToAffine">convertToAffine</a>(array $p)
+        
+                                            <p><p>Returns the affine point</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_convertToAffine">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_convertToInternal">convertToInternal</a>(array $p)
+        
+                                            <p><p>Converts an affine point to a jacobian coordinate</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_convertToInternal">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    object[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_negatePoint">negatePoint</a>(array $p)
+        
+                                            <p><p>Negates a point</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html#method_negatePoint">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_multiplyAddPoints">multiplyAddPoints</a>(array $points, array $scalars)
+        
+                                            <p><p>Multiply and Add Points</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_multiplyAddPoints">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setModulo">setModulo</a>(<a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $modulo)
+        
+                                            <p><p>Sets the modulo</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_setModulo">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setCoefficients">setCoefficients</a>(<a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $a, <a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $b)
+        
+                                            <p><p>Set coefficients a and b</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_setCoefficients">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setBasePoint">setBasePoint</a>(<a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>|<a href="../../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a> $x, <a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>|<a href="../../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a> $y)
+        
+                                            <p><p>Set x and y coordinates for the base point</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_setBasePoint">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getBasePoint">getBasePoint</a>()
+        
+                                            <p><p>Retrieve the base point as an array</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_getBasePoint">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_jacobianAddPointMixedXY">jacobianAddPointMixedXY</a>(array $p, array $q)
+        
+                                            <p><p>Adds two &quot;fresh&quot; jacobian form on the curve</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_jacobianAddPointMixedXY">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_jacobianAddPointMixedX">jacobianAddPointMixedX</a>(array $p, array $q)
+        
+                                            <p><p>Adds one &quot;fresh&quot; jacobian form on the curve</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_jacobianAddPointMixedX">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_jacobianAddPoint">jacobianAddPoint</a>(array $p, array $q)
+        
+                                            <p><p>Adds two jacobian coordinates on the curve</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_jacobianAddPoint">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_addPoint">addPoint</a>(array $p, array $q)
+        
+                                            <p><p>Adds two points on the curve</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_addPoint">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_doublePointHelper">doublePointHelper</a>(array $p)
+        
+                                            <p><p>Returns the numerator and denominator of the slope</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_doublePointHelper">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_jacobianDoublePoint">jacobianDoublePoint</a>(array $p)
+        
+                                            <p><p>Doubles a jacobian coordinate on the curve</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_jacobianDoublePoint">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_jacobianDoublePointMixed">jacobianDoublePointMixed</a>(array $p)
+        
+                                            <p><p>Doubles a &quot;fresh&quot; jacobian coordinate on the curve</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_jacobianDoublePointMixed">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_doublePoint">doublePoint</a>(array $p)
+        
+                                            <p><p>Doubles a point on a curve</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_doublePoint">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_derivePoint">derivePoint</a>($m)
+        
+                                            <p><p>Returns the X coordinate and the derived Y coordinate</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_derivePoint">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_verifyPoint">verifyPoint</a>(array $p)
+        
+                                            <p><p>Tests whether or not the x / y values satisfy the equation</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_verifyPoint">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getModulo">getModulo</a>()
+        
+                                            <p><p>Returns the modulo</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_getModulo">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getA">getA</a>()
+        
+                                            <p><p>Returns the a coefficient</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_getA">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getB">getB</a>()
+        
+                                            <p><p>Returns the a coefficient</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_getB">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_randomInteger">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html#method_randomInteger">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a> at line 44</div>
+        <code>                    object
+    <strong>randomInteger</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns a random integer</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_convertInteger">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html#method_convertInteger">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a> at line 54</div>
+        <code>                    object
+    <strong>convertInteger</strong>(<a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $x)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Converts a BigInteger to a \phpseclib3\Math\FiniteField\Integer integer</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+                <td>$x</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLengthInBytes">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html#method_getLengthInBytes">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a> at line 64</div>
+        <code>                    int
+    <strong>getLengthInBytes</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the length, in bytes, of the modulo</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLength">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html#method_getLength">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a> at line 74</div>
+        <code>                    int
+    <strong>getLength</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the length, in bits, of the modulo</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_multiplyPoint">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html#method_multiplyPoint">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a> at line 89</div>
+        <code>                    array
+    <strong>multiplyPoint</strong>(array $p, <a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $d)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Multiply a point on the curve by a scalar</p></p>                <p><p>Uses the montgomery ladder technique as described here:</p>
+<p><a href="https://en.wikipedia.org/wiki/Elliptic_curve_point_multiplication#Montgomery_ladder">https://en.wikipedia.org/wiki/Elliptic_curve_point_multiplication#Montgomery_ladder</a>
+<a href="https://github.com/phpecc/phpecc/issues/16#issuecomment-59176772">https://github.com/phpecc/phpecc/issues/16#issuecomment-59176772</a></p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$p</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+                <td>$d</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createRandomMultiplier">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html#method_createRandomMultiplier">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a> at line 111</div>
+        <code>                    <a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>
+    <strong>createRandomMultiplier</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a random scalar multiplier</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rangeCheck">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html#method_rangeCheck">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a> at line 124</div>
+        <code>                    
+    <strong>rangeCheck</strong>(<a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $x)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Performs range check</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+                <td>$x</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setOrder">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html#method_setOrder">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a> at line 142</div>
+        <code>                    
+    <strong>setOrder</strong>(<a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $order)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the Order</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+                <td>$order</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getOrder">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html#method_getOrder">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a> at line 152</div>
+        <code>                    <a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>
+    <strong>getOrder</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the Order</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setReduction">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html#method_setReduction">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a> at line 162</div>
+        <code>                    object
+    <strong>setReduction</strong>(callable $func)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Use a custom defined modular reduction function</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>callable</td>
+                <td>$func</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_convertToAffine">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_convertToAffine">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a> at line 756</div>
+        <code>                    object[]
+    <strong>convertToAffine</strong>(array $p)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the affine point</p></p>                <p><p>A Jacobian Coordinate is of the form (x, y, z).
+To convert a Jacobian Coordinate to an Affine Point
+you do (x / z^2, y / z^3)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$p</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_convertToInternal">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_convertToInternal">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a> at line 775</div>
+        <code>                    object[]
+    <strong>convertToInternal</strong>(array $p)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Converts an affine point to a jacobian coordinate</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$p</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_negatePoint">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Base.html#method_negatePoint">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Base">Base</abbr></a> at line 192</div>
+        <code>                    object[]
+    <strong>negatePoint</strong>(array $p)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Negates a point</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$p</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>object[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_multiplyAddPoints">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_multiplyAddPoints">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a> at line 521</div>
+        <code>                    int[]
+    <strong>multiplyAddPoints</strong>(array $points, array $scalars)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Multiply and Add Points</p></p>                <p><p>Adapted from:
+<a href="https://github.com/indutny/elliptic/blob/725bd91/lib/elliptic/curve/base.js#L125">https://github.com/indutny/elliptic/blob/725bd91/lib/elliptic/curve/base.js#L125</a></p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$points</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$scalars</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setModulo">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_setModulo">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a> at line 117</div>
+        <code>                    
+    <strong>setModulo</strong>(<a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $modulo)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the modulo</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+                <td>$modulo</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCoefficients">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_setCoefficients">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a> at line 132</div>
+        <code>                    
+    <strong>setCoefficients</strong>(<a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $a, <a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a> $b)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set coefficients a and b</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+                <td>$a</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+                <td>$b</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setBasePoint">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_setBasePoint">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a> at line 148</div>
+        <code>                    <a href="../../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a>[]
+    <strong>setBasePoint</strong>(<a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>|<a href="../../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a> $x, <a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>|<a href="../../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a> $y)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set x and y coordinates for the base point</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>|<a href="../../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a></td>
+                <td>$x</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>|<a href="../../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a></td>
+                <td>$y</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBasePoint">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_getBasePoint">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a> at line 170</div>
+        <code>                    array
+    <strong>getBasePoint</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Retrieve the base point as an array</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_jacobianAddPointMixedXY">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_jacobianAddPointMixedXY">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a> at line 188</div>
+        <code>            protected        <abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]
+    <strong>jacobianAddPointMixedXY</strong>(array $p, array $q)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Adds two &quot;fresh&quot; jacobian form on the curve</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$p</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$q</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_jacobianAddPointMixedX">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_jacobianAddPointMixedX">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a> at line 220</div>
+        <code>            protected        <abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]
+    <strong>jacobianAddPointMixedX</strong>(array $p, array $q)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Adds one &quot;fresh&quot; jacobian form on the curve</p></p>                <p><p>The second parameter should be the &quot;fresh&quot; one</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$p</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$q</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_jacobianAddPoint">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_jacobianAddPoint">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a> at line 256</div>
+        <code>            protected        <abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]
+    <strong>jacobianAddPoint</strong>(array $p, array $q)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Adds two jacobian coordinates on the curve</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$p</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$q</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addPoint">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_addPoint">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a> at line 295</div>
+        <code>                    <abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]
+    <strong>addPoint</strong>(array $p, array $q)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Adds two points on the curve</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$p</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$q</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doublePointHelper">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_doublePointHelper">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a> at line 351</div>
+        <code>            protected        <abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]
+    <strong>doublePointHelper</strong>(array $p)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the numerator and denominator of the slope</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$p</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_jacobianDoublePoint">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_jacobianDoublePoint">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a> at line 363</div>
+        <code>            protected        <abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]
+    <strong>jacobianDoublePoint</strong>(array $p)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Doubles a jacobian coordinate on the curve</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$p</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_jacobianDoublePointMixed">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_jacobianDoublePointMixed">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a> at line 386</div>
+        <code>            protected        <abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]
+    <strong>jacobianDoublePointMixed</strong>(array $p)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Doubles a &quot;fresh&quot; jacobian coordinate on the curve</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$p</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doublePoint">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_doublePoint">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a> at line 407</div>
+        <code>                    <abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]
+    <strong>doublePoint</strong>(array $p)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Doubles a point on a curve</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$p</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="phpseclib3\Crypt\EC\BaseCurves\FiniteField">FiniteField</abbr>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_derivePoint">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_derivePoint">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a> at line 440</div>
+        <code>                    array
+    <strong>derivePoint</strong>($m)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the X coordinate and the derived Y coordinate</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$m</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_verifyPoint">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_verifyPoint">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a> at line 472</div>
+        <code>                    bool
+    <strong>verifyPoint</strong>(array $p)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Tests whether or not the x / y values satisfy the equation</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$p</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getModulo">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_getModulo">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a> at line 488</div>
+        <code>                    <a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a>
+    <strong>getModulo</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the modulo</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/BigInteger.html"><abbr title="phpseclib3\Math\BigInteger">BigInteger</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getA">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_getA">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a> at line 498</div>
+        <code>                    <a href="../../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a>
+    <strong>getA</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the a coefficient</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getB">
+        <div class="location">in <a href="../../../../phpseclib3/Crypt/EC/BaseCurves/Prime.html#method_getB">
+<abbr title="phpseclib3\Crypt\EC\BaseCurves\Prime">Prime</abbr></a> at line 508</div>
+        <code>                    <a href="../../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a>
+    <strong>getB</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the a coefficient</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/PrimeField/Integer.html"><abbr title="phpseclib3\Math\PrimeField\Integer">Integer</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 21</div>
+        <code>                    
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>
