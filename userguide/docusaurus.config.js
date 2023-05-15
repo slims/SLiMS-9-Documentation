@@ -63,6 +63,12 @@ const config = {
         sidebarPath: require.resolve('./sidebars.js'),
       }, 
     ],
+    [
+      require.resolve('docusaurus-lunr-search'),
+      {
+          indexBaseUrl: true
+      }
+    ]
   ],
 
   themeConfig:
@@ -97,11 +103,11 @@ const config = {
             items: [
               {
                 label: 'User Guide',
-                to: '/docs/intro',
+                to: '/docs/About',
               },
               {
-                label: 'How To',
-                to: '/howto',
+                label: 'Learn',
+                to: '/learn',
               },
             ],
           },
@@ -128,7 +134,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} SLiMS, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} SLiMS. Built with Docusaurus.`,
       },
       prism: {
         theme: require('prism-react-renderer/themes/vsDark'),

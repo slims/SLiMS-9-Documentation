@@ -4,8 +4,8 @@ Sistem plugin merupakan inovasi yang dihadirkan sejak versi SLiMS Bulian 9.3.0 o
 
 ### Persiapan
 Hal yang perlu disiapkan (minimal) untuk membuat sebuah plugin seperti:
-* Pengetahuan mengenai bahasa pemrograman HTML (termasuk CSS), PHP, JS, dan SQL
-* Pemahaman mengenai penggunaan library dan tool seperti composer (opsional)
+* Pengetahuan mengenai bahasa pemrograman **HTML (termasuk CSS), PHP, JS, dan SQL**
+* Pemahaman mengenai penggunaan library dan tool seperti **composer (opsional)**
 
 ### Sistematika plugin
 Semua plugin SLiMS secara *default* diletakan di folder `plugins/`, yang ditandai dengan ekstensi file `.plugin.php`. Seluruh plugin akan dipindai oleh SLiMS dengan kedalaman tingkat folder hingga 3 tinggkat.
@@ -60,9 +60,10 @@ $plugins = Plugins::getInstance();
 ### Tipe operasi plugin
 Setelah anda paham mengenai format isi plugin, maka anda harus mencantumkan operasi apa yang akan dilakukan oleh plugin tersebut. Sistem plugin SLiMS berjalan dalam beberapa tipe, seperti [hook](#hook), [path](#path), dan [menu](#menu). 
 #### **Hook** 
-merupakan metoda yang digunakan oleh SLiMS untuk mengoperasikan beberapa perintah untuk melakukan modifikasi atau menambah atau menginterupsi operasi yang sudah/akan berjalan sesuai nama hook yang tersedia. Anda dapat melihat daftar nama hook yang tersedia pada [lama ini](https://github.com/slims/slims9_bulian/blob/master/lib/Plugins.php#L20), dalam format konstanta. contoh : `Plugins::MEMBERSHIP_INIT`;
+merupakan metoda yang digunakan oleh SLiMS untuk mengoperasikan beberapa perintah untuk melakukan modifikasi atau menambah atau menginterupsi operasi yang sudah/akan berjalan sesuai nama hook yang tersedia. Anda dapat melihat daftar nama hook yang tersedia pada [laman ini](https://github.com/slims/slims9_bulian/blob/master/lib/Plugins.php#L20), dalam format konstanta. contoh : `Plugins::MEMBERSHIP_INIT`;
 ```php 
-<?php # Contoh
+<?php 
+# Contoh
 $plugins->register('<nama_hook>', function(){
     // lakukan suatu hal didalam block fungsi ini
 });
@@ -105,7 +106,7 @@ $plugins->registerMenu('opac', 'bebas pustaka', __DIR__ . '/sayabebas.inc.php');
 Pada paramter ke **2** setiap spasi akan dikonversi menjadi `_` atau **underscore**. Contoh 'bebas pustaka' menjadi 'bebas_pustaka', maka ketika anda memanggil path itu dibrowser menjadi ✅ `http://localhost/slims/index.php?p=bebas_pustaka` bukan 🚫 `http://localhost/slims/index.php?p=bebas pustaka`.
 
 #### **Menu**
-Bagian ini merupakan penjelasan bagaimana menambah/merubah menu yang ada di setiap module saat login sebagai pustakawan. Ini mempermudah anda sebagai pengembang SLiMS dalam mendaftarkan menu pada modul tertentu tanpa harus merubah file `submenu.php` pada setiap module. Berikut cara nya:
+Tak berbeda dengan sebelumnya, bagian ini merupakan penjelasan bagaimana menambah/merubah menu yang ada di setiap module saat login sebagai pustakawan. Ini mempermudah anda sebagai pengembang SLiMS dalam mendaftarkan menu pada modul tertentu tanpa harus merubah file `submenu.php` pada setiap module. Berikut cara nya:
 ```php
 // atau jika dipraktikan akan seperti ini
 $plugins->registerMenu('membership', 'Bebas Pustaka', __DIR__ . '/sayabebas.inc.php');

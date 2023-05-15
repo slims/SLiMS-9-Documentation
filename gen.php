@@ -33,18 +33,12 @@ $excludes = [
     'flex',
     'psr',
     'myclabs',
-    'Zend',
-    'spomky-labs',
-    'paragonie',
-    'phpseclib',
-    'league',
-    'bacon',
-    'dasprid'
+    'Zend'
 ];
 
 foreach ($excludes as $exclude) {
     $iterator->exclude($exclude);
 }
-$iterator->in('../../docker4slims/app/lib/');
+$iterator->in('../../../../app/lib/');
 
 return new Doctum($iterator);

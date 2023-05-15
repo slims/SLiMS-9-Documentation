@@ -10,4 +10,23 @@ $plugins->register(Plugins::CONTENT_BEFORE_LOAD, function(){
 });
 ```
 
+Berikut contohny lenghkap nya
+```php
+<?php
+/**
+ * Plugin Name: Hello World
+ * Plugin URI: -
+ * Description: Belajar membuat plugin sederhana
+ * Version: 1.0.0
+ * Author: Foo
+ * Author URI: https://foo.who
+ */
+use SLiMS\Plugins;
+$plugins = Plugins::getInstance();
+
+$plugins->register(Plugins::CONTENT_BEFORE_LOAD, function(){
+    exit('<h1>Hello World</h1>')
+});
+```
+
 Setelah itu aktifkan plugin itu pada modul `System > Plugin`. Lalu buka halaman OPAC anda, dan lihat apa yang terjadi 😁. Bagaimana? sudah melihat hasilnya? nah dengan ini anda sudah membuat sebuah plugin sederhana.
