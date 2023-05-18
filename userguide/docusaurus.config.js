@@ -3,13 +3,14 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const env = require('./env');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: 'SLiMS Documentation',
+    title: 'A page for SLiMS User, and Developer',
     tagline: 'Library Automation With Style',
     url: 'https://slims.web.id',
-    baseUrl: '/',
+    baseUrl: env.baseUrl ?? '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'https://slims.web.id/web/site/templates/assets/images/logo.png',
