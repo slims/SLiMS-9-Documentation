@@ -98,7 +98,7 @@ const config = {
         footer: {
             style: 'dark',
             links: [{
-                    title: 'User Guide',
+                    title: 'Contents',
                     items: [{
                             label: 'User Guide',
                             to: '/user-guid/about',

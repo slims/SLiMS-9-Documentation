@@ -13,13 +13,14 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <h1 className="hero__title">SLiMS Documentation</h1>
+        <p className="hero__subtitle">What is your role?</p>
         <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/About">
-            Get Started
+          <Link className="button button--secondary button--lg" to="/user-guide/about" title="librarian or end user">
+            User
+          </Link>&nbsp;
+          <Link className="button button--secondary button--lg" to="/development-guide/about" title="Developer, Plugin Maker, System Admin etc">
+            Developer
           </Link>
         </div>
       </div>
