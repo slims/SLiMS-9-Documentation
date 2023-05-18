@@ -187,7 +187,7 @@
                     
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_registerProvider">registerProvider</a>(string $providerName)
+                    <a href="#method_registerProvider">registerProvider</a>(string $providerName, string $providerClass)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -209,6 +209,17 @@
                 </div>
                 <div class="col-md-8">
                     <a href="#method_getError">getError</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getCaptchaSection">getCaptchaSection</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -254,7 +265,7 @@ active or not</p></p>                </div>
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_getInstance">
-        <div class="location">at line 30</div>
+        <div class="location">at line 31</div>
         <code>        static            
     <strong>getInstance</strong>()
         </code>
@@ -508,7 +519,7 @@ password</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_getProviderList">
-        <div class="location">at line 128</div>
+        <div class="location">at line 134</div>
         <code>                    
     <strong>getProviderList</strong>()
         </code>
@@ -532,9 +543,9 @@ password</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_registerProvider">
-        <div class="location">at line 135</div>
+        <div class="location">at line 141</div>
         <code>                    
-    <strong>registerProvider</strong>(string $providerName)
+    <strong>registerProvider</strong>(string $providerName, string $providerClass)
         </code>
     </h3>
     <div class="details">    
@@ -554,6 +565,11 @@ password</p></p>
                 <td>$providerName</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td>string</td>
+                <td>$providerClass</td>
+                <td></td>
+            </tr>
             </table>
 
             
@@ -566,7 +582,7 @@ password</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_getCaptcha">
-        <div class="location">at line 145</div>
+        <div class="location">at line 151</div>
         <code>                    string
     <strong>getCaptcha</strong>()
         </code>
@@ -598,7 +614,7 @@ password</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_getError">
-        <div class="location">at line 150</div>
+        <div class="location">at line 156</div>
         <code>                    
     <strong>getError</strong>()
         </code>
@@ -621,8 +637,32 @@ password</p></p>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_isValid">
+                    <h3 id="method_getCaptchaSection">
         <div class="location">at line 161</div>
+        <code>                    
+    <strong>getCaptchaSection</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isValid">
+        <div class="location">at line 172</div>
         <code>                    bool
     <strong>isValid</strong>()
         </code>
@@ -655,7 +695,7 @@ provider</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_isSectionActive">
-        <div class="location">at line 172</div>
+        <div class="location">at line 183</div>
         <code>                    bool
     <strong>isSectionActive</strong>()
         </code>
@@ -688,7 +728,7 @@ active or not</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_operate">
-        <div class="location">at line 182</div>
+        <div class="location">at line 193</div>
         <code>        static            void
     <strong>operate</strong>()
         </code>

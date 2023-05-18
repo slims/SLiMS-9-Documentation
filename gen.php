@@ -39,6 +39,6 @@ $excludes = [
 foreach ($excludes as $exclude) {
     $iterator->exclude($exclude);
 }
-$iterator->in('../../../../app/lib/');
+$iterator->in('../docker4slims/app/lib/');
 
 return new Doctum($iterator);
