@@ -60,7 +60,46 @@ $plugins = Plugins::getInstance();
 ### Tipe operasi plugin
 Setelah anda paham mengenai format isi plugin, maka anda harus mencantumkan operasi apa yang akan dilakukan oleh plugin tersebut. Sistem plugin SLiMS berjalan dalam beberapa tipe, seperti [hook](#hook), [path](#path), dan [menu](#menu). 
 #### **Hook** 
-merupakan metoda yang digunakan oleh SLiMS untuk mengoperasikan beberapa perintah untuk melakukan modifikasi atau menambah atau menginterupsi operasi yang sudah/akan berjalan sesuai nama hook yang tersedia. Anda dapat melihat daftar nama hook yang tersedia pada [laman ini](https://github.com/slims/slims9_bulian/blob/master/lib/Plugins.php#L20), dalam format konstanta. contoh : `Plugins::MEMBERSHIP_INIT`;
+merupakan metoda yang digunakan oleh SLiMS untuk mengoperasikan beberapa perintah untuk melakukan modifikasi atau menambah atau menginterupsi operasi yang sudah/akan berjalan sesuai nama hook yang tersedia. Berikut daftar operasi hook yang tersedia di SLiMS:
+```php
+const ADMIN_SESSION_AFTER_START = 'admin_session_after_start';
+const CONTENT_BEFORE_LOAD = 'before_content_load';
+const CONTENT_AFTER_LOAD = 'after_content_load';
+const BIBLIOGRAPHY_INIT = 'bibliography_init';
+const BIBLIOGRAPHY_BEFORE_UPDATE = 'bibliography_before_update';
+const BIBLIOGRAPHY_AFTER_UPDATE = 'bibliography_after_update';
+const BIBLIOGRAPHY_BEFORE_SAVE = 'bibliography_before_save';
+const BIBLIOGRAPHY_AFTER_SAVE = 'bibliography_after_save';
+const BIBLIOGRAPHY_BEFORE_DELETE = 'bibliography_before_delete';
+const BIBLIOGRAPHY_AFTER_DELETE = 'bibliography_after_delete';
+const BIBLIOGRAPHY_CUSTOM_FIELD_DATA = 'advance_custom_field_data';
+const BIBLIOGRAPHY_CUSTOM_FIELD_FORM = 'advance_custom_field_form';
+const CIRCULATION_AFTER_SUCCESSFUL_TRANSACTION = 'circulation_after_successful_transaction';
+const MEMBERSHIP_INIT = 'membership_init';
+const MEMBERSHIP_BEFORE_UPDATE = 'membership_before_update';
+const MEMBERSHIP_AFTER_UPDATE = 'membership_after_update';
+const MEMBERSHIP_BEFORE_SAVE = 'membership_before_save';
+const MEMBERSHIP_AFTER_SAVE = 'membership_after_save';
+const OVERDUE_NOTICE_INIT = 'overduenotice_init';
+```
+Daftar diatas merupakan operasi hook yang terdaftar secara default di sistem plugin SLiMS. Namun ada beberapa yang tidak terdaftar namun tetap dapat bekerja dengan baik, berikut penjelasannya:
+1. ``` ADMIN_SESSION_AFTER_START ``` : hook akan bekerja ketika sesi login admin dimulaui.
+2. ``` CONTENT_BEFORE_LOAD ``` : hook ini berjalan di OPAC, dimana prosesnya akan bekerja sebelum konten OPAC dimuat.
+3. ``` CONTENT_AFTER_LOAD ``` : ini kebalikan dari hook kedua, yaitu setelah konten pada OPAC dimuat.
+4. ``` BIBLIOGRAPHY_INIT ``` : hook ini berada pada halaman utama pada modul **bibliografi**.
+5. ``` BIBLIOGRAPHY_BEFORE_UPDATE ``` : hook ini beroperasi sebelum proses pembaharuan data bibliografi dimulai.
+6. ``` BIBLIOGRAPHY_BEFORE_SAVE ``` : hook ini beroperasi sebelum proses penyimpanan data bibliografi dimulai.
+7. ``` BIBLIOGRAPHY_AFTER_UPDATE ``` : hook ini beroperasi setelah proses pembaharuan data bibliografi dimulai.
+8. ``` BIBLIOGRAPHY_AFTER_SAVE ``` : hook ini beroperasi setelah proses penyimpanan data bibliografi dimulai.
+9. ``` BIBLIOGRAPHY_CUSTOM_FIELD_DATA ``` : hook ini merupakan operasi yang digunakan untuk mendaftarkan data ruas tambahan secara mahir.
+9. ``` BIBLIOGRAPHY_CUSTOM_FIELD_FORM ``` : hook ini merupakan operasi yang digunakan untuk mendaftarkan ruas tambahan secara mahir.
+10. ``` MEMBERSHIP_INIT ``` : tidak berbeda jauh dengan ``` BIBLIOGRAPHY_INIT ``` hanya saja ini berjalan di modul **membership**
+11. ``` MEMBERSHIP_BEFORE_UPDATE ``` : hook ini mirip seperti ``` BIBLIOGRAPHY_BEFORE_UPDATE ```. Namun hanya pada modul **membership**.
+12. ``` MEMBERSHIP_BEFORE_SAVE ``` : hook ini mirip seperti ``` BIBLIOGRAPHY_BEFORE_SAVE ```. Namun hanya pada modul **membership**.
+13. ``` MEMBERSHIP_AFTER_UPDATE ``` : hook ini mirip seperti ``` BIBLIOGRAPHY_AFTER_UPDATE ```. Namun hanya pada modul **membership**.
+14. ``` MEMBERSHIP_AFTER_SAVE ``` : hook ini mirip seperti ``` BIBLIOGRAPHY_AFTER_SAVE ```. Namun hanya pada modul **membership**.
+
+Berikut ini cara penggunaan hook yang tersedia pada daftar diatas:
 ```php 
 <?php 
 # Contoh
