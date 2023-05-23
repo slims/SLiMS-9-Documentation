@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>module | API</title>
+    <title>simbio_dbop | API</title>
 
             <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
@@ -19,7 +19,7 @@
 
     </head>
 
-    <body id="class" data-name="class:module" data-root-path="" data-search-index-url="doctum-search.json">
+    <body id="class" data-name="class:simbio_dbop" data-root-path="" data-search-index-url="doctum-search.json">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -74,13 +74,13 @@
 
                             <div id="page-content">
     <div class="page-header">
-        <h1>module    
+        <h1>simbio_dbop    
             </h1>
     </div>
 
     
     <p>        class
-    <strong>module</strong>        extends <a href="simbio.html">simbio</a>
+    <strong>simbio_dbop</strong>        extends <a href="simbio.html">simbio</a>
 </p>
 
         
@@ -100,33 +100,23 @@
                                     </td>
                 <td>$error</td>
                 <td class="last"></td>
-                <td><small>from&nbsp;<a href="simbio.html#property_error">
-simbio</a></small></td>
+                <td></td>
             </tr>
                     <tr>
-                <td class="type" id="property_module_list">
+                <td class="type" id="property_insert_id">
                                                                                 
                                                                                 
                                     </td>
-                <td>$module_list</td>
+                <td>$insert_id</td>
                 <td class="last"></td>
                 <td></td>
             </tr>
                     <tr>
-                <td class="type" id="property_appended_first">
+                <td class="type" id="property_affected_rows">
                                                                                 
                                                                                 
                                     </td>
-                <td>$appended_first</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_appended_last">
-                                                                                
-                                                                                
-                                    </td>
-                <td>$appended_last</td>
+                <td>$affected_rows</td>
                 <td class="last"></td>
                 <td></td>
             </tr>
@@ -163,20 +153,40 @@ simbio</a></small></div>
                     
                 </div>
                 <div class="col-md-8">
-                    <a href="#method___construct">__construct</a>()
+                    <a href="#method___construct">__construct</a>(object $obj_db)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p><p>A Class Constructor
+Provide an argument with mysqli or simbio_mysql RDBMS connection object</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    bool
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_setModulesDir">setModulesDir</a>(string $str_modules_dir)
+                    <a href="#method_insert">insert</a>(string $str_table, array $array_data)
         
-                                            <p><p>Method to set modules directory</p></p>                </div>
+                                            <p><p>Method to insert a record</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_update">update</a>(string $str_table, array $array_update, string $str_criteria)
+        
+                                            <p><p>Method to update table records based on $str_criteria</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_delete">delete</a>(string $str_table, string $str_criteria)
+        
+                                            <p><p>Method to delete records based on $str_criteria</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -184,80 +194,9 @@ simbio</a></small></div>
                     string
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_generateModuleMenu">generateModuleMenu</a>(object $obj_db)
+                    <a href="#method_getSQL">getSQL</a>()
         
-                                            <p><p>Method to generate a list of module menu</p></p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    array
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_getModuleMainMenu">getModuleMainMenu</a>(object $obj_db, bool $also_get_childs = false)
-        
-                                            <p><p>Method to get a list of module menu</p></p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    string
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_generateSubMenu">generateSubMenu</a>(string $str_module = &#039;&#039;)
-        
-                                            <p><p>Method to generate a list of module submenu</p></p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    array
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_getSubMenuItems">getSubMenuItems</a>(string $str_module = &#039;&#039;)
-        
-                                            <p><p>Method to get a list of module submenu</p></p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    array
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_reorderMenus">reorderMenus</a>(array $default, array $plugin)
-        
-                                            <p><p>Method to order default menu and plugin menu</p></p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    mixed
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_getFirstMenu">getFirstMenu</a>(string $str_module = &#039;&#039;)
-        
-                                            <p><p>Method to get a first submenu of module</p></p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    array
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_get_shortcuts_menu">get_shortcuts_menu</a>()
-        
-                                            <p><p>Method to get a list of shortcut submenu</p></p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_unprivileged">unprivileged</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p><p>Method to get last sql string</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -356,7 +295,7 @@ simbio</a> at line 58</div>
                     <h3 id="method___construct">
         <div class="location">at line 45</div>
         <code>                    
-    <strong>__construct</strong>()
+    <strong>__construct</strong>(object $obj_db)
         </code>
     </h3>
     <div class="details">    
@@ -364,73 +303,8 @@ simbio</a> at line 58</div>
             
 
         <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
-        </div>
-        <div class="tags">
-            
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_setModulesDir">
-        <div class="location">at line 57</div>
-        <code>                    void
-    <strong>setModulesDir</strong>(string $str_modules_dir)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Method to set modules directory</p></p>                        
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$str_modules_dir</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_generateModuleMenu">
-        <div class="location">at line 69</div>
-        <code>                    string
-    <strong>generateModuleMenu</strong>(object $obj_db)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Method to generate a list of module menu</p></p>                        
+                            <p><p>A Class Constructor
+Provide an argument with mysqli or simbio_mysql RDBMS connection object</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -444,15 +318,6 @@ simbio</a> at line 58</div>
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td></td>
-        </tr>
-    </table>
-
             
             
             
@@ -461,10 +326,10 @@ simbio</a> at line 58</div>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getModuleMainMenu">
-        <div class="location">at line 95</div>
-        <code>                    array
-    <strong>getModuleMainMenu</strong>(object $obj_db, bool $also_get_childs = false)
+                    <h3 id="method_insert">
+        <div class="location">at line 58</div>
+        <code>                    bool
+    <strong>insert</strong>(string $str_table, array $array_data)
         </code>
     </h3>
     <div class="details">    
@@ -472,20 +337,20 @@ simbio</a> at line 58</div>
             
 
         <div class="method-description">
-                            <p><p>Method to get a list of module menu</p></p>                        
+                            <p><p>Method to insert a record</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>object</td>
-                <td>$obj_db</td>
+                <td>string</td>
+                <td>$str_table</td>
                 <td></td>
             </tr>
                     <tr>
-                <td>bool</td>
-                <td>$also_get_childs</td>
+                <td>array</td>
+                <td>$array_data</td>
                 <td></td>
             </tr>
             </table>
@@ -495,7 +360,7 @@ simbio</a> at line 58</div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>array</td>
+            <td>bool</td>
             <td></td>
         </tr>
     </table>
@@ -508,10 +373,109 @@ simbio</a> at line 58</div>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_generateSubMenu">
-        <div class="location">at line 132</div>
+                    <h3 id="method_update">
+        <div class="location">at line 119</div>
+        <code>                    bool
+    <strong>update</strong>(string $str_table, array $array_update, string $str_criteria)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Method to update table records based on $str_criteria</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$str_table</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$array_update</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$str_criteria</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">at line 171</div>
+        <code>                    bool
+    <strong>delete</strong>(string $str_table, string $str_criteria)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Method to delete records based on $str_criteria</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$str_table</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$str_criteria</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSQL">
+        <div class="location">at line 193</div>
         <code>                    string
-    <strong>generateSubMenu</strong>(string $str_module = &#039;&#039;)
+    <strong>getSQL</strong>()
         </code>
     </h3>
     <div class="details">    
@@ -519,19 +483,9 @@ simbio</a> at line 58</div>
             
 
         <div class="method-description">
-                            <p><p>Method to generate a list of module submenu</p></p>                        
+                            <p><p>Method to get last sql string</p></p>                        
         </div>
         <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$str_module</td>
-                <td></td>
-            </tr>
-            </table>
-
             
                             <h4>Return Value</h4>
 
@@ -542,193 +496,6 @@ simbio</a> at line 58</div>
         </tr>
     </table>
 
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getSubMenuItems">
-        <div class="location">at line 161</div>
-        <code>                    array
-    <strong>getSubMenuItems</strong>(string $str_module = &#039;&#039;)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Method to get a list of module submenu</p></p>                        
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$str_module</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_reorderMenus">
-        <div class="location">at line 203</div>
-        <code>                    array
-    <strong>reorderMenus</strong>(array $default, array $plugin)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Method to order default menu and plugin menu</p></p>                        
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>array</td>
-                <td>$default</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>array</td>
-                <td>$plugin</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getFirstMenu">
-        <div class="location">at line 290</div>
-        <code>                    mixed
-    <strong>getFirstMenu</strong>(string $str_module = &#039;&#039;)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Method to get a first submenu of module</p></p>                        
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$str_module</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>mixed</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_get_shortcuts_menu">
-        <div class="location">at line 304</div>
-        <code>                    array
-    <strong>get_shortcuts_menu</strong>()
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Method to get a list of shortcut submenu</p></p>                        
-        </div>
-        <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_unprivileged">
-        <div class="location">at line 316</div>
-        <code>                    
-    <strong>unprivileged</strong>()
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
-        </div>
-        <div class="tags">
-            
             
             
             

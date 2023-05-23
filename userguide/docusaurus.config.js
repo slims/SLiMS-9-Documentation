@@ -88,6 +88,7 @@ const config = {
                     label: 'User Guide',
                 },
                 { to: '/development-guide/about', label: 'Development Guide', position: 'left' },
+                { to: 'https://slims.web.id/api/', label: 'APi', position: 'left' },
                 {
                     href: 'https://github.com/slims/',
                     label: 'GitHub',

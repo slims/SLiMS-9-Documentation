@@ -1,3 +1,4 @@
 build/
 doctum.phar
 cache/
+env.php

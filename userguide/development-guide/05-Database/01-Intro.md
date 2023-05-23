@@ -102,3 +102,70 @@ while($data = $query->fetch(PDO::FETCH_ASSOC)) {
 // lakukan sesuatu dibawah ini berdasarkan data yang anda ambil
 ```
 Selengkapnya anda dapat membaca dokumentasi resmi dari [PHP mengenai penggunaan PDO](https://www.php.net/manual/en/book.pdo.php).
+### Perbedaan penggunaan MySQLi dan PDO
+#### Global scope
+Ketika anda menggunakan MySQLi atau $dbs didalam sebuah ``` function() ``` maka anda tidak bisa menulis seperti ini
+```php
+function ambilData() {
+    $query = $dbs->query('select * from biblio');
+    // skrip selanjutnya
+}
+```
+ketika anda menulis seperti skrip diatas maka PHP akan menampilkan **error** mengenai variabel ``` $dbs ``` tidak tersedia. Solusinya yaitu:
+```php
+function ambilData($dbs) {
+    $query = $dbs->query('select * from biblio');
+    // skrip selanjutnya
+}
+
+// atau 
+
+function ambilData() {
+    global $dbs;
+    $query = $dbs->query('select * from biblio');
+    // skrip selanjutnya
+}
+```
+
+Namun apabila anda menggunakan PDO atau ``` DB::class ``` maka anda tidak perlu menggunakan **global scope** apabia ingin memanggil nya dalam ``` function ```. Contoh nya sebagai berikut:
+```php
+function ambilData() {
+    $query = \SLiMS\DB::getInstance()->query('select * from biblio');
+    // skrip selanjutnya
+}
+```
+atau bisa seperti ini:
+```php
+<?php
+use \SLiMS\DB; // unuk skrip harus dibawah <?php
+
+function ambilData() {
+    $query = DB::getInstance()->query('select * from biblio');
+    // skrip selanjutnya
+}
+```
+#### Simpulan
+Jadi kesimpulannya adalah ada dicara pemanggilannya. Jika anda menggunakan MySQLi anda harus memanfaatkan variabel $dbs, tetapi di PDO anda tidak perlu untuk menggunakan variabel untuk menggunakannya.
+
+### Menggunakan MySQLi via ```DB::class```
+Jika anda ingin menggunakan MySQLi namun tidak bergantung pada variabel ```$dbs``` maka anda dapat memanggil seperti berikut:
+```php
+$query = \SLiMS\DB::getInstance('mysqli')->query('select * from biblio');
+```
+atau
+```php
+use \SLiMS\DB;
+$query = DB::getInstance('mysqli')->query('select * from biblio');
+```
+walaupun menggunakan ``` DB::class ``` anda tetap bisa menggunakan ```API``` dari MySQLi seperti ```fetch_assoc``` dll seperti berikut:
+```php
+$result = [];
+while($data = $query->fetch_assoc())
+{
+    $result[] = $data;
+}
+```
+
+:::note
+Sebelum anda menggunakan MySQLi via ```$dbs``` atau ```DB::class``` dan PDO pastikan pada file yang sedang anda gunakan sudah menempatkan ```require '<slims-root-path>/sysconfig.inc.php'``` di paling atas setelah skrip ``` use SLiMS\DB; ``` dll;
+:::

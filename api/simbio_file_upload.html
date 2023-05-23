@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>module | API</title>
+    <title>simbio_file_upload | API</title>
 
             <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
@@ -19,7 +19,7 @@
 
     </head>
 
-    <body id="class" data-name="class:module" data-root-path="" data-search-index-url="doctum-search.json">
+    <body id="class" data-name="class:simbio_file_upload" data-root-path="" data-search-index-url="doctum-search.json">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -74,13 +74,13 @@
 
                             <div id="page-content">
     <div class="page-header">
-        <h1>module    
+        <h1>simbio_file_upload    
             </h1>
     </div>
 
     
     <p>        class
-    <strong>module</strong>        extends <a href="simbio.html">simbio</a>
+    <strong>simbio_file_upload</strong>        extends <a href="simbio.html">simbio</a>
 </p>
 
         
@@ -104,29 +104,11 @@
 simbio</a></small></td>
             </tr>
                     <tr>
-                <td class="type" id="property_module_list">
+                <td class="type" id="property_new_filename">
                                                                                 
                                                                                 
                                     </td>
-                <td>$module_list</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_appended_first">
-                                                                                
-                                                                                
-                                    </td>
-                <td>$appended_first</td>
-                <td class="last"></td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_appended_last">
-                                                                                
-                                                                                
-                                    </td>
-                <td>$appended_last</td>
+                <td>$new_filename</td>
                 <td class="last"></td>
                 <td></td>
             </tr>
@@ -160,13 +142,12 @@ simbio</a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    void
                 </div>
                 <div class="col-md-8">
-                    <a href="#method___construct">__construct</a>()
+                    <a href="#method_setAllowableFormat">setAllowableFormat</a>(array $array_allowable_ext)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p><p>Method to set allowable file formats</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -174,79 +155,29 @@ simbio</a></small></div>
                     void
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_setModulesDir">setModulesDir</a>(string $str_modules_dir)
+                    <a href="#method_setMaxSize">setMaxSize</a>(int $int_max_size)
         
-                                            <p><p>Method to set modules directory</p></p>                </div>
+                                            <p><p>Method to set maximum size of file to upload</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    void
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_generateModuleMenu">generateModuleMenu</a>(object $obj_db)
+                    <a href="#method_setUploadDir">setUploadDir</a>(string $str_upload_dir)
         
-                                            <p><p>Method to generate a list of module menu</p></p>                </div>
+                                            <p><p>Method to set upload file directory</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    array
+                    int
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_getModuleMainMenu">getModuleMainMenu</a>(object $obj_db, bool $also_get_childs = false)
+                    <a href="#method_doUpload">doUpload</a>(string $file_input_name, string $str_new_filename = &#039;&#039;)
         
-                                            <p><p>Method to get a list of module menu</p></p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    string
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_generateSubMenu">generateSubMenu</a>(string $str_module = &#039;&#039;)
-        
-                                            <p><p>Method to generate a list of module submenu</p></p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    array
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_getSubMenuItems">getSubMenuItems</a>(string $str_module = &#039;&#039;)
-        
-                                            <p><p>Method to get a list of module submenu</p></p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    array
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_reorderMenus">reorderMenus</a>(array $default, array $plugin)
-        
-                                            <p><p>Method to order default menu and plugin menu</p></p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    mixed
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_getFirstMenu">getFirstMenu</a>(string $str_module = &#039;&#039;)
-        
-                                            <p><p>Method to get a first submenu of module</p></p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    array
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_get_shortcuts_menu">get_shortcuts_menu</a>()
-        
-                                            <p><p>Method to get a list of shortcut submenu</p></p>                </div>
+                                            <p><p>Method to upload file</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -254,7 +185,7 @@ simbio</a></small></div>
                     
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_unprivileged">unprivileged</a>()
+                    <a href="#method_chunkUpload">chunkUpload</a>($tmpfile, $target_file)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -353,34 +284,10 @@ simbio</a> at line 58</div>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method___construct">
-        <div class="location">at line 45</div>
-        <code>                    
-    <strong>__construct</strong>()
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
-        </div>
-        <div class="tags">
-            
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_setModulesDir">
-        <div class="location">at line 57</div>
+                    <h3 id="method_setAllowableFormat">
+        <div class="location">at line 53</div>
         <code>                    void
-    <strong>setModulesDir</strong>(string $str_modules_dir)
+    <strong>setAllowableFormat</strong>(array $array_allowable_ext)
         </code>
     </h3>
     <div class="details">    
@@ -388,15 +295,15 @@ simbio</a> at line 58</div>
             
 
         <div class="method-description">
-                            <p><p>Method to set modules directory</p></p>                        
+                            <p><p>Method to set allowable file formats</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
-                <td>$str_modules_dir</td>
+                <td>array</td>
+                <td>$array_allowable_ext</td>
                 <td></td>
             </tr>
             </table>
@@ -419,10 +326,10 @@ simbio</a> at line 58</div>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_generateModuleMenu">
-        <div class="location">at line 69</div>
-        <code>                    string
-    <strong>generateModuleMenu</strong>(object $obj_db)
+                    <h3 id="method_setMaxSize">
+        <div class="location">at line 75</div>
+        <code>                    void
+    <strong>setMaxSize</strong>(int $int_max_size)
         </code>
     </h3>
     <div class="details">    
@@ -430,15 +337,15 @@ simbio</a> at line 58</div>
             
 
         <div class="method-description">
-                            <p><p>Method to generate a list of module menu</p></p>                        
+                            <p><p>Method to set maximum size of file to upload</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>object</td>
-                <td>$obj_db</td>
+                <td>int</td>
+                <td>$int_max_size</td>
                 <td></td>
             </tr>
             </table>
@@ -448,7 +355,7 @@ simbio</a> at line 58</div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>void</td>
             <td></td>
         </tr>
     </table>
@@ -461,10 +368,10 @@ simbio</a> at line 58</div>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getModuleMainMenu">
-        <div class="location">at line 95</div>
-        <code>                    array
-    <strong>getModuleMainMenu</strong>(object $obj_db, bool $also_get_childs = false)
+                    <h3 id="method_setUploadDir">
+        <div class="location">at line 88</div>
+        <code>                    void
+    <strong>setUploadDir</strong>(string $str_upload_dir)
         </code>
     </h3>
     <div class="details">    
@@ -472,54 +379,7 @@ simbio</a> at line 58</div>
             
 
         <div class="method-description">
-                            <p><p>Method to get a list of module menu</p></p>                        
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>object</td>
-                <td>$obj_db</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>bool</td>
-                <td>$also_get_childs</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_generateSubMenu">
-        <div class="location">at line 132</div>
-        <code>                    string
-    <strong>generateSubMenu</strong>(string $str_module = &#039;&#039;)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Method to generate a list of module submenu</p></p>                        
+                            <p><p>Method to set upload file directory</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -527,7 +387,7 @@ simbio</a> at line 58</div>
                     <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$str_module</td>
+                <td>$str_upload_dir</td>
                 <td></td>
             </tr>
             </table>
@@ -537,7 +397,7 @@ simbio</a> at line 58</div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td>void</td>
             <td></td>
         </tr>
     </table>
@@ -550,10 +410,10 @@ simbio</a> at line 58</div>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getSubMenuItems">
-        <div class="location">at line 161</div>
-        <code>                    array
-    <strong>getSubMenuItems</strong>(string $str_module = &#039;&#039;)
+                    <h3 id="method_doUpload">
+        <div class="location">at line 101</div>
+        <code>                    int
+    <strong>doUpload</strong>(string $file_input_name, string $str_new_filename = &#039;&#039;)
         </code>
     </h3>
     <div class="details">    
@@ -561,7 +421,7 @@ simbio</a> at line 58</div>
             
 
         <div class="method-description">
-                            <p><p>Method to get a list of module submenu</p></p>                        
+                            <p><p>Method to upload file</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -569,96 +429,12 @@ simbio</a> at line 58</div>
                     <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$str_module</td>
+                <td>$file_input_name</td>
                 <td></td>
             </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_reorderMenus">
-        <div class="location">at line 203</div>
-        <code>                    array
-    <strong>reorderMenus</strong>(array $default, array $plugin)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Method to order default menu and plugin menu</p></p>                        
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>array</td>
-                <td>$default</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>array</td>
-                <td>$plugin</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getFirstMenu">
-        <div class="location">at line 290</div>
-        <code>                    mixed
-    <strong>getFirstMenu</strong>(string $str_module = &#039;&#039;)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Method to get a first submenu of module</p></p>                        
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$str_module</td>
+                <td>$str_new_filename</td>
                 <td></td>
             </tr>
             </table>
@@ -668,7 +444,7 @@ simbio</a> at line 58</div>
 
                     <table class="table table-condensed">
         <tr>
-            <td>mixed</td>
+            <td>int</td>
             <td></td>
         </tr>
     </table>
@@ -681,42 +457,10 @@ simbio</a> at line 58</div>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_get_shortcuts_menu">
-        <div class="location">at line 304</div>
-        <code>                    array
-    <strong>get_shortcuts_menu</strong>()
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Method to get a list of shortcut submenu</p></p>                        
-        </div>
-        <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_unprivileged">
-        <div class="location">at line 316</div>
+                    <h3 id="method_chunkUpload">
+        <div class="location">at line 147</div>
         <code>                    
-    <strong>unprivileged</strong>()
+    <strong>chunkUpload</strong>($tmpfile, $target_file)
         </code>
     </h3>
     <div class="details">    
@@ -728,6 +472,21 @@ simbio</a> at line 58</div>
                     
         </div>
         <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$tmpfile</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$target_file</td>
+                <td></td>
+            </tr>
+            </table>
+
             
             
             

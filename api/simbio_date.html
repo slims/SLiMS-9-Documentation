@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>simbio_date | API</title>
+
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="fonts/doctum-font.css">
+        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="doctum.js"></script>
+        <script async defer src="js/bootstrap.min.js"></script>
+        <script async defer src="js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:simbio_date" data-root-path="" data-search-index-url="doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="namespaces.html">Namespaces</a></li>
+                    <li><a href="interfaces.html">Interfaces</a></li>
+                    <li><a href="traits.html">Traits</a></li>
+                    <li><a href="doc-index.html">Index</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                            <div id="page-content">
+    <div class="page-header">
+        <h1>simbio_date    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>simbio_date</strong>
+</p>
+
+        
+    
+        
+
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getNextDate">getNextDate</a>(int $int_day_num = 1, string $str_start_date = &#039;&#039;, $str_date_format = &#039;Y-m-d&#039;)
+        
+                                            <p><p>Static Method to get next date</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPrevDate">getPrevDate</a>(int $int_day_num = 1, string $str_start_date = &#039;&#039;, string $str_date_format = &#039;Y-m-d&#039;)
+        
+                                            <p><p>Static Method to get previous date</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_calcDay">calcDay</a>(string $str_start_date, string $str_end_date)
+        
+                                            <p><p>Static Method to get number of day between dates</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_countHolidayBetween">countHolidayBetween</a>(string $str_start_date, string $str_end_date, $array_holiday_dayname = array(&#039;Sun&#039;), array $array_holiday_date = array())
+        
+                                            <p><p>Static Method to get number of holiday between dates</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_compareDates">compareDates</a>()
+        
+                                            <p><p>Static Method to compare dates and return the latest date</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getNextDateNotHoliday">getNextDateNotHoliday</a>(string $str_date, array $array_holiday_dayname = array(), array $array_holiday_date = array())
+        
+                                            <p><p>Static Method to get next date that are not holidays</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_generateCalendar">generateCalendar</a>($mix_year, $mix_month, $arr_date_data = array())
+        
+                                            <p><p>Generate calendar</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getNextDate">
+        <div class="location">at line 54</div>
+        <code>        static            string
+    <strong>getNextDate</strong>(int $int_day_num = 1, string $str_start_date = &#039;&#039;, $str_date_format = &#039;Y-m-d&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Static Method to get next date</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$int_day_num</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$str_start_date</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$str_date_format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPrevDate">
+        <div class="location">at line 76</div>
+        <code>        static            string
+    <strong>getPrevDate</strong>(int $int_day_num = 1, string $str_start_date = &#039;&#039;, string $str_date_format = &#039;Y-m-d&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Static Method to get previous date</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$int_day_num</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$str_start_date</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$str_date_format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_calcDay">
+        <div class="location">at line 96</div>
+        <code>        static            int
+    <strong>calcDay</strong>(string $str_start_date, string $str_end_date)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Static Method to get number of day between dates</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$str_start_date</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$str_end_date</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_countHolidayBetween">
+        <div class="location">at line 116</div>
+        <code>        static            int
+    <strong>countHolidayBetween</strong>(string $str_start_date, string $str_end_date, $array_holiday_dayname = array(&#039;Sun&#039;), array $array_holiday_date = array())
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Static Method to get number of holiday between dates</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$str_start_date</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$str_end_date</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$array_holiday_dayname</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$array_holiday_date</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compareDates">
+        <div class="location">at line 141</div>
+        <code>        static            string
+    <strong>compareDates</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Static Method to compare dates and return the latest date</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getNextDateNotHoliday">
+        <div class="location">at line 183</div>
+        <code>        static            string
+    <strong>getNextDateNotHoliday</strong>(string $str_date, array $array_holiday_dayname = array(), array $array_holiday_date = array())
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Static Method to get next date that are not holidays</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$str_date</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$array_holiday_dayname</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$array_holiday_date</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_generateCalendar">
+        <div class="location">at line 231</div>
+        <code>        static            string
+    <strong>generateCalendar</strong>($mix_year, $mix_month, $arr_date_data = array())
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Generate calendar</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$mix_year</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$mix_month</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$arr_date_data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

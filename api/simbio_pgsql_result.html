@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>module | API</title>
+    <title>simbio_pgsql_result | API</title>
 
             <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
@@ -19,7 +19,7 @@
 
     </head>
 
-    <body id="class" data-name="class:module" data-root-path="" data-search-index-url="doctum-search.json">
+    <body id="class" data-name="class:simbio_pgsql_result" data-root-path="" data-search-index-url="doctum-search.json">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -74,13 +74,13 @@
 
                             <div id="page-content">
     <div class="page-header">
-        <h1>module    
+        <h1>simbio_pgsql_result    
             </h1>
     </div>
 
     
     <p>        class
-    <strong>module</strong>        extends <a href="simbio.html">simbio</a>
+    <strong>simbio_pgsql_result</strong>        extends <a href="simbio.html">simbio</a>
 </p>
 
         
@@ -104,29 +104,47 @@
 simbio</a></small></td>
             </tr>
                     <tr>
-                <td class="type" id="property_module_list">
+                <td class="type" id="property_num_rows">
                                                                                 
                                                                                 
                                     </td>
-                <td>$module_list</td>
+                <td>$num_rows</td>
+                <td class="last"><p>Public properties</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_field_count">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$field_count</td>
                 <td class="last"></td>
                 <td></td>
             </tr>
                     <tr>
-                <td class="type" id="property_appended_first">
+                <td class="type" id="property_affected_rows">
                                                                                 
                                                                                 
                                     </td>
-                <td>$appended_first</td>
+                <td>$affected_rows</td>
                 <td class="last"></td>
                 <td></td>
             </tr>
                     <tr>
-                <td class="type" id="property_appended_last">
+                <td class="type" id="property_insert_id">
                                                                                 
                                                                                 
                                     </td>
-                <td>$appended_last</td>
+                <td>$insert_id</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_errno">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$errno</td>
                 <td class="last"></td>
                 <td></td>
             </tr>
@@ -163,10 +181,39 @@ simbio</a></small></div>
                     
                 </div>
                 <div class="col-md-8">
-                    <a href="#method___construct">__construct</a>()
+                    <a href="#method___construct">__construct</a>(string $str_query, resource $res_conn)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p><p>Class Constructor</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_fetch_assoc">fetch_assoc</a>()
+        
+                                            <p><p>Method to fetch record in associative  array</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_fetch_row">fetch_row</a>()
+        
+                                            <p><p>Method to fetch record in numeric array indexes</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_fetch_fields">fetch_fields</a>()
+        
+                                            <p><p>Method to fetch fields information of resultset</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -174,90 +221,9 @@ simbio</a></small></div>
                     void
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_setModulesDir">setModulesDir</a>(string $str_modules_dir)
+                    <a href="#method_free_result">free_result</a>()
         
-                                            <p><p>Method to set modules directory</p></p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    string
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_generateModuleMenu">generateModuleMenu</a>(object $obj_db)
-        
-                                            <p><p>Method to generate a list of module menu</p></p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    array
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_getModuleMainMenu">getModuleMainMenu</a>(object $obj_db, bool $also_get_childs = false)
-        
-                                            <p><p>Method to get a list of module menu</p></p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    string
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_generateSubMenu">generateSubMenu</a>(string $str_module = &#039;&#039;)
-        
-                                            <p><p>Method to generate a list of module submenu</p></p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    array
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_getSubMenuItems">getSubMenuItems</a>(string $str_module = &#039;&#039;)
-        
-                                            <p><p>Method to get a list of module submenu</p></p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    array
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_reorderMenus">reorderMenus</a>(array $default, array $plugin)
-        
-                                            <p><p>Method to order default menu and plugin menu</p></p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    mixed
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_getFirstMenu">getFirstMenu</a>(string $str_module = &#039;&#039;)
-        
-                                            <p><p>Method to get a first submenu of module</p></p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    array
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_get_shortcuts_menu">get_shortcuts_menu</a>()
-        
-                                            <p><p>Method to get a list of shortcut submenu</p></p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_unprivileged">unprivileged</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p><p>Method to free resultset memory</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -354,9 +320,9 @@ simbio</a> at line 58</div>
             </div>
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 45</div>
+        <div class="location">at line 71</div>
         <code>                    
-    <strong>__construct</strong>()
+    <strong>__construct</strong>(string $str_query, resource $res_conn)
         </code>
     </h3>
     <div class="details">    
@@ -364,10 +330,24 @@ simbio</a> at line 58</div>
             
 
         <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
+                            <p><p>Class Constructor</p></p>                        
         </div>
         <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$str_query</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>resource</td>
+                <td>$res_conn</td>
+                <td></td>
+            </tr>
+            </table>
+
             
             
             
@@ -377,10 +357,10 @@ simbio</a> at line 58</div>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_setModulesDir">
-        <div class="location">at line 57</div>
-        <code>                    void
-    <strong>setModulesDir</strong>(string $str_modules_dir)
+                    <h3 id="method_fetch_assoc">
+        <div class="location">at line 123</div>
+        <code>                    array
+    <strong>fetch_assoc</strong>()
         </code>
     </h3>
     <div class="details">    
@@ -388,19 +368,105 @@ simbio</a> at line 58</div>
             
 
         <div class="method-description">
-                            <p><p>Method to set modules directory</p></p>                        
+                            <p><p>Method to fetch record in associative  array</p></p>                        
         </div>
         <div class="tags">
-                            <h4>Parameters</h4>
+            
+                            <h4>Return Value</h4>
 
                     <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$str_modules_dir</td>
-                <td></td>
-            </tr>
-            </table>
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
 
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetch_row">
+        <div class="location">at line 134</div>
+        <code>                    array
+    <strong>fetch_row</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Method to fetch record in numeric array indexes</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetch_fields">
+        <div class="location">at line 145</div>
+        <code>                    array
+    <strong>fetch_fields</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Method to fetch fields information of resultset</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_free_result">
+        <div class="location">at line 166</div>
+        <code>                    void
+    <strong>free_result</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Method to free resultset memory</p></p>                        
+        </div>
+        <div class="tags">
             
                             <h4>Return Value</h4>
 
@@ -411,324 +477,6 @@ simbio</a> at line 58</div>
         </tr>
     </table>
 
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_generateModuleMenu">
-        <div class="location">at line 69</div>
-        <code>                    string
-    <strong>generateModuleMenu</strong>(object $obj_db)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Method to generate a list of module menu</p></p>                        
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>object</td>
-                <td>$obj_db</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getModuleMainMenu">
-        <div class="location">at line 95</div>
-        <code>                    array
-    <strong>getModuleMainMenu</strong>(object $obj_db, bool $also_get_childs = false)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Method to get a list of module menu</p></p>                        
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>object</td>
-                <td>$obj_db</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>bool</td>
-                <td>$also_get_childs</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_generateSubMenu">
-        <div class="location">at line 132</div>
-        <code>                    string
-    <strong>generateSubMenu</strong>(string $str_module = &#039;&#039;)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Method to generate a list of module submenu</p></p>                        
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$str_module</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getSubMenuItems">
-        <div class="location">at line 161</div>
-        <code>                    array
-    <strong>getSubMenuItems</strong>(string $str_module = &#039;&#039;)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Method to get a list of module submenu</p></p>                        
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$str_module</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_reorderMenus">
-        <div class="location">at line 203</div>
-        <code>                    array
-    <strong>reorderMenus</strong>(array $default, array $plugin)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Method to order default menu and plugin menu</p></p>                        
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>array</td>
-                <td>$default</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>array</td>
-                <td>$plugin</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getFirstMenu">
-        <div class="location">at line 290</div>
-        <code>                    mixed
-    <strong>getFirstMenu</strong>(string $str_module = &#039;&#039;)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Method to get a first submenu of module</p></p>                        
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$str_module</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>mixed</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_get_shortcuts_menu">
-        <div class="location">at line 304</div>
-        <code>                    array
-    <strong>get_shortcuts_menu</strong>()
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Method to get a list of shortcut submenu</p></p>                        
-        </div>
-        <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_unprivileged">
-        <div class="location">at line 316</div>
-        <code>                    
-    <strong>unprivileged</strong>()
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
-        </div>
-        <div class="tags">
-            
             
             
             
