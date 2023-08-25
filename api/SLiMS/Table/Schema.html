@@ -416,14 +416,14 @@ table and column Auto Increment status</p></p>                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    static&nbsp;
                 </div>
                 <div class="col-md-8">
-                    <a href="#method___call">__call</a>($method, $arguments)
+                    <a href="#method_connection">connection</a>(string $connectionName = &#039;SLiMS&#039;)
         
-                                            <p><p>Magic method to call data via scoped property</p></p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../SLiMS/Table/Detail.html#method___call">
-<abbr title="SLiMS\Table\Detail">Detail</abbr></a></small></div>
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -437,10 +437,10 @@ table and column Auto Increment status</p></p>                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;void
+                    void
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_create">create</a>(string $tableName, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callBack)
+                    <a href="#method_structureCreate">structureCreate</a>(string $tableName, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callBack)
         
                                             <p><p>Create and table schema
 with Blueprint as designer based on
@@ -449,20 +449,20 @@ rdbms grammar</p></p>                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;<a href="../../SLiMS/Table/Schema.html"><abbr title="SLiMS\Table\Schema">Schema</abbr></a>|string
+                    <a href="../../SLiMS/Table/Schema.html"><abbr title="SLiMS\Table\Schema">Schema</abbr></a>|string
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_table">table</a>(string $tableName, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callBack = &#039;&#039;)
+                    <a href="#method_structureTable">structureTable</a>(string $tableName, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callBack = &#039;&#039;)
         
                                             <p><p>Modify existing table</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;void
+                    void
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_drop">drop</a>(string $tableName)
+                    <a href="#method_structureDrop">structureDrop</a>(string $tableName)
         
                                             <p><p>Drop table
 just type table name and drop it.</p></p>                </div>
@@ -470,10 +470,10 @@ just type table name and drop it.</p></p>                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;void
+                    void
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_dropColumn">dropColumn</a>(string $tableName, string $columnName)
+                    <a href="#method_structureDropColumn">structureDropColumn</a>(string $tableName, string $columnName)
         
                                             <p><p>Drop column table
 just type table and column name then drop it.</p></p>                </div>
@@ -481,12 +481,33 @@ just type table and column name then drop it.</p></p>                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;void
+                    void
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_truncate">truncate</a>(string $tableName)
+                    <a href="#method_structureTruncate">structureTruncate</a>(string $tableName)
         
                                             <p><p>Emptying table</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___call">__call</a>($method, $arguments)
+        
+                                            <p><p>Magic method to call data via scoped property or structure method</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___callStatic">__callStatic</a>($method, $arguments)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -748,7 +769,7 @@ just type table and column name then drop it.</p></p>                </div>
                     <div class="method-item">
                     <h3 id="method_getTableDetail">
         <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_getTableDetail">
-<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 58</div>
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 59</div>
         <code>                    <abbr title="SLiMS\Table\PDOStatement">PDOStatement</abbr>
     <strong>getTableDetail</strong>(string $tableName)
         </code>
@@ -792,7 +813,7 @@ just type table and column name then drop it.</p></p>                </div>
                     <div class="method-item">
                     <h3 id="method_getColumnDetail">
         <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_getColumnDetail">
-<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 75</div>
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 77</div>
         <code>                    <abbr title="SLiMS\Table\PDOStatement">PDOStatement</abbr>
     <strong>getColumnDetail</strong>(string $tableName, string $columnName)
         </code>
@@ -841,7 +862,7 @@ just type table and column name then drop it.</p></p>                </div>
                     <div class="method-item">
                     <h3 id="method_getTableColumn">
         <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_getTableColumn">
-<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 92</div>
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 95</div>
         <code>                    array
     <strong>getTableColumn</strong>(string $tableName, bool $fetchAll = false)
         </code>
@@ -890,7 +911,7 @@ just type table and column name then drop it.</p></p>                </div>
                     <div class="method-item">
                     <h3 id="method_hasTable">
         <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_hasTable">
-<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 115</div>
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 119</div>
         <code>        static            bool
     <strong>hasTable</strong>(string $tableName)
         </code>
@@ -933,7 +954,7 @@ just type table and column name then drop it.</p></p>                </div>
                     <div class="method-item">
                     <h3 id="method_hasColumn">
         <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_hasColumn">
-<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 127</div>
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 131</div>
         <code>        static            bool
     <strong>hasColumn</strong>(string $tableName, string $columnName)
         </code>
@@ -981,7 +1002,7 @@ just type table and column name then drop it.</p></p>                </div>
                     <div class="method-item">
                     <h3 id="method_column">
         <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_column">
-<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 138</div>
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 142</div>
         <code>                    <a href="../../SLiMS/Table/Schema.html"><abbr title="SLiMS\Table\Schema">Schema</abbr></a>
     <strong>column</strong>(string $column)
         </code>
@@ -1024,7 +1045,7 @@ just type table and column name then drop it.</p></p>                </div>
                     <div class="method-item">
                     <h3 id="method_columns">
         <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_columns">
-<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 152</div>
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 156</div>
         <code>                    array
     <strong>columns</strong>(bool $fetchAll = false)
         </code>
@@ -1069,7 +1090,7 @@ about column in some table</p></p>
                     <div class="method-item">
                     <h3 id="method_tables">
         <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_tables">
-<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 162</div>
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 166</div>
         <code>        static            array
     <strong>tables</strong>()
         </code>
@@ -1102,7 +1123,7 @@ about column in some table</p></p>
                     <div class="method-item">
                     <h3 id="method_isAutoIncrement">
         <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_isAutoIncrement">
-<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 185</div>
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 189</div>
         <code>                    bool
     <strong>isAutoIncrement</strong>()
         </code>
@@ -1136,7 +1157,7 @@ table and column Auto Increment status</p></p>
                     <div class="method-item">
                     <h3 id="method_isTemporary">
         <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_isTemporary">
-<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 194</div>
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 198</div>
         <code>                    bool
     <strong>isTemporary</strong>()
         </code>
@@ -1170,7 +1191,7 @@ table and column Auto Increment status</p></p>
                     <div class="method-item">
                     <h3 id="method_isEmpty">
         <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_isEmpty">
-<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 202</div>
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 206</div>
         <code>                    bool
     <strong>isEmpty</strong>()
         </code>
@@ -1204,7 +1225,7 @@ table and column Auto Increment status</p></p>
                     <div class="method-item">
                     <h3 id="method_isNull">
         <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_isNull">
-<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 210</div>
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 214</div>
         <code>                    bool
     <strong>isNull</strong>()
         </code>
@@ -1238,7 +1259,7 @@ table and column Auto Increment status</p></p>
                     <div class="method-item">
                     <h3 id="method_isUnique">
         <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_isUnique">
-<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 218</div>
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 222</div>
         <code>                    bool
     <strong>isUnique</strong>()
         </code>
@@ -1272,7 +1293,7 @@ table and column Auto Increment status</p></p>
                     <div class="method-item">
                     <h3 id="method_isPrimary">
         <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_isPrimary">
-<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 226</div>
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 230</div>
         <code>                    bool
     <strong>isPrimary</strong>()
         </code>
@@ -1306,7 +1327,7 @@ table and column Auto Increment status</p></p>
                     <div class="method-item">
                     <h3 id="method_isFullText">
         <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_isFullText">
-<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 234</div>
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 238</div>
         <code>                    bool
     <strong>isFullText</strong>()
         </code>
@@ -1340,7 +1361,7 @@ table and column Auto Increment status</p></p>
                     <div class="method-item">
                     <h3 id="method_isExists">
         <div class="location">in <a href="../../SLiMS/Table/Detail.html#method_isExists">
-<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 242</div>
+<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 246</div>
         <code>                    bool
     <strong>isExists</strong>()
         </code>
@@ -1372,11 +1393,10 @@ table and column Auto Increment status</p></p>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method___call">
-        <div class="location">in <a href="../../SLiMS/Table/Detail.html#method___call">
-<abbr title="SLiMS\Table\Detail">Detail</abbr></a> at line 255</div>
-        <code>                    string
-    <strong>__call</strong>($method, $arguments)
+                    <h3 id="method_connection">
+        <div class="location">at line 44</div>
+        <code>        static            
+    <strong>connection</strong>(string $connectionName = &#039;SLiMS&#039;)
         </code>
     </h3>
     <div class="details">    
@@ -1384,34 +1404,21 @@ table and column Auto Increment status</p></p>
             
 
         <div class="method-description">
-                            <p><p>Magic method to call data via scoped property</p></p>                        
+                            <p class="no-description">No description</p>
+                    
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
-                <td>$method</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$arguments</td>
+                <td>string</td>
+                <td>$connectionName</td>
                 <td></td>
             </tr>
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td></td>
-        </tr>
-    </table>
-
             
             
             
@@ -1421,7 +1428,7 @@ table and column Auto Increment status</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_getInstance">
-        <div class="location">at line 48</div>
+        <div class="location">at line 56</div>
         <code>        static            void
     <strong>getInstance</strong>()
         </code>
@@ -1452,10 +1459,10 @@ table and column Auto Increment status</p></p>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_create">
-        <div class="location">at line 64</div>
-        <code>        static            void
-    <strong>create</strong>(string $tableName, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callBack)
+                    <h3 id="method_structureCreate">
+        <div class="location">at line 72</div>
+        <code>                    void
+    <strong>structureCreate</strong>(string $tableName, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callBack)
         </code>
     </h3>
     <div class="details">    
@@ -1501,10 +1508,10 @@ rdbms grammar</p></p>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_table">
-        <div class="location">at line 90</div>
-        <code>        static            <a href="../../SLiMS/Table/Schema.html"><abbr title="SLiMS\Table\Schema">Schema</abbr></a>|string
-    <strong>table</strong>(string $tableName, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callBack = &#039;&#039;)
+                    <h3 id="method_structureTable">
+        <div class="location">at line 98</div>
+        <code>                    <a href="../../SLiMS/Table/Schema.html"><abbr title="SLiMS\Table\Schema">Schema</abbr></a>|string
+    <strong>structureTable</strong>(string $tableName, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callBack = &#039;&#039;)
         </code>
     </h3>
     <div class="details">    
@@ -1548,10 +1555,10 @@ rdbms grammar</p></p>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_drop">
-        <div class="location">at line 119</div>
-        <code>        static            void
-    <strong>drop</strong>(string $tableName)
+                    <h3 id="method_structureDrop">
+        <div class="location">at line 127</div>
+        <code>                    void
+    <strong>structureDrop</strong>(string $tableName)
         </code>
     </h3>
     <div class="details">    
@@ -1591,10 +1598,10 @@ just type table name and drop it.</p></p>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_dropColumn">
-        <div class="location">at line 131</div>
-        <code>        static            void
-    <strong>dropColumn</strong>(string $tableName, string $columnName)
+                    <h3 id="method_structureDropColumn">
+        <div class="location">at line 139</div>
+        <code>                    void
+    <strong>structureDropColumn</strong>(string $tableName, string $columnName)
         </code>
     </h3>
     <div class="details">    
@@ -1639,10 +1646,10 @@ just type table and column name then drop it.</p></p>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_truncate">
-        <div class="location">at line 142</div>
-        <code>        static            void
-    <strong>truncate</strong>(string $tableName)
+                    <h3 id="method_structureTruncate">
+        <div class="location">at line 150</div>
+        <code>                    void
+    <strong>structureTruncate</strong>(string $tableName)
         </code>
     </h3>
     <div class="details">    
@@ -1673,6 +1680,92 @@ just type table and column name then drop it.</p></p>
         </tr>
     </table>
 
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">at line 162</div>
+        <code>                    string
+    <strong>__call</strong>($method, $arguments)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Magic method to call data via scoped property or structure method</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___callStatic">
+        <div class="location">at line 184</div>
+        <code>        static            
+    <strong>__callStatic</strong>($method, $arguments)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
             
             
             

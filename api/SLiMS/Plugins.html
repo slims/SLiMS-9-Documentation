@@ -497,7 +497,7 @@ submenut.</p></p>                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    static&nbsp;void
                 </div>
                 <div class="col-md-8">
                     <a href="#method_module">module</a>(string $module_name, string $path, string $description = &#039;&#039;, string $callback_priv = &#039;&#039;)
@@ -631,6 +631,29 @@ handler</p></p>                </div>
                                     </div>
                 <div class="col-md-2"></div>
             </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_registerPages">registerPages</a>(string $pathToPages = &#039;pages&#039;)
+        
+                                            <p><p>Load php files inside (pages/) of a plugin
+and register as module menu with
+hierarchical directory.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void|object
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___callStatic">__callStatic</a>(string $method, array $arguments)
+        
+                                            <p><p>Magic 🪄 method to manage registing menu
+per module via static method call.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
             </div>
 
 
@@ -639,7 +662,7 @@ handler</p></p>                </div>
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 71</div>
+        <div class="location">at line 74</div>
         <code>                    
     <strong>__construct</strong>(null $location = null)
         </code>
@@ -672,7 +695,7 @@ handler</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getInstance">
-        <div class="location">at line 76</div>
+        <div class="location">at line 79</div>
         <code>        static            <a href="../SLiMS/Plugins.html"><abbr title="SLiMS\Plugins">Plugins</abbr></a>
     <strong>getInstance</strong>()
         </code>
@@ -705,7 +728,7 @@ handler</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_addLocation">
-        <div class="location">at line 87</div>
+        <div class="location">at line 90</div>
         <code>                    <a href="../SLiMS/Plugins.html"><abbr title="SLiMS\Plugins">Plugins</abbr></a>
     <strong>addLocation</strong>(array|string $location)
         </code>
@@ -747,7 +770,7 @@ handler</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_isDeep">
-        <div class="location">at line 227</div>
+        <div class="location">at line 255</div>
         <code>                    bool
     <strong>isDeep</strong>(string $location)
         </code>
@@ -789,7 +812,7 @@ handler</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getPlugins">
-        <div class="location">at line 237</div>
+        <div class="location">at line 265</div>
         <code>                    array
     <strong>getPlugins</strong>()
         </code>
@@ -822,7 +845,7 @@ handler</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getActive">
-        <div class="location">at line 249</div>
+        <div class="location">at line 277</div>
         <code>                    array
     <strong>getActive</strong>()
         </code>
@@ -854,7 +877,7 @@ handler</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_isActive">
-        <div class="location">at line 256</div>
+        <div class="location">at line 284</div>
         <code>                    bool
     <strong>isActive</strong>($id)
         </code>
@@ -897,7 +920,7 @@ handler</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_loadPlugins">
-        <div class="location">at line 268</div>
+        <div class="location">at line 296</div>
         <code>                    void
     <strong>loadPlugins</strong>()
         </code>
@@ -929,7 +952,7 @@ handler</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_register">
-        <div class="location">at line 282</div>
+        <div class="location">at line 310</div>
         <code>                    void
     <strong>register</strong>(string $hook, <abbr title="SLiMS\closure">closure</abbr> $callback)
         </code>
@@ -976,7 +999,7 @@ handler</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_registerHook">
-        <div class="location">at line 294</div>
+        <div class="location">at line 322</div>
         <code>                    void
     <strong>registerHook</strong>(string $hook, <abbr title="SLiMS\closure">closure</abbr> $callback)
         </code>
@@ -1023,7 +1046,7 @@ handler</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_hook">
-        <div class="location">at line 302</div>
+        <div class="location">at line 330</div>
         <code>        static            
     <strong>hook</strong>($hook, $callback)
         </code>
@@ -1061,7 +1084,7 @@ handler</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_registerMenu">
-        <div class="location">at line 317</div>
+        <div class="location">at line 345</div>
         <code>                    void
     <strong>registerMenu</strong>(string $module_name, string $label, string $path, string $description = null)
         </code>
@@ -1119,7 +1142,7 @@ submenut.</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_menu">
-        <div class="location">at line 336</div>
+        <div class="location">at line 364</div>
         <code>        static            
     <strong>menu</strong>($module_name, $label, $path, $description = null)
         </code>
@@ -1167,7 +1190,7 @@ submenut.</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_registerModule">
-        <div class="location">at line 350</div>
+        <div class="location">at line 378</div>
         <code>                    void
     <strong>registerModule</strong>(string $module_name, string $path, string $description = &#039;&#039;, string $callback_priv = &#039;&#039;)
         </code>
@@ -1224,8 +1247,8 @@ submenut.</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_module">
-        <div class="location">at line 400</div>
-        <code>                    void
+        <div class="location">at line 428</div>
+        <code>        static            void
     <strong>module</strong>(string $module_name, string $path, string $description = &#039;&#039;, string $callback_priv = &#039;&#039;)
         </code>
     </h3>
@@ -1281,7 +1304,7 @@ submenut.</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_registerSearchEngine">
-        <div class="location">at line 411</div>
+        <div class="location">at line 439</div>
         <code>                    void
     <strong>registerSearchEngine</strong>(string $class_name)
         </code>
@@ -1323,7 +1346,7 @@ submenut.</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_registerSessionDriver">
-        <div class="location">at line 422</div>
+        <div class="location">at line 450</div>
         <code>                    void
     <strong>registerSessionDriver</strong>(string $class_name)
         </code>
@@ -1365,7 +1388,7 @@ submenut.</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_registerCommand">
-        <div class="location">at line 433</div>
+        <div class="location">at line 461</div>
         <code>                    void
     <strong>registerCommand</strong>(string $class_name)
         </code>
@@ -1407,7 +1430,7 @@ submenut.</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_registerAutoload">
-        <div class="location">at line 443</div>
+        <div class="location">at line 471</div>
         <code>                    
     <strong>registerAutoload</strong>($directoryToAutoload)
         </code>
@@ -1441,7 +1464,7 @@ and plugin base composer (vendor inside each plugin).</p></p>                <p>
             </div>
                     <div class="method-item">
                     <h3 id="method_getAutoload">
-        <div class="location">at line 449</div>
+        <div class="location">at line 477</div>
         <code>                    
     <strong>getAutoload</strong>($pluginPath)
         </code>
@@ -1475,7 +1498,7 @@ and plugin base composer (vendor inside each plugin).</p></p>                <p>
             </div>
                     <div class="method-item">
                     <h3 id="method_group">
-        <div class="location">at line 461</div>
+        <div class="location">at line 489</div>
         <code>        static            <a href="../SLiMS/GroupMenuOrder.html"><abbr title="SLiMS\GroupMenuOrder">GroupMenuOrder</abbr></a>
     <strong>group</strong>(string $group_name, <abbr title="SLiMS\closure">closure</abbr> $callback)
         </code>
@@ -1522,7 +1545,7 @@ and plugin base composer (vendor inside each plugin).</p></p>                <p>
             </div>
                     <div class="method-item">
                     <h3 id="method_setGroupName">
-        <div class="location">at line 469</div>
+        <div class="location">at line 497</div>
         <code>                    
     <strong>setGroupName</strong>($group_name)
         </code>
@@ -1556,7 +1579,7 @@ and plugin base composer (vendor inside each plugin).</p></p>                <p>
             </div>
                     <div class="method-item">
                     <h3 id="method_run">
-        <div class="location">at line 481</div>
+        <div class="location">at line 509</div>
         <code>        static            void
     <strong>run</strong>(string $hook, array $params = [])
         </code>
@@ -1603,7 +1626,7 @@ and plugin base composer (vendor inside each plugin).</p></p>                <p>
             </div>
                     <div class="method-item">
                     <h3 id="method_execute">
-        <div class="location">at line 485</div>
+        <div class="location">at line 513</div>
         <code>                    
     <strong>execute</strong>($hook, $params = [])
         </code>
@@ -1642,7 +1665,7 @@ and plugin base composer (vendor inside each plugin).</p></p>                <p>
             </div>
                     <div class="method-item">
                     <h3 id="method_use">
-        <div class="location">at line 502</div>
+        <div class="location">at line 530</div>
         <code>        static            
     <strong>use</strong>(string $handler_class)
         </code>
@@ -1676,7 +1699,7 @@ method to set up your class.</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_for">
-        <div class="location">at line 514</div>
+        <div class="location">at line 542</div>
         <code>                    
     <strong>for</strong>(<abbr title="SLiMS\closure">closure</abbr> $hooks)
         </code>
@@ -1710,7 +1733,7 @@ handler</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_getMenus">
-        <div class="location">at line 524</div>
+        <div class="location">at line 552</div>
         <code>                    array
     <strong>getMenus</strong>(null $module = null)
         </code>
@@ -1740,6 +1763,110 @@ handler</p></p>
                     <table class="table table-condensed">
         <tr>
             <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerPages">
+        <div class="location">at line 582</div>
+        <code>        static            void
+    <strong>registerPages</strong>(string $pathToPages = &#039;pages&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Load php files inside (pages/) of a plugin
+and register as module menu with
+hierarchical directory.</p></p>                <p><p>Description :</p>
+<p>pages/ # first directory
+--- bibliography # as module
+---- index.php # as file</p>
+<p>or
+--- membership # as module
+---- GROUP # as group name of plugin
+----- index.php # as file</p>
+<p>or if you want to grouping and ordering menu
+--- membership # as module
+---- GROUP<em>&lt;after|before&gt;</em><EXISTING_GROUP> # as group name of plugin, e.g : GROUP_before_TOOLS
+----- index.php # as file</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pathToPages</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___callStatic">
+        <div class="location">at line 654</div>
+        <code>        static            void|object
+    <strong>__callStatic</strong>(string $method, array $arguments)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Magic 🪄 method to manage registing menu
+per module via static method call.</p></p>                <p><p>e.g :</p>
+<p>Plugins::opac($webPath, $filePaath) = Plugins::menu('opac', ...etc)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void|object</td>
             <td></td>
         </tr>
     </table>

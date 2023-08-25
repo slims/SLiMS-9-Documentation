@@ -140,6 +140,16 @@
 <abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a></small></td>
             </tr>
                     <tr>
+                <td class="type" id="property_diskName">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$diskName</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../SLiMS/Filesystems/Providers/Contract.html#property_diskName">
+<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a></small></td>
+            </tr>
+                    <tr>
                 <td class="type" id="property_path">
                                         protected                                        
                                                                                 
@@ -320,6 +330,28 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFilesystem">getFilesystem</a>()
+        
+                                            <p><p>Get filesystem instance</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../SLiMS/Filesystems/Providers/Contract.html#method_getFilesystem">
+<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDiskName">getDiskName</a>()
+        
+                                            <p><p>Get filesystem instance</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../SLiMS/Filesystems/Providers/Contract.html#method_getDiskName">
+<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     void
                 </div>
                 <div class="col-md-8">
@@ -468,6 +500,18 @@ if file have invalid condition</p></p>                </div>
                     void
                 </div>
                 <div class="col-md-8">
+                    <a href="#method_cleanExifInfo">cleanExifInfo</a>()
+        
+                                            <p><p>Clean exif info
+modification from <a href="https://stackoverflow.com/a/38862429/13322576">https://stackoverflow.com/a/38862429/13322576</a></p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../SLiMS/Filesystems/Utils.html#method_cleanExifInfo">
+<abbr title="SLiMS\Filesystems\Utils">Utils</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
                     <a href="#method_streamFile">streamFile</a>(string $filePath, string $callback = &#039;&#039;)
         
                                             <p><p>Open and stream a file</p></p>                </div>
@@ -490,7 +534,7 @@ if file have invalid condition</p></p>                </div>
                     
                 </div>
                 <div class="col-md-8">
-                    <a href="#method___construct">__construct</a>(string $root)
+                    <a href="#method___construct">__construct</a>(string $root, string $diskName)
         
                                             <p><p>Define adapter and filesystem</p></p>                </div>
                 <div class="col-md-2"></div>
@@ -514,7 +558,7 @@ if file have invalid condition</p></p>                </div>
                     <div class="method-item">
                     <h3 id="method_directories">
         <div class="location">in <a href="../../../SLiMS/Filesystems/Providers/Contract.html#method_directories">
-<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 33</div>
+<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 34</div>
         <code>                    void
     <strong>directories</strong>(string $directoryName = &#039;/&#039;)
         </code>
@@ -557,7 +601,7 @@ if file have invalid condition</p></p>                </div>
                     <div class="method-item">
                     <h3 id="method_makeDirectory">
         <div class="location">in <a href="../../../SLiMS/Filesystems/Providers/Contract.html#method_makeDirectory">
-<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 44</div>
+<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 45</div>
         <code>                    void
     <strong>makeDirectory</strong>(string $directoryName)
         </code>
@@ -600,7 +644,7 @@ if file have invalid condition</p></p>                </div>
                     <div class="method-item">
                     <h3 id="method_isExists">
         <div class="location">in <a href="../../../SLiMS/Filesystems/Providers/Contract.html#method_isExists">
-<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 55</div>
+<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 56</div>
         <code>                    bool
     <strong>isExists</strong>(string $path)
         </code>
@@ -643,7 +687,7 @@ if file have invalid condition</p></p>                </div>
                     <div class="method-item">
                     <h3 id="method_move">
         <div class="location">in <a href="../../../SLiMS/Filesystems/Providers/Contract.html#method_move">
-<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 67</div>
+<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 68</div>
         <code>                    void
     <strong>move</strong>(string $from, string $to)
         </code>
@@ -691,7 +735,7 @@ if file have invalid condition</p></p>                </div>
                     <div class="method-item">
                     <h3 id="method_copy">
         <div class="location">in <a href="../../../SLiMS/Filesystems/Providers/Contract.html#method_copy">
-<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 79</div>
+<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 80</div>
         <code>                    void
     <strong>copy</strong>(string $from, string $to)
         </code>
@@ -739,7 +783,7 @@ if file have invalid condition</p></p>                </div>
                     <div class="method-item">
                     <h3 id="method_delete">
         <div class="location">in <a href="../../../SLiMS/Filesystems/Providers/Contract.html#method_delete">
-<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 90</div>
+<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 91</div>
         <code>                    void
     <strong>delete</strong>(string $inputPath)
         </code>
@@ -782,7 +826,7 @@ if file have invalid condition</p></p>                </div>
                     <div class="method-item">
                     <h3 id="method_deleteDirectory">
         <div class="location">in <a href="../../../SLiMS/Filesystems/Providers/Contract.html#method_deleteDirectory">
-<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 101</div>
+<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 102</div>
         <code>                    void
     <strong>deleteDirectory</strong>(string $path)
         </code>
@@ -825,7 +869,7 @@ if file have invalid condition</p></p>                </div>
                     <div class="method-item">
                     <h3 id="method_put">
         <div class="location">in <a href="../../../SLiMS/Filesystems/Providers/Contract.html#method_put">
-<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 113</div>
+<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 114</div>
         <code>                    void
     <strong>put</strong>(string $path, mixed $content)
         </code>
@@ -873,7 +917,7 @@ if file have invalid condition</p></p>                </div>
                     <div class="method-item">
                     <h3 id="method_putStream">
         <div class="location">in <a href="../../../SLiMS/Filesystems/Providers/Contract.html#method_putStream">
-<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 125</div>
+<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 126</div>
         <code>                    void
     <strong>putStream</strong>(string $path, mixed $content)
         </code>
@@ -921,7 +965,7 @@ if file have invalid condition</p></p>                </div>
                     <div class="method-item">
                     <h3 id="method_read">
         <div class="location">in <a href="../../../SLiMS/Filesystems/Providers/Contract.html#method_read">
-<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 136</div>
+<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 137</div>
         <code>                    void
     <strong>read</strong>(string $path)
         </code>
@@ -964,7 +1008,7 @@ if file have invalid condition</p></p>                </div>
                     <div class="method-item">
                     <h3 id="method_readStream">
         <div class="location">in <a href="../../../SLiMS/Filesystems/Providers/Contract.html#method_readStream">
-<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 147</div>
+<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 148</div>
         <code>                    void
     <strong>readStream</strong>(string $path)
         </code>
@@ -1007,7 +1051,7 @@ if file have invalid condition</p></p>                </div>
                     <div class="method-item">
                     <h3 id="method_lastModified">
         <div class="location">in <a href="../../../SLiMS/Filesystems/Providers/Contract.html#method_lastModified">
-<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 155</div>
+<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 156</div>
         <code>                    
     <strong>lastModified</strong>(string $path)
         </code>
@@ -1040,7 +1084,7 @@ if file have invalid condition</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_upload">
-        <div class="location">at line 46</div>
+        <div class="location">at line 48</div>
         <code>                    object
     <strong>upload</strong>(string $fileToUpload, <a target="_blank" rel="noopener" href="https://www.php.net/closure">closure</a> $validation)
         </code>
@@ -1088,7 +1132,7 @@ if file have invalid condition</p></p>                </div>
                     <div class="method-item">
                     <h3 id="method_getProviderName">
         <div class="location">in <a href="../../../SLiMS/Filesystems/Providers/Contract.html#method_getProviderName">
-<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 174</div>
+<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 175</div>
         <code>                    string
     <strong>getProviderName</strong>()
         </code>
@@ -1119,9 +1163,57 @@ if file have invalid condition</p></p>                </div>
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getFilesystem">
+        <div class="location">in <a href="../../../SLiMS/Filesystems/Providers/Contract.html#method_getFilesystem">
+<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 184</div>
+        <code>                    
+    <strong>getFilesystem</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get filesystem instance</p></p>                        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDiskName">
+        <div class="location">in <a href="../../../SLiMS/Filesystems/Providers/Contract.html#method_getDiskName">
+<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 192</div>
+        <code>                    
+    <strong>getDiskName</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get filesystem instance</p></p>                        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getPath">
         <div class="location">in <a href="../../../SLiMS/Filesystems/Providers/Contract.html#method_getPath">
-<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 185</div>
+<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 202</div>
         <code>                    void
     <strong>getPath</strong>(string $additionalPath = &#039;&#039;)
         </code>
@@ -1164,7 +1256,7 @@ if file have invalid condition</p></p>                </div>
                     <div class="method-item">
                     <h3 id="method_getSize">
         <div class="location">in <a href="../../../SLiMS/Filesystems/Providers/Contract.html#method_getSize">
-<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 196</div>
+<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 213</div>
         <code>                    void
     <strong>getSize</strong>(string $path)
         </code>
@@ -1207,7 +1299,7 @@ if file have invalid condition</p></p>                </div>
                     <div class="method-item">
                     <h3 id="method_getError">
         <div class="location">in <a href="../../../SLiMS/Filesystems/Providers/Contract.html#method_getError">
-<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 202</div>
+<abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> at line 219</div>
         <code>                    
     <strong>getError</strong>()
         </code>
@@ -1621,6 +1713,40 @@ if file have invalid condition</p></p>
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_cleanExifInfo">
+        <div class="location">in <a href="../../../SLiMS/Filesystems/Utils.html#method_cleanExifInfo">
+<abbr title="SLiMS\Filesystems\Utils">Utils</abbr></a> at line 113</div>
+        <code>                    void
+    <strong>cleanExifInfo</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Clean exif info
+modification from <a href="https://stackoverflow.com/a/38862429/13322576">https://stackoverflow.com/a/38862429/13322576</a></p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_streamFile">
         <div class="location">in <a href="../../../SLiMS/Filesystems/Stream.html#method_streamFile">
 <abbr title="SLiMS\Filesystems\Stream">Stream</abbr></a> at line 22</div>
@@ -1713,9 +1839,9 @@ if file have invalid condition</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 32</div>
+        <div class="location">at line 33</div>
         <code>                    
-    <strong>__construct</strong>(string $root)
+    <strong>__construct</strong>(string $root, string $diskName)
         </code>
     </h3>
     <div class="details">    
@@ -1734,6 +1860,11 @@ if file have invalid condition</p></p>
                 <td>$root</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td>string</td>
+                <td>$diskName</td>
+                <td></td>
+            </tr>
             </table>
 
             
@@ -1746,7 +1877,7 @@ if file have invalid condition</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_as">
-        <div class="location">at line 77</div>
+        <div class="location">at line 79</div>
         <code>                    object
     <strong>as</strong>(string $newName)
         </code>

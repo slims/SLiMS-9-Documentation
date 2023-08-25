@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>SLiMS\Filesystems\Utils | API</title>
+    <title>SLiMS\Csv\Reader | API</title>
 
             <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
@@ -19,7 +19,7 @@
 
     </head>
 
-    <body id="class" data-name="class:SLiMS_Filesystems_Utils" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+    <body id="class" data-name="class:SLiMS_Csv_Reader" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -74,19 +74,19 @@
 
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
-                <li><span class="label label-default">trait</span></li>
-                        <li><a href="../../SLiMS.html">SLiMS</a></li><li class="backslash">\</li><li><a href="../../SLiMS/Filesystems.html">Filesystems</a></li><li class="backslash">\</li><li>Utils</li>
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../SLiMS.html">SLiMS</a></li><li class="backslash">\</li><li><a href="../../SLiMS/Csv.html">Csv</a></li><li class="backslash">\</li><li>Reader</li>
             </ol>
         </div>
                 <div id="page-content">
     <div class="page-header">
-        <h1>Utils    
+        <h1>Reader    
             </h1>
     </div>
 
     
-    <p>        trait
-    <strong>Utils</strong>
+    <p>        class
+    <strong>Reader</strong>
 </p>
 
         
@@ -102,63 +102,68 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_toByteSize">toByteSize</a>(string $NumberLimit)
+                    <a href="#method___construct">__construct</a>(array $standert = [])
         
-                                            <p><p>Convert from '2MByte' to '2000000Byte'</p></p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_toUnitSize">toUnitSize</a>($bytes)
+                    <a href="#method_readFromStream">readFromStream</a>($resource)
         
-                                            <p><p>Took from <a href="https://stackoverflow.com/questions/5501427/php-filesize-mb-kb-conversion#answer-5501447">https://stackoverflow.com/questions/5501427/php-filesize-mb-kb-conversion#answer-5501447</a></p></p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_getExt">getExt</a>(string $fileToUpload)
+                    <a href="#method_setLimit">setLimit</a>(int $limit)
         
-                                            <p><p>Get extension from path info</p></p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_getUploadedFileName">getUploadedFileName</a>()
+                    <a href="#method_getTotalLine">getTotalLine</a>()
         
-                                            <p><p>Get filename of uploaded file</p></p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_getUploadStatus">getUploadStatus</a>()
+                    <a href="#method_each">each</a>(<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $formatter, <abbr title="SLiMS\Csv\Closure|string">Closure|string</abbr> $processor = &#039;&#039;, int $length = 102400)
         
-                                            <p><p>Get uploaded status</p></p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_cleanExifInfo">cleanExifInfo</a>()
+                    <a href="#method_getFields">getFields</a>()
         
-                                            <p><p>Clean exif info
-modification from <a href="https://stackoverflow.com/a/38862429/13322576">https://stackoverflow.com/a/38862429/13322576</a></p></p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -168,10 +173,10 @@ modification from <a href="https://stackoverflow.com/a/38862429/13322576">https:
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_toByteSize">
-        <div class="location">at line 21</div>
-        <code>                    void
-    <strong>toByteSize</strong>(string $NumberLimit)
+                    <h3 id="method___construct">
+        <div class="location">at line 23</div>
+        <code>                    
+    <strong>__construct</strong>(array $standert = [])
         </code>
     </h3>
     <div class="details">    
@@ -179,29 +184,21 @@ modification from <a href="https://stackoverflow.com/a/38862429/13322576">https:
             
 
         <div class="method-description">
-                            <p><p>Convert from '2MByte' to '2000000Byte'</p></p>                        
+                            <p class="no-description">No description</p>
+                    
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
-                <td>$NumberLimit</td>
+                <td>array</td>
+                <td>$standert</td>
                 <td></td>
             </tr>
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
             
             
             
@@ -210,10 +207,10 @@ modification from <a href="https://stackoverflow.com/a/38862429/13322576">https:
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_toUnitSize">
-        <div class="location">at line 46</div>
-        <code>                    void
-    <strong>toUnitSize</strong>($bytes)
+                    <h3 id="method_readFromStream">
+        <div class="location">at line 28</div>
+        <code>                    
+    <strong>readFromStream</strong>($resource)
         </code>
     </h3>
     <div class="details">    
@@ -221,7 +218,8 @@ modification from <a href="https://stackoverflow.com/a/38862429/13322576">https:
             
 
         <div class="method-description">
-                            <p><p>Took from <a href="https://stackoverflow.com/questions/5501427/php-filesize-mb-kb-conversion#answer-5501447">https://stackoverflow.com/questions/5501427/php-filesize-mb-kb-conversion#answer-5501447</a></p></p>                        
+                            <p class="no-description">No description</p>
+                    
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -229,21 +227,12 @@ modification from <a href="https://stackoverflow.com/a/38862429/13322576">https:
                     <table class="table table-condensed">
                     <tr>
                 <td></td>
-                <td>$bytes</td>
+                <td>$resource</td>
                 <td></td>
             </tr>
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
             
             
             
@@ -252,10 +241,10 @@ modification from <a href="https://stackoverflow.com/a/38862429/13322576">https:
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getExt">
-        <div class="location">at line 82</div>
-        <code>                    void
-    <strong>getExt</strong>(string $fileToUpload)
+                    <h3 id="method_setLimit">
+        <div class="location">at line 34</div>
+        <code>                    
+    <strong>setLimit</strong>(int $limit)
         </code>
     </h3>
     <div class="details">    
@@ -263,29 +252,21 @@ modification from <a href="https://stackoverflow.com/a/38862429/13322576">https:
             
 
         <div class="method-description">
-                            <p><p>Get extension from path info</p></p>                        
+                            <p class="no-description">No description</p>
+                    
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td>string</td>
-                <td>$fileToUpload</td>
+                <td>int</td>
+                <td>$limit</td>
                 <td></td>
             </tr>
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
             
             
             
@@ -294,10 +275,10 @@ modification from <a href="https://stackoverflow.com/a/38862429/13322576">https:
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getUploadedFileName">
-        <div class="location">at line 93</div>
-        <code>                    string
-    <strong>getUploadedFileName</strong>()
+                    <h3 id="method_getTotalLine">
+        <div class="location">at line 39</div>
+        <code>                    
+    <strong>getTotalLine</strong>()
         </code>
     </h3>
     <div class="details">    
@@ -305,19 +286,11 @@ modification from <a href="https://stackoverflow.com/a/38862429/13322576">https:
             
 
         <div class="method-description">
-                            <p><p>Get filename of uploaded file</p></p>                        
+                            <p class="no-description">No description</p>
+                    
         </div>
         <div class="tags">
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td></td>
-        </tr>
-    </table>
-
             
             
             
@@ -326,10 +299,10 @@ modification from <a href="https://stackoverflow.com/a/38862429/13322576">https:
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getUploadStatus">
-        <div class="location">at line 103</div>
-        <code>                    bool
-    <strong>getUploadStatus</strong>()
+                    <h3 id="method_each">
+        <div class="location">at line 56</div>
+        <code>                    
+    <strong>each</strong>(<a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $formatter, <abbr title="SLiMS\Csv\Closure|string">Closure|string</abbr> $processor = &#039;&#039;, int $length = 102400)
         </code>
     </h3>
     <div class="details">    
@@ -337,19 +310,31 @@ modification from <a href="https://stackoverflow.com/a/38862429/13322576">https:
             
 
         <div class="method-description">
-                            <p><p>Get uploaded status</p></p>                        
+                            <p class="no-description">No description</p>
+                    
         </div>
         <div class="tags">
-            
-                            <h4>Return Value</h4>
+                            <h4>Parameters</h4>
 
                     <table class="table table-condensed">
-        <tr>
-            <td>bool</td>
-            <td></td>
-        </tr>
-    </table>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+                <td>$formatter</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="SLiMS\Csv\Closure|string">Closure|string</abbr></td>
+                <td>$processor</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$length</td>
+                <td></td>
+            </tr>
+            </table>
 
+            
             
             
             
@@ -358,10 +343,10 @@ modification from <a href="https://stackoverflow.com/a/38862429/13322576">https:
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_cleanExifInfo">
-        <div class="location">at line 113</div>
-        <code>                    void
-    <strong>cleanExifInfo</strong>()
+                    <h3 id="method_getFields">
+        <div class="location">at line 91</div>
+        <code>                    
+    <strong>getFields</strong>()
         </code>
     </h3>
     <div class="details">    
@@ -369,20 +354,11 @@ modification from <a href="https://stackoverflow.com/a/38862429/13322576">https:
             
 
         <div class="method-description">
-                            <p><p>Clean exif info
-modification from <a href="https://stackoverflow.com/a/38862429/13322576">https://stackoverflow.com/a/38862429/13322576</a></p></p>                        
+                            <p class="no-description">No description</p>
+                    
         </div>
         <div class="tags">
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
             
             
             

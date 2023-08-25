@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>SLiMS\DB | API</title>
+    <title>SLiMS\Connection | API</title>
 
             <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
@@ -19,7 +19,7 @@
 
     </head>
 
-    <body id="class" data-name="class:SLiMS_DB" data-root-path="../" data-search-index-url="../doctum-search.json">
+    <body id="class" data-name="class:SLiMS_Connection" data-root-path="../" data-search-index-url="../doctum-search.json">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -75,18 +75,18 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../SLiMS.html">SLiMS</a></li><li class="backslash">\</li><li>DB</li>
+                        <li><a href="../SLiMS.html">SLiMS</a></li><li class="backslash">\</li><li>Connection</li>
             </ol>
         </div>
                 <div id="page-content">
     <div class="page-header">
-        <h1>DB    
+        <h1>Connection    
             </h1>
     </div>
 
     
     <p>        class
-    <strong>DB</strong>
+    <strong>Connection</strong>
 </p>
 
         
@@ -95,27 +95,6 @@
 
             
         
-            <h2>Constants</h2>    <table class="table table-condensed">
-                    <tr>
-                <td>
-                                                                                                                        BACKUP_BASED_ON_DAY
-                                    </td>
-                <td class="last">
-                    <p><em><p>Backup const</p></em></p>
-                    <p></p>
-                </td>
-            </tr>
-                    <tr>
-                <td>
-                                                                                                                        BACKUP_BASED_ON_LAST_ITEM
-                                    </td>
-                <td class="last">
-                    <p><em></em></p>
-                    <p></p>
-                </td>
-            </tr>
-            </table>
-
     
     
             <h2>Methods</h2>
@@ -123,53 +102,54 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;<a target="_blank" rel="noopener" href="https://www.php.net/PDO">PDO</a>|<abbr title="SLiMS\MySQLi">MySQLi</abbr>
+                    
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_getInstance">getInstance</a>(string $driver = &#039;pdo&#039;, $connectionName = &#039;&#039;)
+                    <a href="#method___construct">__construct</a>(string $name, array $detail, string $driver)
         
-                                            <p><p>An method to get database instance
-based on database driver PDO | MySQLi</p></p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;<abbr title="Ifsnop\Mysqldump\Mysqldump">Mysqldump</abbr>
+                    
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_backup">backup</a>()
+                    <a href="#method_getName">getName</a>()
         
-                                            <p><p>Create MySQLDump instance
-with default profile provide by
-this Object.</p></p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;void
+                    
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_connection">connection</a>(string $name, string $driver = &#039;pdo&#039;)
+                    <a href="#method_getConn">getConn</a>()
         
-                                            <p><p>Connection profiling</p></p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;bool
+                    
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_hasBackup">hasBackup</a>($by = self::BACKUP_BASED_ON_DAY)
+                    <a href="#method___sleep">__sleep</a>()
         
-                                            <p><p>Undocumented function</p></p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;
+                    
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_getCredential">getCredential</a>(string $name)
+                    <a href="#method___wakeup">__wakeup</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -182,181 +162,10 @@ this Object.</p></p>                </div>
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_getInstance">
-        <div class="location">at line 79</div>
-        <code>        static            <a target="_blank" rel="noopener" href="https://www.php.net/PDO">PDO</a>|<abbr title="SLiMS\MySQLi">MySQLi</abbr>
-    <strong>getInstance</strong>(string $driver = &#039;pdo&#039;, $connectionName = &#039;&#039;)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>An method to get database instance
-based on database driver PDO | MySQLi</p></p>                        
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$driver</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td></td>
-                <td>$connectionName</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a target="_blank" rel="noopener" href="https://www.php.net/PDO">PDO</a>|<abbr title="SLiMS\MySQLi">MySQLi</abbr></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_backup">
-        <div class="location">at line 108</div>
-        <code>        static            <abbr title="Ifsnop\Mysqldump\Mysqldump">Mysqldump</abbr>
-    <strong>backup</strong>()
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Create MySQLDump instance
-with default profile provide by
-this Object.</p></p>                        
-        </div>
-        <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><abbr title="Ifsnop\Mysqldump\Mysqldump">Mysqldump</abbr></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_connection">
-        <div class="location">at line 121</div>
-        <code>        static            void
-    <strong>connection</strong>(string $name, string $driver = &#039;pdo&#039;)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Connection profiling</p></p>                        
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$name</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$driver</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_hasBackup">
-        <div class="location">at line 142</div>
-        <code>        static            bool
-    <strong>hasBackup</strong>($by = self::BACKUP_BASED_ON_DAY)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Undocumented function</p></p>                        
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$by</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>bool</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getCredential">
-        <div class="location">at line 195</div>
-        <code>        static            
-    <strong>getCredential</strong>(string $name)
+                    <h3 id="method___construct">
+        <div class="location">at line 19</div>
+        <code>                    
+    <strong>__construct</strong>(string $name, array $detail, string $driver)
         </code>
     </h3>
     <div class="details">    
@@ -376,8 +185,114 @@ this Object.</p></p>
                 <td>$name</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td>array</td>
+                <td>$detail</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$driver</td>
+                <td></td>
+            </tr>
             </table>
 
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getName">
+        <div class="location">at line 62</div>
+        <code>                    
+    <strong>getName</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConn">
+        <div class="location">at line 67</div>
+        <code>                    
+    <strong>getConn</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___sleep">
+        <div class="location">at line 73</div>
+        <code>                    
+    <strong>__sleep</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___wakeup">
+        <div class="location">at line 78</div>
+        <code>                    
+    <strong>__wakeup</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
             
             
             

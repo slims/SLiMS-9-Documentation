@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>SLiMS\Filesystems\Utils | API</title>
+    <title>SLiMS\Filesystems\Mount | API</title>
 
             <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
@@ -19,7 +19,7 @@
 
     </head>
 
-    <body id="class" data-name="class:SLiMS_Filesystems_Utils" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+    <body id="class" data-name="class:SLiMS_Filesystems_Mount" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -74,19 +74,19 @@
 
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
-                <li><span class="label label-default">trait</span></li>
-                        <li><a href="../../SLiMS.html">SLiMS</a></li><li class="backslash">\</li><li><a href="../../SLiMS/Filesystems.html">Filesystems</a></li><li class="backslash">\</li><li>Utils</li>
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../SLiMS.html">SLiMS</a></li><li class="backslash">\</li><li><a href="../../SLiMS/Filesystems.html">Filesystems</a></li><li class="backslash">\</li><li>Mount</li>
             </ol>
         </div>
                 <div id="page-content">
     <div class="page-header">
-        <h1>Utils    
+        <h1>Mount    
             </h1>
     </div>
 
     
-    <p>        trait
-    <strong>Utils</strong>
+    <p>        class
+    <strong>Mount</strong>        implements        <a target="_blank" rel="noopener" href="https://www.php.net/IteratorAggregate">IteratorAggregate</a>
 </p>
 
         
@@ -102,63 +102,66 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_toByteSize">toByteSize</a>(string $NumberLimit)
+                    <a href="#method___construct">__construct</a>(array $filesystems)
         
-                                            <p><p>Convert from '2MByte' to '2000000Byte'</p></p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    static&nbsp;<a href="../../SLiMS/Filesystems/Mount.html"><abbr title="SLiMS\Filesystems\Mount">Mount</abbr></a>
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_toUnitSize">toUnitSize</a>($bytes)
+                    <a href="#method_registerStorages">registerStorages</a>(<a href="../../SLiMS/Filesystems/Providers/Contract.html"><abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> $storage, <a href="../../SLiMS/Filesystems/Providers/Contract.html"><abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> $anotherStorage)
         
-                                            <p><p>Took from <a href="https://stackoverflow.com/questions/5501427/php-filesize-mb-kb-conversion#answer-5501447">https://stackoverflow.com/questions/5501427/php-filesize-mb-kb-conversion#answer-5501447</a></p></p>                </div>
+                                            <p><p>Register storage into mount manager instance</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    <a target="_blank" rel="noopener" href="https://www.php.net/ArrayIterator">ArrayIterator</a>
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_getExt">getExt</a>(string $fileToUpload)
+                    <a href="#method_getIterator">getIterator</a>()
         
-                                            <p><p>Get extension from path info</p></p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_getUploadedFileName">getUploadedFileName</a>()
+                    <a href="#method_pathResolver">pathResolver</a>(string $storageName, string $path)
         
-                                            <p><p>Get filename of uploaded file</p></p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    bool
+                    mixed
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_getUploadStatus">getUploadStatus</a>()
+                    <a href="#method_to">to</a>(string $storage, string $path)
         
-                                            <p><p>Get uploaded status</p></p>                </div>
+                                            <p><p>Set destionation place</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    void
+                    mixed
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_cleanExifInfo">cleanExifInfo</a>()
+                    <a href="#method___call">__call</a>(string $method, array $arguments)
         
-                                            <p><p>Clean exif info
-modification from <a href="https://stackoverflow.com/a/38862429/13322576">https://stackoverflow.com/a/38862429/13322576</a></p></p>                </div>
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -168,10 +171,10 @@ modification from <a href="https://stackoverflow.com/a/38862429/13322576">https:
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_toByteSize">
-        <div class="location">at line 21</div>
-        <code>                    void
-    <strong>toByteSize</strong>(string $NumberLimit)
+                    <h3 id="method___construct">
+        <div class="location">at line 30</div>
+        <code>                    
+    <strong>__construct</strong>(array $filesystems)
         </code>
     </h3>
     <div class="details">    
@@ -179,7 +182,122 @@ modification from <a href="https://stackoverflow.com/a/38862429/13322576">https:
             
 
         <div class="method-description">
-                            <p><p>Convert from '2MByte' to '2000000Byte'</p></p>                        
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$filesystems</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerStorages">
+        <div class="location">at line 42</div>
+        <code>        static            <a href="../../SLiMS/Filesystems/Mount.html"><abbr title="SLiMS\Filesystems\Mount">Mount</abbr></a>
+    <strong>registerStorages</strong>(<a href="../../SLiMS/Filesystems/Providers/Contract.html"><abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> $storage, <a href="../../SLiMS/Filesystems/Providers/Contract.html"><abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a> $anotherStorage)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Register storage into mount manager instance</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../SLiMS/Filesystems/Providers/Contract.html"><abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a></td>
+                <td>$storage</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../SLiMS/Filesystems/Providers/Contract.html"><abbr title="SLiMS\Filesystems\Providers\Contract">Contract</abbr></a></td>
+                <td>$anotherStorage</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../SLiMS/Filesystems/Mount.html"><abbr title="SLiMS\Filesystems\Mount">Mount</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getIterator">
+        <div class="location">at line 81</div>
+        <code>                    <a target="_blank" rel="noopener" href="https://www.php.net/ArrayIterator">ArrayIterator</a>
+    <strong>getIterator</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" rel="noopener" href="https://www.php.net/ArrayIterator">ArrayIterator</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pathResolver">
+        <div class="location">at line 100</div>
+        <code>                    
+    <strong>pathResolver</strong>(string $storageName, string $path)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -187,105 +305,17 @@ modification from <a href="https://stackoverflow.com/a/38862429/13322576">https:
                     <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$NumberLimit</td>
+                <td>$storageName</td>
                 <td></td>
             </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_toUnitSize">
-        <div class="location">at line 46</div>
-        <code>                    void
-    <strong>toUnitSize</strong>($bytes)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Took from <a href="https://stackoverflow.com/questions/5501427/php-filesize-mb-kb-conversion#answer-5501447">https://stackoverflow.com/questions/5501427/php-filesize-mb-kb-conversion#answer-5501447</a></p></p>                        
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$bytes</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getExt">
-        <div class="location">at line 82</div>
-        <code>                    void
-    <strong>getExt</strong>(string $fileToUpload)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Get extension from path info</p></p>                        
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$fileToUpload</td>
+                <td>$path</td>
                 <td></td>
             </tr>
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
             
             
             
@@ -294,74 +324,10 @@ modification from <a href="https://stackoverflow.com/a/38862429/13322576">https:
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_getUploadedFileName">
-        <div class="location">at line 93</div>
-        <code>                    string
-    <strong>getUploadedFileName</strong>()
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Get filename of uploaded file</p></p>                        
-        </div>
-        <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getUploadStatus">
-        <div class="location">at line 103</div>
-        <code>                    bool
-    <strong>getUploadStatus</strong>()
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p><p>Get uploaded status</p></p>                        
-        </div>
-        <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>bool</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_cleanExifInfo">
+                    <h3 id="method_to">
         <div class="location">at line 113</div>
-        <code>                    void
-    <strong>cleanExifInfo</strong>()
+        <code>                    mixed
+    <strong>to</strong>(string $storage, string $path)
         </code>
     </h3>
     <div class="details">    
@@ -369,16 +335,78 @@ modification from <a href="https://stackoverflow.com/a/38862429/13322576">https:
             
 
         <div class="method-description">
-                            <p><p>Clean exif info
-modification from <a href="https://stackoverflow.com/a/38862429/13322576">https://stackoverflow.com/a/38862429/13322576</a></p></p>                        
+                            <p><p>Set destionation place</p></p>                        
         </div>
         <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$storage</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>void</td>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">at line 127</div>
+        <code>                    mixed
+    <strong>__call</strong>(string $method, array $arguments)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
             <td></td>
         </tr>
     </table>

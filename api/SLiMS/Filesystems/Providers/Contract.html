@@ -118,6 +118,15 @@
                 <td></td>
             </tr>
                     <tr>
+                <td class="type" id="property_diskName">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$diskName</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
                 <td class="type" id="property_path">
                                         protected                                        
                                                                                 
@@ -283,6 +292,26 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getFilesystem">getFilesystem</a>()
+        
+                                            <p><p>Get filesystem instance</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getDiskName">getDiskName</a>()
+        
+                                            <p><p>Get filesystem instance</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     void
                 </div>
                 <div class="col-md-8">
@@ -320,7 +349,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_directories">
-        <div class="location">at line 33</div>
+        <div class="location">at line 34</div>
         <code>                    void
     <strong>directories</strong>(string $directoryName = &#039;/&#039;)
         </code>
@@ -362,7 +391,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_makeDirectory">
-        <div class="location">at line 44</div>
+        <div class="location">at line 45</div>
         <code>                    void
     <strong>makeDirectory</strong>(string $directoryName)
         </code>
@@ -404,7 +433,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isExists">
-        <div class="location">at line 55</div>
+        <div class="location">at line 56</div>
         <code>                    bool
     <strong>isExists</strong>(string $path)
         </code>
@@ -446,7 +475,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_move">
-        <div class="location">at line 67</div>
+        <div class="location">at line 68</div>
         <code>                    void
     <strong>move</strong>(string $from, string $to)
         </code>
@@ -493,7 +522,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_copy">
-        <div class="location">at line 79</div>
+        <div class="location">at line 80</div>
         <code>                    void
     <strong>copy</strong>(string $from, string $to)
         </code>
@@ -540,7 +569,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_delete">
-        <div class="location">at line 90</div>
+        <div class="location">at line 91</div>
         <code>                    void
     <strong>delete</strong>(string $inputPath)
         </code>
@@ -582,7 +611,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteDirectory">
-        <div class="location">at line 101</div>
+        <div class="location">at line 102</div>
         <code>                    void
     <strong>deleteDirectory</strong>(string $path)
         </code>
@@ -624,7 +653,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_put">
-        <div class="location">at line 113</div>
+        <div class="location">at line 114</div>
         <code>                    void
     <strong>put</strong>(string $path, mixed $content)
         </code>
@@ -671,7 +700,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_putStream">
-        <div class="location">at line 125</div>
+        <div class="location">at line 126</div>
         <code>                    void
     <strong>putStream</strong>(string $path, mixed $content)
         </code>
@@ -718,7 +747,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_read">
-        <div class="location">at line 136</div>
+        <div class="location">at line 137</div>
         <code>                    void
     <strong>read</strong>(string $path)
         </code>
@@ -760,7 +789,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_readStream">
-        <div class="location">at line 147</div>
+        <div class="location">at line 148</div>
         <code>                    void
     <strong>readStream</strong>(string $path)
         </code>
@@ -802,7 +831,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_lastModified">
-        <div class="location">at line 155</div>
+        <div class="location">at line 156</div>
         <code>                    
     <strong>lastModified</strong>(string $path)
         </code>
@@ -835,7 +864,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_upload">
-        <div class="location">at line 167</div>
+        <div class="location">at line 168</div>
         <code>    abstract                object
     <strong>upload</strong>(string $fileToUpload, <a target="_blank" rel="noopener" href="https://www.php.net/closure">closure</a> $validation)
         </code>
@@ -882,7 +911,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getProviderName">
-        <div class="location">at line 174</div>
+        <div class="location">at line 175</div>
         <code>                    string
     <strong>getProviderName</strong>()
         </code>
@@ -913,8 +942,54 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_getFilesystem">
+        <div class="location">at line 184</div>
+        <code>                    
+    <strong>getFilesystem</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get filesystem instance</p></p>                        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDiskName">
+        <div class="location">at line 192</div>
+        <code>                    
+    <strong>getDiskName</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get filesystem instance</p></p>                        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_getPath">
-        <div class="location">at line 185</div>
+        <div class="location">at line 202</div>
         <code>                    void
     <strong>getPath</strong>(string $additionalPath = &#039;&#039;)
         </code>
@@ -956,7 +1031,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getSize">
-        <div class="location">at line 196</div>
+        <div class="location">at line 213</div>
         <code>                    void
     <strong>getSize</strong>(string $path)
         </code>
@@ -998,7 +1073,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getError">
-        <div class="location">at line 202</div>
+        <div class="location">at line 219</div>
         <code>                    
     <strong>getError</strong>()
         </code>

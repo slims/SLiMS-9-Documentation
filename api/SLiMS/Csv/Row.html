@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>SLiMS\Parcel\Package | API</title>
+    <title>SLiMS\Csv\Row | API</title>
 
             <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
@@ -19,7 +19,7 @@
 
     </head>
 
-    <body id="class" data-name="class:SLiMS_Parcel_Package" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+    <body id="class" data-name="class:SLiMS_Csv_Row" data-root-path="../../" data-search-index-url="../../doctum-search.json">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -75,18 +75,18 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../../SLiMS.html">SLiMS</a></li><li class="backslash">\</li><li><a href="../../SLiMS/Parcel.html">Parcel</a></li><li class="backslash">\</li><li>Package</li>
+                        <li><a href="../../SLiMS.html">SLiMS</a></li><li class="backslash">\</li><li><a href="../../SLiMS/Csv.html">Csv</a></li><li class="backslash">\</li><li>Row</li>
             </ol>
         </div>
                 <div id="page-content">
     <div class="page-header">
-        <h1>Package    
+        <h1>Row    
             </h1>
     </div>
 
     
     <p>        class
-    <strong>Package</strong>        implements        <a target="_blank" rel="noopener" href="https://www.php.net/IteratorAggregate">IteratorAggregate</a>, <a target="_blank" rel="noopener" href="https://www.php.net/JsonSerializable">JsonSerializable</a>, <a target="_blank" rel="noopener" href="https://www.php.net/Countable">Countable</a>
+    <strong>Row</strong>        implements        <a target="_blank" rel="noopener" href="https://www.php.net/IteratorAggregate">IteratorAggregate</a>, <a target="_blank" rel="noopener" href="https://www.php.net/Countable">Countable</a>
 </p>
 
         
@@ -95,6 +95,27 @@
 
             
         
+            <h2>Constants</h2>    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                                                                                                        KEY_BASED
+                                    </td>
+                <td class="last">
+                    <p><em><p>output type</p></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        VALUE_BASED
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
     
     
             <h2>Methods</h2>
@@ -102,10 +123,10 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;
+                    
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_getInstance">getInstance</a>()
+                    <a href="#method___construct">__construct</a>(array $data, array|null $standart = null, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|null $callback = null)
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -113,24 +134,53 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;
+                    string
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_prepare">prepare</a>(string $filepath, string $packager = &#039;&#039;)
+                    <a href="#method_generate">generate</a>(int $type = self::VALUE_BASED)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p><p>Make a content based on \SLiMS\Csv\Columns</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;
+                    <a href="../../SLiMS/Csv/Columns.html"><abbr title="SLiMS\Csv\Columns">Columns</abbr></a>
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_process">process</a>(string $packageName)
+                    <a href="#method_all">all</a>()
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p><p>Get all columns data</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_add">add</a>(string $columnName, string $columnValue)
+        
+                                            <p><p>Add new column data</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_registerColumnModifier">registerColumnModifier</a>(string $columnName, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback)
+        
+                                            <p><p>Modify column content based on
+user function</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../SLiMS/Csv/Row.html"><abbr title="SLiMS\Csv\Row">Row</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setStandart">setStandart</a>(<abbr title="SLiMS\Csv\array|string">array|string</abbr> $key, string $value = &#039;&#039;)
+        
+                                            <p><p>Set row standart</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -138,7 +188,7 @@
                     
                 </div>
                 <div class="col-md-8">
-                    <a href="#method___get">__get</a>($key)
+                    <a href="#method_toArray">toArray</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -146,10 +196,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    mixed
+                    <a target="_blank" rel="noopener" href="https://www.php.net/ArrayIterator">ArrayIterator</a>
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_jsonSerialize">jsonSerialize</a>()
+                    <a href="#method_getIterator">getIterator</a>()
         
                                             <p class="no-description">No description</p>
                                     </div>
@@ -166,28 +216,6 @@
                                     </div>
                 <div class="col-md-2"></div>
             </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <a target="_blank" rel="noopener" href="https://www.php.net/Traversable">Traversable</a>
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_getIterator">getIterator</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    static&nbsp;
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_getError">getError</a>()
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
             </div>
 
 
@@ -195,107 +223,10 @@
 
             <div id="method-details">
                     <div class="method-item">
-                    <h3 id="method_getInstance">
-        <div class="location">at line 40</div>
-        <code>        static            
-    <strong>getInstance</strong>()
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
-        </div>
-        <div class="tags">
-            
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_prepare">
-        <div class="location">at line 65</div>
-        <code>        static            
-    <strong>prepare</strong>(string $filepath, string $packager = &#039;&#039;)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$filepath</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>string</td>
-                <td>$packager</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_process">
-        <div class="location">at line 71</div>
-        <code>        static            
-    <strong>process</strong>(string $packageName)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$packageName</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method___get">
-        <div class="location">at line 76</div>
+                    <h3 id="method___construct">
+        <div class="location">at line 54</div>
         <code>                    
-    <strong>__get</strong>($key)
+    <strong>__construct</strong>(array $data, array|null $standart = null, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|null $callback = null)
         </code>
     </h3>
     <div class="details">    
@@ -311,12 +242,262 @@
 
                     <table class="table table-condensed">
                     <tr>
+                <td>array</td>
+                <td>$data</td>
                 <td></td>
+            </tr>
+                    <tr>
+                <td>array|null</td>
+                <td>$standart</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a>|null</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_generate">
+        <div class="location">at line 67</div>
+        <code>                    string
+    <strong>generate</strong>(int $type = self::VALUE_BASED)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Make a content based on \SLiMS\Csv\Columns</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_all">
+        <div class="location">at line 105</div>
+        <code>                    <a href="../../SLiMS/Csv/Columns.html"><abbr title="SLiMS\Csv\Columns">Columns</abbr></a>
+    <strong>all</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get all columns data</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../SLiMS/Csv/Columns.html"><abbr title="SLiMS\Csv\Columns">Columns</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_add">
+        <div class="location">at line 117</div>
+        <code>                    void
+    <strong>add</strong>(string $columnName, string $columnValue)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Add new column data</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$columnName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$columnValue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerColumnModifier">
+        <div class="location">at line 130</div>
+        <code>                    void
+    <strong>registerColumnModifier</strong>(string $columnName, <a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a> $callback)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Modify column content based on
+user function</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$columnName</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/Closure">Closure</a></td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setStandart">
+        <div class="location">at line 152</div>
+        <code>                    <a href="../../SLiMS/Csv/Row.html"><abbr title="SLiMS\Csv\Row">Row</abbr></a>
+    <strong>setStandart</strong>(<abbr title="SLiMS\Csv\array|string">array|string</abbr> $key, string $value = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set row standart</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="SLiMS\Csv\array|string">array|string</abbr></td>
                 <td>$key</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
             </table>
 
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../SLiMS/Csv/Row.html"><abbr title="SLiMS\Csv\Row">Row</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toArray">
+        <div class="location">at line 159</div>
+        <code>                    
+    <strong>toArray</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
             
             
             
@@ -326,10 +507,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_jsonSerialize">
-        <div class="location">at line 81</div>
-        <code>                    mixed
-    <strong>jsonSerialize</strong>()
+                    <h3 id="method_getIterator">
+        <div class="location">at line 164</div>
+        <code>                    <a target="_blank" rel="noopener" href="https://www.php.net/ArrayIterator">ArrayIterator</a>
+    <strong>getIterator</strong>()
         </code>
     </h3>
     <div class="details">    
@@ -346,7 +527,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>mixed</td>
+            <td><a target="_blank" rel="noopener" href="https://www.php.net/ArrayIterator">ArrayIterator</a></td>
             <td></td>
         </tr>
     </table>
@@ -360,7 +541,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_count">
-        <div class="location">at line 86</div>
+        <div class="location">at line 169</div>
         <code>                    int
     <strong>count</strong>()
         </code>
@@ -384,63 +565,6 @@
         </tr>
     </table>
 
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getIterator">
-        <div class="location">at line 91</div>
-        <code>                    <a target="_blank" rel="noopener" href="https://www.php.net/Traversable">Traversable</a>
-    <strong>getIterator</strong>()
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
-        </div>
-        <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a target="_blank" rel="noopener" href="https://www.php.net/Traversable">Traversable</a></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getError">
-        <div class="location">at line 96</div>
-        <code>        static            
-    <strong>getError</strong>()
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
-        </div>
-        <div class="tags">
-            
             
             
             
