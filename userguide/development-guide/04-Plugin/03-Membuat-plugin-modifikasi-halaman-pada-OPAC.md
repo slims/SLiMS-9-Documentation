@@ -41,7 +41,7 @@ $plugins->registerMenu('opac', 'member', __DIR__ . '/member.inc.php');
 ### Contoh plugin modifikasi halaman yang belum ada
 Tak berbeda jauh dengan langkah sebelumnya. Berikut langkahnya:
 1. Buat sebuah folder baru di dalam folder ``` plugins/ ``` dengan nama **bebas_pustaka** lalu masuk ke dalam folder tadi.
-2. Setelah itu buat file **bebas_pustaka.plugin.inc.php**
+2. Setelah itu buat file **bebas_pustaka.plugin.php**
 3. Isi file tersebut dengan skrip dibawah ini:
 ```php
 <?php
