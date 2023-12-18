@@ -4,7 +4,7 @@ description: Penjelasan teknis terkait cara menggunakan fitur SLIMS console.
 image: '/docs/static/img/console-meta-image.png'
 ---
 ### Pengantar
-Fitur ini membutuhkan antarmuka berbasis perintah atau sering dikenal dengan CLi. Maka anda diwajibkan sudah paham terkait pengguna aplikasi pendukung fitur ini seperti pada Micrsoft Windows: Command Prompt, Windows Terminal atau PowerShell, pada GNU Linux: Terminal, Konsol, dll.
+Fitur ini membutuhkan antarmuka berbasis perintah atau sering dikenal dengan CLi. Maka anda diwajibkan sudah paham terkait penggunaan aplikasi pendukung fitur ini seperti pada Micrsoft Windows: Command Prompt, Windows Terminal atau PowerShell, pada GNU Linux: Terminal, Konsol, dll.
 
 ### Langkah memulai
 1. Buka konsole anda (Command Prompt dll)

@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>ParagonIE\ConstantTime\Base32Hex | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../doctum.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script async defer src="../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:ParagonIE_ConstantTime_Base32Hex" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../ParagonIE.html">ParagonIE</a></li><li class="backslash">\</li><li><a href="../../ParagonIE/ConstantTime.html">ConstantTime</a></li><li class="backslash">\</li><li>Base32Hex</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Base32Hex    
+            </h1>
+    </div>
+
+    
+    <p>    abstract     class
+    <strong>Base32Hex</strong>        extends <a href="../../ParagonIE/ConstantTime/Base32.html"><abbr title="ParagonIE\ConstantTime\Base32">Base32</abbr></a>
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>Class Base32Hex
+[0-9][A-V]</p></p>                    </div>
+            
+        
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_decode">decode</a>(string $encodedString, bool $strictPadding = false)
+        
+                                            <p><p>Decode a Base32-encoded string into raw binary</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../ParagonIE/ConstantTime/Base32.html#method_decode">
+<abbr title="ParagonIE\ConstantTime\Base32">Base32</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_decodeUpper">decodeUpper</a>(string $src, bool $strictPadding = false)
+        
+                                            <p><p>Decode an uppercase Base32-encoded string into raw binary</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../ParagonIE/ConstantTime/Base32.html#method_decodeUpper">
+<abbr title="ParagonIE\ConstantTime\Base32">Base32</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_encode">encode</a>(string $binString)
+        
+                                            <p><p>Encode into Base32 (RFC 4648)</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../ParagonIE/ConstantTime/Base32.html#method_encode">
+<abbr title="ParagonIE\ConstantTime\Base32">Base32</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_encodeUnpadded">encodeUnpadded</a>(string $src)
+        
+                                            <p><p>Encode into Base32 (RFC 4648)</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../ParagonIE/ConstantTime/Base32.html#method_encodeUnpadded">
+<abbr title="ParagonIE\ConstantTime\Base32">Base32</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_encodeUpper">encodeUpper</a>(string $src)
+        
+                                            <p><p>Encode into uppercase Base32 (RFC 4648)</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../ParagonIE/ConstantTime/Base32.html#method_encodeUpper">
+<abbr title="ParagonIE\ConstantTime\Base32">Base32</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_encodeUpperUnpadded">encodeUpperUnpadded</a>(string $src)
+        
+                                            <p><p>Encode into uppercase Base32 (RFC 4648)</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../ParagonIE/ConstantTime/Base32.html#method_encodeUpperUnpadded">
+<abbr title="ParagonIE\ConstantTime\Base32">Base32</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_decode5Bits">decode5Bits</a>(int $src)
+        
+                                            <p><p>Uses bitwise operators instead of table-lookups to turn 5-bit integers
+into 8-bit integers.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_decode5BitsUpper">decode5BitsUpper</a>(int $src)
+        
+                                            <p><p>Uses bitwise operators instead of table-lookups to turn 5-bit integers
+into 8-bit integers.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_encode5Bits">encode5Bits</a>(int $src)
+        
+                                            <p><p>Uses bitwise operators instead of table-lookups to turn 8-bit integers
+into 5-bit integers.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_encode5BitsUpper">encode5BitsUpper</a>(int $src)
+        
+                                            <p><p>Uses bitwise operators instead of table-lookups to turn 8-bit integers
+into 5-bit integers.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_decodeNoPadding">decodeNoPadding</a>(string $encodedString, bool $upper = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../ParagonIE/ConstantTime/Base32.html#method_decodeNoPadding">
+<abbr title="ParagonIE\ConstantTime\Base32">Base32</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_doDecode">doDecode</a>(string $src, bool $upper = false, bool $strictPadding = false)
+        
+                                            <p><p>Base32 decoding</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../ParagonIE/ConstantTime/Base32.html#method_doDecode">
+<abbr title="ParagonIE\ConstantTime\Base32">Base32</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_doEncode">doEncode</a>(string $src, bool $upper = false, bool $pad = true)
+        
+                                            <p><p>Base32 Encoding</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../ParagonIE/ConstantTime/Base32.html#method_doEncode">
+<abbr title="ParagonIE\ConstantTime\Base32">Base32</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_decode">
+        <div class="location">in <a href="../../ParagonIE/ConstantTime/Base32.html#method_decode">
+<abbr title="ParagonIE\ConstantTime\Base32">Base32</abbr></a> at line 47</div>
+        <code>        static            string
+    <strong>decode</strong>(string $encodedString, bool $strictPadding = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Decode a Base32-encoded string into raw binary</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$encodedString</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$strictPadding</td>
+                <td><p>Error on invalid padding</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td><p>(raw binary)</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_decodeUpper">
+        <div class="location">in <a href="../../ParagonIE/ConstantTime/Base32.html#method_decodeUpper">
+<abbr title="ParagonIE\ConstantTime\Base32">Base32</abbr></a> at line 59</div>
+        <code>        static            string
+    <strong>decodeUpper</strong>(string $src, bool $strictPadding = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Decode an uppercase Base32-encoded string into raw binary</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$src</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$strictPadding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_encode">
+        <div class="location">in <a href="../../ParagonIE/ConstantTime/Base32.html#method_encode">
+<abbr title="ParagonIE\ConstantTime\Base32">Base32</abbr></a> at line 71</div>
+        <code>        static            string
+    <strong>encode</strong>(string $binString)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Encode into Base32 (RFC 4648)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$binString</td>
+                <td><p>(raw binary)</p></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/TypeError">TypeError</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_encodeUnpadded">
+        <div class="location">in <a href="../../ParagonIE/ConstantTime/Base32.html#method_encodeUnpadded">
+<abbr title="ParagonIE\ConstantTime\Base32">Base32</abbr></a> at line 82</div>
+        <code>        static            string
+    <strong>encodeUnpadded</strong>(string $src)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Encode into Base32 (RFC 4648)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$src</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/TypeError">TypeError</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_encodeUpper">
+        <div class="location">in <a href="../../ParagonIE/ConstantTime/Base32.html#method_encodeUpper">
+<abbr title="ParagonIE\ConstantTime\Base32">Base32</abbr></a> at line 94</div>
+        <code>        static            string
+    <strong>encodeUpper</strong>(string $src)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Encode into uppercase Base32 (RFC 4648)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$src</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/TypeError">TypeError</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_encodeUpperUnpadded">
+        <div class="location">in <a href="../../ParagonIE/ConstantTime/Base32.html#method_encodeUpperUnpadded">
+<abbr title="ParagonIE\ConstantTime\Base32">Base32</abbr></a> at line 106</div>
+        <code>        static            string
+    <strong>encodeUpperUnpadded</strong>(string $src)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Encode into uppercase Base32 (RFC 4648)</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$src</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/TypeError">TypeError</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_decode5Bits">
+        <div class="location">at line 43</div>
+        <code>        static    protected        int
+    <strong>decode5Bits</strong>(int $src)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Uses bitwise operators instead of table-lookups to turn 5-bit integers
+into 8-bit integers.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$src</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_decode5BitsUpper">
+        <div class="location">at line 63</div>
+        <code>        static    protected        int
+    <strong>decode5BitsUpper</strong>(int $src)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Uses bitwise operators instead of table-lookups to turn 5-bit integers
+into 8-bit integers.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$src</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_encode5Bits">
+        <div class="location">at line 83</div>
+        <code>        static    protected        string
+    <strong>encode5Bits</strong>(int $src)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Uses bitwise operators instead of table-lookups to turn 8-bit integers
+into 5-bit integers.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$src</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_encode5BitsUpper">
+        <div class="location">at line 102</div>
+        <code>        static    protected        string
+    <strong>encode5BitsUpper</strong>(int $src)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Uses bitwise operators instead of table-lookups to turn 8-bit integers
+into 5-bit integers.</p></p>                <p><p>Uppercase variant.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$src</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_decodeNoPadding">
+        <div class="location">in <a href="../../ParagonIE/ConstantTime/Base32.html#method_decodeNoPadding">
+<abbr title="ParagonIE\ConstantTime\Base32">Base32</abbr></a> at line 194</div>
+        <code>        static            string
+    <strong>decodeNoPadding</strong>(string $encodedString, bool $upper = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$encodedString</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$upper</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doDecode">
+        <div class="location">in <a href="../../ParagonIE/ConstantTime/Base32.html#method_doDecode">
+<abbr title="ParagonIE\ConstantTime\Base32">Base32</abbr></a> at line 227</div>
+        <code>        static    protected        string
+    <strong>doDecode</strong>(string $src, bool $upper = false, bool $strictPadding = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Base32 decoding</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$src</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$upper</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$strictPadding</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/TypeError">TypeError</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_doEncode">
+        <div class="location">in <a href="../../ParagonIE/ConstantTime/Base32.html#method_doEncode">
+<abbr title="ParagonIE\ConstantTime\Base32">Base32</abbr></a> at line 437</div>
+        <code>        static    protected        string
+    <strong>doEncode</strong>(string $src, bool $upper = false, bool $pad = true)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Base32 Encoding</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$src</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$upper</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$pad</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/TypeError">TypeError</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

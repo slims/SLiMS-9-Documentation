@@ -1,0 +1,3517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>phpseclib3\Net\SSH2 | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../fonts/doctum-font.css">
+        <script src="../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../doctum.js"></script>
+        <script async defer src="../../js/bootstrap.min.js"></script>
+        <script async defer src="../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:phpseclib3_Net_SSH2" data-root-path="../../" data-search-index-url="../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../classes.html">Classes</a></li>
+                    <li><a href="../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../traits.html">Traits</a></li>
+                    <li><a href="../../doc-index.html">Index</a></li>
+                    <li><a href="../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../phpseclib3.html">phpseclib3</a></li><li class="backslash">\</li><li><a href="../../phpseclib3/Net.html">Net</a></li><li class="backslash">\</li><li>SSH2</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>SSH2    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>SSH2</strong>
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>Pure-PHP implementation of SSHv2.</p></p>                    </div>
+            
+        
+            <h2>Constants</h2>    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                                                                                                        NET_SSH2_COMPRESSION_NONE
+                                    </td>
+                <td class="last">
+                    <p><em><p>No compression</p></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        NET_SSH2_COMPRESSION_ZLIB
+                                    </td>
+                <td class="last">
+                    <p><em><p>zlib compression</p></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        NET_SSH2_COMPRESSION_ZLIB_AT_OPENSSH
+                                    </td>
+                <td class="last">
+                    <p><em>zlib@openssh.com</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        MASK_CONSTRUCTOR
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        MASK_CONNECTED
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        MASK_LOGIN_REQ
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        MASK_LOGIN
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        MASK_SHELL
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        MASK_WINDOW_ADJUST
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        CHANNEL_EXEC
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        CHANNEL_SHELL
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        CHANNEL_SUBSYSTEM
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        CHANNEL_AGENT_FORWARD
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        CHANNEL_KEEP_ALIVE
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        LOG_SIMPLE
+                                    </td>
+                <td class="last">
+                    <p><em><p>Returns the message numbers</p></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        LOG_COMPLEX
+                                    </td>
+                <td class="last">
+                    <p><em><p>Returns the message content</p></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        LOG_REALTIME
+                                    </td>
+                <td class="last">
+                    <p><em><p>Outputs the content real-time</p></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        LOG_REALTIME_FILE
+                                    </td>
+                <td class="last">
+                    <p><em><p>Dumps the content real-time to a file</p></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        LOG_SIMPLE_REALTIME
+                                    </td>
+                <td class="last">
+                    <p><em><p>Outputs the message numbers real-time</p></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        LOG_MAX_SIZE
+                                    </td>
+                <td class="last">
+                    <p><em><p>Make sure that the log never gets larger than this</p></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        READ_SIMPLE
+                                    </td>
+                <td class="last">
+                    <p><em><p>Returns when a string matching $expect exactly is found</p></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        READ_REGEX
+                                    </td>
+                <td class="last">
+                    <p><em><p>Returns when a string matching the regular expression $expect is found</p></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        READ_NEXT
+                                    </td>
+                <td class="last">
+                    <p><em><p>Returns whenever a data packet is received.</p></em></p>
+                    <p><p>Some data packets may only contain a single character so it may be necessary
+to call read() multiple times when using this option</p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_fsock">
+                                                                                
+                                                                                
+                                    </td>
+                <td>$fsock</td>
+                <td class="last"><p>The Socket Object</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_bitmap">
+                                        protected                                        int
+                                                                                
+                                    </td>
+                <td>$bitmap</td>
+                <td class="last"><p>Execution Bitmap</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_server_identifier">
+                                        protected                                        string|false
+                                                                                
+                                    </td>
+                <td>$server_identifier</td>
+                <td class="last"><p>Server Identifier</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_server_channels">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$server_channels</td>
+                <td class="last"><p>Server Channels</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_channel_status">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$channel_status</td>
+                <td class="last"><p>Channel Status</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_window_size">
+                                        protected                                        int
+                                                                                
+                                    </td>
+                <td>$window_size</td>
+                <td class="last"><p>The Window Size</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_window_size_server_to_client">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$window_size_server_to_client</td>
+                <td class="last"><p>Window size, server to client</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_timeout">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$timeout</td>
+                <td class="last">Timeout</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_curTimeout">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$curTimeout</td>
+                <td class="last"><p>Current Timeout</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_preferred_signature_format">
+                                        protected                                        string|false
+                                                                                
+                                    </td>
+                <td>$preferred_signature_format</td>
+                <td class="last"><p>Preferred Signature Format</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_auth">
+                                        protected                                        array
+                                                                                
+                                    </td>
+                <td>$auth</td>
+                <td class="last"><p>Authentication Credentials</p></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(mixed $host, int $port = 22, int $timeout = 10)
+        
+                                            <p><p>Default Constructor.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setCryptoEngine">setCryptoEngine</a>(int $engine)
+        
+                                            <p><p>Set Crypto Engine Mode</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_sendIdentificationStringFirst">sendIdentificationStringFirst</a>()
+        
+                                            <p><p>Send Identification String First</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_sendIdentificationStringLast">sendIdentificationStringLast</a>()
+        
+                                            <p><p>Send Identification String Last</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_sendKEXINITFirst">sendKEXINITFirst</a>()
+        
+                                            <p><p>Send SSH_MSG_KEXINIT First</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_sendKEXINITLast">sendKEXINITLast</a>()
+        
+                                            <p><p>Send SSH_MSG_KEXINIT Last</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_login">login</a>(string $username, string|<a href="../../phpseclib3/Crypt/Common/AsymmetricKey.html"><abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a>|array[]|<a href="../../phpseclib3/System/SSH/Agent.html"><abbr title="phpseclib3\System\SSH\Agent">Agent</abbr></a>|null ...$args)
+        
+                                            <p>Login</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_sublogin">sublogin</a>(string $username, string ...$args)
+        
+                                            <p><p>Login Helper</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setTimeout">setTimeout</a>(mixed $timeout)
+        
+                                            <p><p>Set Timeout</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setKeepAlive">setKeepAlive</a>(int $interval)
+        
+                                            <p><p>Set Keep Alive</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getStdError">getStdError</a>()
+        
+                                            <p><p>Get the output from stdError</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_exec">exec</a>(string $command, callable $callback = null)
+        
+                                            <p><p>Execute Command</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_requestAgentForwarding">requestAgentForwarding</a>()
+        
+                                            <p><p>Request agent forwarding of remote server</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|bool|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_read">read</a>(string $expect = &#039;&#039;, int $mode = self::READ_SIMPLE)
+        
+                                            <p><p>Returns the output of an interactive shell</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_write">write</a>(string $cmd)
+        
+                                            <p><p>Inputs a command into an interactive shell.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_startSubsystem">startSubsystem</a>(string $subsystem)
+        
+                                            <p><p>Start a subsystem.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_stopSubsystem">stopSubsystem</a>()
+        
+                                            <p><p>Stops a subsystem.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_reset">reset</a>()
+        
+                                            <p><p>Closes a channel</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isTimeout">isTimeout</a>()
+        
+                                            <p><p>Is timeout?</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_disconnect">disconnect</a>()
+        
+                                            <p>Disconnect</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___destruct">__destruct</a>()
+        
+                                            <p>Destructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isConnected">isConnected</a>()
+        
+                                            <p><p>Is the connection still active?</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isAuthenticated">isAuthenticated</a>()
+        
+                                            <p><p>Have you successfully been logged in?</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_ping">ping</a>()
+        
+                                            <p><p>Pings a server connection, or tries to reconnect if the connection has gone down</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_reset_connection">reset_connection</a>(int $reason)
+        
+                                            <p><p>Resets a connection for re-use</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_enableQuietMode">enableQuietMode</a>()
+        
+                                            <p><p>Enable Quiet Mode</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_disableQuietMode">disableQuietMode</a>()
+        
+                                            <p><p>Disable Quiet Mode</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isQuietModeEnabled">isQuietModeEnabled</a>()
+        
+                                            <p><p>Returns whether Quiet Mode is enabled or not</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_enablePTY">enablePTY</a>()
+        
+                                            <p><p>Enable request-pty when using exec()</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_disablePTY">disablePTY</a>()
+        
+                                            <p><p>Disable request-pty when using exec()</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isPTYEnabled">isPTYEnabled</a>()
+        
+                                            <p><p>Returns whether request-pty is enabled or not</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_get_channel_packet">get_channel_packet</a>(int $client_channel, bool $skip_extended = false)
+        
+                                            <p><p>Gets channel data</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_send_binary_packet">send_binary_packet</a>(string $data, string $logged = null)
+        
+                                            <p><p>Sends Binary Packets</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_append_log_helper">append_log_helper</a>(int $constant, string $message_number, string $message, array $message_number_log, array $message_log, int $log_size, resource $realtime_log_file, bool $realtime_log_wrap, int $realtime_log_size)
+        
+                                            <p><p>Logs data packet helper</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_send_channel_packet">send_channel_packet</a>(int $client_channel, string $data)
+        
+                                            <p><p>Sends channel data</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    false
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_disconnect_helper">disconnect_helper</a>(int $reason)
+        
+                                            <p>Disconnect</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_define_array">define_array</a>(array ...$args)
+        
+                                            <p><p>Define Array</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|false|string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLog">getLog</a>()
+        
+                                            <p><p>Returns a log of the packets that have been sent and received.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_format_log">format_log</a>(array $message_log, array $message_number_log)
+        
+                                            <p><p>Formats a log for printing</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getErrors">getErrors</a>()
+        
+                                            <p><p>Returns all errors</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLastError">getLastError</a>()
+        
+                                            <p><p>Returns the last error</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|false
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getServerIdentification">getServerIdentification</a>()
+        
+                                            <p><p>Return the server identification.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getServerAlgorithms">getServerAlgorithms</a>()
+        
+                                            <p><p>Returns a list of algorithms the server supports</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSupportedKEXAlgorithms">getSupportedKEXAlgorithms</a>()
+        
+                                            <p><p>Returns a list of KEX algorithms that phpseclib supports</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSupportedHostKeyAlgorithms">getSupportedHostKeyAlgorithms</a>()
+        
+                                            <p><p>Returns a list of host key algorithms that phpseclib supports</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSupportedEncryptionAlgorithms">getSupportedEncryptionAlgorithms</a>()
+        
+                                            <p><p>Returns a list of symmetric key algorithms that phpseclib supports</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSupportedMACAlgorithms">getSupportedMACAlgorithms</a>()
+        
+                                            <p><p>Returns a list of MAC algorithms that phpseclib supports</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getSupportedCompressionAlgorithms">getSupportedCompressionAlgorithms</a>()
+        
+                                            <p><p>Returns a list of compression algorithms that phpseclib supports</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getAlgorithmsNegotiated">getAlgorithmsNegotiated</a>()
+        
+                                            <p><p>Return list of negotiated algorithms</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setTerminal">setTerminal</a>(string $term)
+        
+                                            <p><p>Allows you to set the terminal</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setPreferredAlgorithms">setPreferredAlgorithms</a>(array $methods)
+        
+                                            <p><p>Accepts an associative array with up to four parameters as described at
+<a href="https://www.php.net/manual/en/function.ssh2-connect.php">https://www.php.net/manual/en/function.ssh2-connect.php</a></p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getBannerMessage">getBannerMessage</a>()
+        
+                                            <p><p>Returns the banner message.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|false
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getServerPublicHostKey">getServerPublicHostKey</a>()
+        
+                                            <p><p>Returns the server public host key.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    false|int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getExitStatus">getExitStatus</a>()
+        
+                                            <p><p>Returns the exit status of an SSH command or false.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getWindowColumns">getWindowColumns</a>()
+        
+                                            <p><p>Returns the number of columns for the terminal window size.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getWindowRows">getWindowRows</a>()
+        
+                                            <p><p>Returns the number of rows for the terminal window size.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setWindowColumns">setWindowColumns</a>(int $value)
+        
+                                            <p><p>Sets the number of columns for the terminal window size.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setWindowRows">setWindowRows</a>(int $value)
+        
+                                            <p><p>Sets the number of rows for the terminal window size.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setWindowSize">setWindowSize</a>(int $columns = 80, int $rows = 24)
+        
+                                            <p><p>Sets the number of columns and rows for the terminal window size.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___toString">__toString</a>()
+        
+                                            <p><p>To String Magic Method</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getResourceId">getResourceId</a>()
+        
+                                            <p><p>Get Resource ID</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool|<a href="../../phpseclib3/Net/SSH2.html"><abbr title="phpseclib3\Net\SSH2">SSH2</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getConnectionByResourceId">getConnectionByResourceId</a>(string $id)
+        
+                                            <p><p>Return existing connection</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="phpseclib3\Net\array&lt;string,\phpseclib3\Net\SSH2&gt;">SSH2&gt;</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getConnections">getConnections</a>()
+        
+                                            <p><p>Return all excising connections</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getAuthMethodsToContinue">getAuthMethodsToContinue</a>()
+        
+                                            <p><p>Return the list of authentication methods that may productively continue authentication.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_enableSmartMFA">enableSmartMFA</a>()
+        
+                                            <p><p>Enables &quot;smart&quot; multi-factor authentication (MFA)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_disableSmartMFA">disableSmartMFA</a>()
+        
+                                            <p><p>Disables &quot;smart&quot; multi-factor authentication (MFA)</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 1094</div>
+        <code>                    
+    <strong>__construct</strong>(mixed $host, int $port = 22, int $timeout = 10)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Default Constructor.</p></p>                <p><p>$host can either be a string, representing the host, or a stream resource.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$host</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$port</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$timeout</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            \phpseclib3\Net\self::login()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setCryptoEngine">
+        <div class="location">at line 1203</div>
+        <code>        static            
+    <strong>setCryptoEngine</strong>(int $engine)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set Crypto Engine Mode</p></p>                <p><p>Possible $engine values:
+OpenSSL, mcrypt, Eval, PHP</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$engine</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sendIdentificationStringFirst">
+        <div class="location">at line 1216</div>
+        <code>                    
+    <strong>sendIdentificationStringFirst</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Send Identification String First</p></p>                <p><p><a href="https://tools.ietf.org/html/rfc4253#section-4.2">https://tools.ietf.org/html/rfc4253#section-4.2</a> says &quot;when the connection has been established,
+both sides MUST send an identification string&quot;. It does not say which side sends it first. In
+theory it shouldn't matter but it is a fact of life that some SSH servers are simply buggy</p></p>        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sendIdentificationStringLast">
+        <div class="location">at line 1229</div>
+        <code>                    
+    <strong>sendIdentificationStringLast</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Send Identification String Last</p></p>                <p><p><a href="https://tools.ietf.org/html/rfc4253#section-4.2">https://tools.ietf.org/html/rfc4253#section-4.2</a> says &quot;when the connection has been established,
+both sides MUST send an identification string&quot;. It does not say which side sends it first. In
+theory it shouldn't matter but it is a fact of life that some SSH servers are simply buggy</p></p>        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sendKEXINITFirst">
+        <div class="location">at line 1242</div>
+        <code>                    
+    <strong>sendKEXINITFirst</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Send SSH_MSG_KEXINIT First</p></p>                <p><p><a href="https://tools.ietf.org/html/rfc4253#section-7.1">https://tools.ietf.org/html/rfc4253#section-7.1</a> says &quot;key exchange begins by each sending
+sending the [SSH_MSG_KEXINIT] packet&quot;. It does not say which side sends it first. In theory
+it shouldn't matter but it is a fact of life that some SSH servers are simply buggy</p></p>        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sendKEXINITLast">
+        <div class="location">at line 1255</div>
+        <code>                    
+    <strong>sendKEXINITLast</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Send SSH_MSG_KEXINIT Last</p></p>                <p><p><a href="https://tools.ietf.org/html/rfc4253#section-7.1">https://tools.ietf.org/html/rfc4253#section-7.1</a> says &quot;key exchange begins by each sending
+sending the [SSH_MSG_KEXINIT] packet&quot;. It does not say which side sends it first. In theory
+it shouldn't matter but it is a fact of life that some SSH servers are simply buggy</p></p>        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_login">
+        <div class="location">at line 2114</div>
+        <code>                    bool
+    <strong>login</strong>(string $username, string|<a href="../../phpseclib3/Crypt/Common/AsymmetricKey.html"><abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a>|array[]|<a href="../../phpseclib3/System/SSH/Agent.html"><abbr title="phpseclib3\System\SSH\Agent">Agent</abbr></a>|null ...$args)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p>Login</p>                <p><p>The $password parameter can be a plaintext password, a \phpseclib3\Crypt\RSA|EC|DSA object, a \phpseclib3\System\SSH\Agent object or an array</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$username</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|<a href="../../phpseclib3/Crypt/Common/AsymmetricKey.html"><abbr title="phpseclib3\Crypt\Common\AsymmetricKey">AsymmetricKey</abbr></a>|array[]|<a href="../../phpseclib3/System/SSH/Agent.html"><abbr title="phpseclib3\System\SSH\Agent">Agent</abbr></a>|null</td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            \phpseclib3\Net\self::_login()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sublogin">
+        <div class="location">at line 2139</div>
+        <code>            protected        bool
+    <strong>sublogin</strong>(string $username, string ...$args)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Login Helper</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$username</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            \phpseclib3\Net\self::_login_helper()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTimeout">
+        <div class="location">at line 2657</div>
+        <code>                    
+    <strong>setTimeout</strong>(mixed $timeout)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set Timeout</p></p>                <p><p>$ssh-&gt;exec('ping 127.0.0.1'); on a Linux host will never return and will run indefinitely.  setTimeout() makes it so it'll timeout.
+Setting $timeout to false or 0 will mean there is no timeout.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$timeout</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setKeepAlive">
+        <div class="location">at line 2669</div>
+        <code>                    
+    <strong>setKeepAlive</strong>(int $interval)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set Keep Alive</p></p>                <p><p>Sends an SSH2_MSG_IGNORE message every x seconds, if x is a positive non-zero number.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$interval</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStdError">
+        <div class="location">at line 2678</div>
+        <code>                    
+    <strong>getStdError</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get the output from stdError</p></p>                        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_exec">
+        <div class="location">at line 2694</div>
+        <code>                    string|bool
+    <strong>exec</strong>(string $command, callable $callback = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Execute Command</p></p>                <p><p>If $callback is set to false then \phpseclib3\Net\SSH2::get_channel_packet(self::CHANNEL_EXEC) will need to be called manually.
+In all likelihood, this is not a feature you want to be taking advantage of.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$command</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>callable</td>
+                <td>$callback</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_requestAgentForwarding">
+        <div class="location">at line 2928</div>
+        <code>                    bool
+    <strong>requestAgentForwarding</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Request agent forwarding of remote server</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_read">
+        <div class="location">at line 2968</div>
+        <code>                    string|bool|null
+    <strong>read</strong>(string $expect = &#039;&#039;, int $mode = self::READ_SIMPLE)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the output of an interactive shell</p></p>                <p><p>Returns when there's a match for $expect, which can take the form of a string literal or,
+if $mode == self::READ_REGEX, a regular expression.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$expect</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$mode</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|bool|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            \phpseclib3\Net\self::write()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_write">
+        <div class="location">at line 3015</div>
+        <code>                    void
+    <strong>write</strong>(string $cmd)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Inputs a command into an interactive shell.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$cmd</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="../../phpseclib3/Net/SSH2.html#method_read">
+<abbr title="phpseclib3\Net\SSH2">SSH2</abbr>::read</a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startSubsystem">
+        <div class="location">at line 3041</div>
+        <code>                    bool
+    <strong>startSubsystem</strong>(string $subsystem)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Start a subsystem.</p></p>                <p><p>Right now only one subsystem at a time is supported. To support multiple subsystem's stopSubsystem() could accept
+a string that contained the name of the subsystem, but at that point, only one subsystem of each type could be opened.
+To support multiple subsystem's of the same name maybe it'd be best if startSubsystem() generated a new channel id and
+returns that and then that that was passed into stopSubsystem() but that'll be saved for a future date and implemented
+if there's sufficient demand for such a feature.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$subsystem</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            \phpseclib3\Net\self::stopSubsystem()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_stopSubsystem">
+        <div class="location">at line 3090</div>
+        <code>                    bool
+    <strong>stopSubsystem</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Stops a subsystem.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            \phpseclib3\Net\self::startSubsystem()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reset">
+        <div class="location">at line 3103</div>
+        <code>                    
+    <strong>reset</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Closes a channel</p></p>                <p><p>If read() timed out you might want to just close the channel and have it auto-restart on the next read() call</p></p>        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isTimeout">
+        <div class="location">at line 3114</div>
+        <code>                    
+    <strong>isTimeout</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Is timeout?</p></p>                <p><p>Did exec() or read() return because they timed out or because they encountered the end?</p></p>        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disconnect">
+        <div class="location">at line 3123</div>
+        <code>                    
+    <strong>disconnect</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p>Disconnect</p>                        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___destruct">
+        <div class="location">at line 3139</div>
+        <code>                    
+    <strong>__destruct</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p>Destructor.</p>                <p><p>Will be called, automatically, if you're supporting just PHP5.  If you're supporting PHP4, you'll need to call
+disconnect().</p></p>        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isConnected">
+        <div class="location">at line 3149</div>
+        <code>                    bool
+    <strong>isConnected</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Is the connection still active?</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isAuthenticated">
+        <div class="location">at line 3159</div>
+        <code>                    bool
+    <strong>isAuthenticated</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Have you successfully been logged in?</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ping">
+        <div class="location">at line 3171</div>
+        <code>                    bool
+    <strong>ping</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Pings a server connection, or tries to reconnect if the connection has gone down</p></p>                <p><p>Inspired by <a href="http://php.net/manual/en/mysqli.ping.php">http://php.net/manual/en/mysqli.ping.php</a></p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reset_connection">
+        <div class="location">at line 3226</div>
+        <code>            protected        
+    <strong>reset_connection</strong>(int $reason)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Resets a connection for re-use</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$reason</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enableQuietMode">
+        <div class="location">at line 3705</div>
+        <code>                    
+    <strong>enableQuietMode</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Enable Quiet Mode</p></p>                <p><p>Suppress stderr from output</p></p>        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disableQuietMode">
+        <div class="location">at line 3716</div>
+        <code>                    
+    <strong>disableQuietMode</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Disable Quiet Mode</p></p>                <p><p>Show stderr in output</p></p>        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isQuietModeEnabled">
+        <div class="location">at line 3728</div>
+        <code>                    bool
+    <strong>isQuietModeEnabled</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns whether Quiet Mode is enabled or not</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            \phpseclib3\Net\self::enableQuietMode()
+                                    </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+                                            \phpseclib3\Net\self::disableQuietMode()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enablePTY">
+        <div class="location">at line 3737</div>
+        <code>                    
+    <strong>enablePTY</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Enable request-pty when using exec()</p></p>                        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disablePTY">
+        <div class="location">at line 3746</div>
+        <code>                    
+    <strong>disablePTY</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Disable request-pty when using exec()</p></p>                        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isPTYEnabled">
+        <div class="location">at line 3762</div>
+        <code>                    bool
+    <strong>isPTYEnabled</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns whether request-pty is enabled or not</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            \phpseclib3\Net\self::enablePTY()
+                                    </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+                                            \phpseclib3\Net\self::disablePTY()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get_channel_packet">
+        <div class="location">at line 3786</div>
+        <code>            protected        mixed
+    <strong>get_channel_packet</strong>(int $client_channel, bool $skip_extended = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Gets channel data</p></p>                <p><p>Returns the data as a string. bool(true) is returned if:</p>
+<ul>
+<li>the server closes the channel</li>
+<li>if the connection times out</li>
+<li>if the channel status is CHANNEL_OPEN and the response was CHANNEL_OPEN_CONFIRMATION</li>
+<li>if the channel status is CHANNEL_REQUEST and the response was CHANNEL_SUCCESS</li>
+</ul>
+<p>bool(false) is returned if:</p>
+<ul>
+<li>if the channel status is CHANNEL_REQUEST and the response was CHANNEL_FAILURE</li>
+</ul></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$client_channel</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$skip_extended</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_send_binary_packet">
+        <div class="location">at line 4009</div>
+        <code>            protected        void
+    <strong>send_binary_packet</strong>(string $data, string $logged = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sends Binary Packets</p></p>                <p><p>See '6. Binary Packet Protocol' of rfc4253 for more info.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$logged</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            \phpseclib3\Net\self::_get_binary_packet()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_append_log_helper">
+        <div class="location">at line 4181</div>
+        <code>            protected        
+    <strong>append_log_helper</strong>(int $constant, string $message_number, string $message, array $message_number_log, array $message_log, int $log_size, resource $realtime_log_file, bool $realtime_log_wrap, int $realtime_log_size)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Logs data packet helper</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$constant</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message_number</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$message_number_log</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$message_log</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$log_size</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>resource</td>
+                <td>$realtime_log_file</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$realtime_log_wrap</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$realtime_log_size</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_send_channel_packet">
+        <div class="location">at line 4264</div>
+        <code>            protected        void
+    <strong>send_channel_packet</strong>(int $client_channel, string $data)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sends channel data</p></p>                <p><p>Spans multiple SSH_MSG_CHANNEL_DATAs if appropriate</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$client_channel</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disconnect_helper">
+        <div class="location">at line 4342</div>
+        <code>            protected        false
+    <strong>disconnect_helper</strong>(int $reason)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p>Disconnect</p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$reason</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_define_array">
+        <div class="location">at line 4370</div>
+        <code>            protected        
+    <strong>define_array</strong>(array ...$args)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Define Array</p></p>                <p><p>Takes any number of arrays whose indices are integers and whose values are strings and defines a bunch of
+named constants from it, using the value as the name of the constant and the index as the value of the constant.
+If any of the constants that would be defined already exists, none of the constants will be defined.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>...$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLog">
+        <div class="location">at line 4390</div>
+        <code>                    array|false|string
+    <strong>getLog</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns a log of the packets that have been sent and received.</p></p>                <p><p>Returns a string if NET_SSH2_LOGGING == self::LOG_COMPLEX, an array if NET_SSH2_LOGGING == self::LOG_SIMPLE and false if !defined('NET_SSH2_LOGGING')</p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|false|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_format_log">
+        <div class="location">at line 4414</div>
+        <code>            protected        string
+    <strong>format_log</strong>(array $message_log, array $message_number_log)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Formats a log for printing</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$message_log</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$message_number_log</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getErrors">
+        <div class="location">at line 4480</div>
+        <code>                    string[]
+    <strong>getErrors</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns all errors</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLastError">
+        <div class="location">at line 4490</div>
+        <code>                    string
+    <strong>getLastError</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the last error</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getServerIdentification">
+        <div class="location">at line 4504</div>
+        <code>                    string|false
+    <strong>getServerIdentification</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Return the server identification.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getServerAlgorithms">
+        <div class="location">at line 4516</div>
+        <code>                    array
+    <strong>getServerAlgorithms</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns a list of algorithms the server supports</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSupportedKEXAlgorithms">
+        <div class="location">at line 4543</div>
+        <code>        static            array
+    <strong>getSupportedKEXAlgorithms</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns a list of KEX algorithms that phpseclib supports</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSupportedHostKeyAlgorithms">
+        <div class="location">at line 4579</div>
+        <code>        static            array
+    <strong>getSupportedHostKeyAlgorithms</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns a list of host key algorithms that phpseclib supports</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSupportedEncryptionAlgorithms">
+        <div class="location">at line 4598</div>
+        <code>        static            array
+    <strong>getSupportedEncryptionAlgorithms</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns a list of symmetric key algorithms that phpseclib supports</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSupportedMACAlgorithms">
+        <div class="location">at line 4702</div>
+        <code>        static            array
+    <strong>getSupportedMACAlgorithms</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns a list of MAC algorithms that phpseclib supports</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSupportedCompressionAlgorithms">
+        <div class="location">at line 4732</div>
+        <code>        static            array
+    <strong>getSupportedCompressionAlgorithms</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns a list of compression algorithms that phpseclib supports</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAlgorithmsNegotiated">
+        <div class="location">at line 4749</div>
+        <code>                    array
+    <strong>getAlgorithmsNegotiated</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Return list of negotiated algorithms</p></p>                <p><p>Uses the same format as <a href="https://www.php.net/ssh2-methods-negotiated">https://www.php.net/ssh2-methods-negotiated</a></p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTerminal">
+        <div class="location">at line 4780</div>
+        <code>                    
+    <strong>setTerminal</strong>(string $term)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Allows you to set the terminal</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$term</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPreferredAlgorithms">
+        <div class="location">at line 4791</div>
+        <code>                    
+    <strong>setPreferredAlgorithms</strong>(array $methods)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Accepts an associative array with up to four parameters as described at
+<a href="https://www.php.net/manual/en/function.ssh2-connect.php">https://www.php.net/manual/en/function.ssh2-connect.php</a></p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$methods</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBannerMessage">
+        <div class="location">at line 4877</div>
+        <code>                    string
+    <strong>getBannerMessage</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the banner message.</p></p>                <p><p>Quoting from the RFC, &quot;in some jurisdictions, sending a warning message before
+authentication may be relevant for getting legal protection.&quot;</p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getServerPublicHostKey">
+        <div class="location">at line 4892</div>
+        <code>                    string|false
+    <strong>getServerPublicHostKey</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the server public host key.</p></p>                <p><p>Caching this the first time you connect to a server and checking the result on subsequent connections
+is recommended.  Returns false if the server signature is not signed correctly with the public host key.</p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" rel="noopener" href="https://www.php.net/RuntimeException">RuntimeException</a></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../phpseclib3/Exception/NoSupportedAlgorithmsException.html"><abbr title="phpseclib3\Exception\NoSupportedAlgorithmsException">NoSupportedAlgorithmsException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getExitStatus">
+        <div class="location">at line 4976</div>
+        <code>                    false|int
+    <strong>getExitStatus</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the exit status of an SSH command or false.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>false|int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getWindowColumns">
+        <div class="location">at line 4989</div>
+        <code>                    int
+    <strong>getWindowColumns</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the number of columns for the terminal window size.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getWindowRows">
+        <div class="location">at line 4999</div>
+        <code>                    int
+    <strong>getWindowRows</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the number of rows for the terminal window size.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setWindowColumns">
+        <div class="location">at line 5009</div>
+        <code>                    
+    <strong>setWindowColumns</strong>(int $value)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the number of columns for the terminal window size.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setWindowRows">
+        <div class="location">at line 5019</div>
+        <code>                    
+    <strong>setWindowRows</strong>(int $value)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the number of rows for the terminal window size.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setWindowSize">
+        <div class="location">at line 5030</div>
+        <code>                    
+    <strong>setWindowSize</strong>(int $columns = 80, int $rows = 24)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the number of columns and rows for the terminal window size.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$columns</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$rows</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location">at line 5041</div>
+        <code>                    string
+    <strong>__toString</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>To String Magic Method</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getResourceId">
+        <div class="location">at line 5057</div>
+        <code>                    string
+    <strong>getResourceId</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get Resource ID</p></p>                <p><p>We use } because that symbols should not be in URL according to
+<a href="http://tools.ietf.org/html/rfc3986#section-2">http://tools.ietf.org/html/rfc3986#section-2</a> RFC.
+It will safe us from any conflicts, because otherwise regexp will
+match all alphanumeric domains.</p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConnectionByResourceId">
+        <div class="location">at line 5069</div>
+        <code>        static            bool|<a href="../../phpseclib3/Net/SSH2.html"><abbr title="phpseclib3\Net\SSH2">SSH2</abbr></a>
+    <strong>getConnectionByResourceId</strong>(string $id)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Return existing connection</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|<a href="../../phpseclib3/Net/SSH2.html"><abbr title="phpseclib3\Net\SSH2">SSH2</abbr></a></td>
+            <td><p>will return false if no such connection</p></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConnections">
+        <div class="location">at line 5082</div>
+        <code>        static            <abbr title="phpseclib3\Net\array&lt;string,\phpseclib3\Net\SSH2&gt;">SSH2&gt;</abbr>
+    <strong>getConnections</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Return all excising connections</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="phpseclib3\Net\array&lt;string,\phpseclib3\Net\SSH2&gt;">SSH2&gt;</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAuthMethodsToContinue">
+        <div class="location">at line 5118</div>
+        <code>                    array|null
+    <strong>getAuthMethodsToContinue</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Return the list of authentication methods that may productively continue authentication.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <a href="https://tools.ietf.org/html/rfc4252#section-5.1">https://tools.ietf.org/html/rfc4252#section-5.1</a>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enableSmartMFA">
+        <div class="location">at line 5126</div>
+        <code>                    
+    <strong>enableSmartMFA</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Enables &quot;smart&quot; multi-factor authentication (MFA)</p></p>                        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disableSmartMFA">
+        <div class="location">at line 5134</div>
+        <code>                    
+    <strong>disableSmartMFA</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Disables &quot;smart&quot; multi-factor authentication (MFA)</p></p>                        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

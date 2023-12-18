@@ -374,7 +374,7 @@ biblio_list_model</a></small></td>
                     
                 </div>
                 <div class="col-md-8">
-                    <a href="#method___construct">__construct</a>(object $obj_db, int $int_num_show)
+                    <a href="#method___construct">__construct</a>(object $obj_db, int $int_num_show = 20)
         
                                             <p><p>Class Constructor</p></p>                </div>
                 <div class="col-md-2"></div>
@@ -386,7 +386,8 @@ biblio_list_model</a></small></td>
                 <div class="col-md-8">
                     <a href="#method_setSQLcriteria">setSQLcriteria</a>(string $str_criteria)
         
-                                            <p><p>Method to set search criteria</p></p>                </div>
+                                            <p><p>Method to set search criteria
+Extend this method</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -396,8 +397,9 @@ biblio_list_model</a></small></td>
                 <div class="col-md-8">
                     <a href="#method_compileSQL">compileSQL</a>()
         
-                                            <p><p>Method to print out document records</p></p>                </div>
-                <div class="col-md-2"></div>
+                                            <p><p>Method to compile SQL statement based on criteria</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="biblio_list_model.html#method_compileSQL">
+biblio_list_model</a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -429,8 +431,7 @@ biblio_list_model</a></small></div>
                     <a href="#method_getDocumentList">getDocumentList</a>(bool $bool_return_output = true)
         
                                             <p><p>Method to print out document records</p></p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="biblio_list_model.html#method_getDocumentList">
-biblio_list_model</a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -440,8 +441,7 @@ biblio_list_model</a></small></div>
                     <a href="#method_makeOutput">makeOutput</a>()
         
                                             <p><p>Method to make an output of document records</p></p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="biblio_list_model.html#method_makeOutput">
-biblio_list_model</a></small></div>
+                <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -476,6 +476,17 @@ biblio_list_model</a></small></div>
                 <div class="col-md-2"><small>from&nbsp;<a href="biblio_list_model.html#method_RSSresult">
 biblio_list_model</a></small></div>
             </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getClustering">getClustering</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
             </div>
 
 
@@ -484,9 +495,9 @@ biblio_list_model</a></small></div>
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 38</div>
+        <div class="location">at line 22</div>
         <code>                    
-    <strong>__construct</strong>(object $obj_db, int $int_num_show)
+    <strong>__construct</strong>(object $obj_db, int $int_num_show = 20)
         </code>
     </h3>
     <div class="details">    
@@ -522,7 +533,7 @@ biblio_list_model</a></small></div>
             </div>
                     <div class="method-item">
                     <h3 id="method_setSQLcriteria">
-        <div class="location">at line 49</div>
+        <div class="location">at line 32</div>
         <code>                    void
     <strong>setSQLcriteria</strong>(string $str_criteria)
         </code>
@@ -532,7 +543,8 @@ biblio_list_model</a></small></div>
             
 
         <div class="method-description">
-                            <p><p>Method to set search criteria</p></p>                        
+                            <p><p>Method to set search criteria
+Extend this method</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -564,8 +576,9 @@ biblio_list_model</a></small></div>
             </div>
                     <div class="method-item">
                     <h3 id="method_compileSQL">
-        <div class="location">at line 172</div>
-        <code>                    void
+        <div class="location">in <a href="biblio_list_model.html#method_compileSQL">
+biblio_list_model</a> at line 93</div>
+        <code>            protected        void
     <strong>compileSQL</strong>()
         </code>
     </h3>
@@ -574,7 +587,7 @@ biblio_list_model</a></small></div>
             
 
         <div class="method-description">
-                            <p><p>Method to print out document records</p></p>                        
+                            <p><p>Method to compile SQL statement based on criteria</p></p>                        
         </div>
         <div class="tags">
             
@@ -682,8 +695,7 @@ biblio_list_model</a> at line 134</div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getDocumentList">
-        <div class="location">in <a href="biblio_list_model.html#method_getDocumentList">
-biblio_list_model</a> at line 150</div>
+        <div class="location">at line 185</div>
         <code>                    string
     <strong>getDocumentList</strong>(bool $bool_return_output = true)
         </code>
@@ -725,8 +737,7 @@ biblio_list_model</a> at line 150</div>
             </div>
                     <div class="method-item">
                     <h3 id="method_makeOutput">
-        <div class="location">in <a href="biblio_list_model.html#method_makeOutput">
-biblio_list_model</a> at line 179</div>
+        <div class="location">at line 241</div>
         <code>            protected        string
     <strong>makeOutput</strong>()
         </code>
@@ -848,6 +859,30 @@ biblio_list_model</a> at line 442</div>
         </tr>
     </table>
 
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getClustering">
+        <div class="location">at line 205</div>
+        <code>                    
+    <strong>getClustering</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
             
             
             

@@ -1,6 +1,7 @@
 <?php 
 return [
     'path' => '',
+    'remove_on_build' => ['cache','build'],
     'excludes' => [
         'bacon',
         'dasprid',

@@ -1,0 +1,2424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>phpseclib3\Tests\Unit\Math\BigInteger\BCMathTest | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../fonts/doctum-font.css">
+        <script src="../../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../../doctum.js"></script>
+        <script async defer src="../../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:phpseclib3_Tests_Unit_Math_BigInteger_BCMathTest" data-root-path="../../../../../" data-search-index-url="../../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../../phpseclib3.html">phpseclib3</a></li><li class="backslash">\</li><li><a href="../../../../../phpseclib3/Tests.html">Tests</a></li><li class="backslash">\</li><li><a href="../../../../../phpseclib3/Tests/Unit.html">Unit</a></li><li class="backslash">\</li><li><a href="../../../../../phpseclib3/Tests/Unit/Math.html">Math</a></li><li class="backslash">\</li><li><a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger.html">BigInteger</a></li><li class="backslash">\</li><li>BCMathTest</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>BCMathTest    
+            </h1>
+    </div>
+
+    
+    <p>        class
+    <strong>BCMathTest</strong>        extends <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html"><abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a>
+</p>
+
+        
+    
+        
+
+            
+        
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_tempFilesToUnlinkOnTearDown">
+                                        protected                                        
+                                                                                
+                                    </td>
+                <td>$tempFilesToUnlinkOnTearDown</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#property_tempFilesToUnlinkOnTearDown">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_tearDown">tearDown</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_tearDown">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_createTempFile">createTempFile</a>(int $number_of_writes = 0, int $bytes_per_write = 0)
+        
+                                            <p><p>Creates a temporary file on the local filesystem and returns its path.</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_createTempFile">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;null
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_ensureConstant">ensureConstant</a>(string $constant, mixed $expected)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_ensureConstant">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getVar">getVar</a>($obj, $var)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_getVar">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_callFunc">callFunc</a>($obj, $func, $params = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_callFunc">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_assertIsArray">assertIsArray</a>($actual, $message = &#039;&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_assertIsArray">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_assertIsString">assertIsString</a>($actual, $message = &#039;&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_assertIsString">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_assertIsResource">assertIsResource</a>($actual, $message = &#039;&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_assertIsResource">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_assertIsObject">assertIsObject</a>($actual, $message = &#039;&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_assertIsObject">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_assertStringContainsString">assertStringContainsString</a>($needle, $haystack, $message = &#039;&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_assertStringContainsString">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_assertStringNotContainsString">assertStringNotContainsString</a>($needle, $haystack, $message = &#039;&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_assertStringNotContainsString">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_assertMatchesRegularExpression">assertMatchesRegularExpression</a>(string $pattern, string $string, string $message = &#039;&#039;)
+        
+                                            <p><p>assertRegExp() was deprecated in favor of assertMatchesRegularExpression().</p></p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_assertMatchesRegularExpression">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testConstructorBase2">testConstructorBase2</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testConstructorBase2">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testConstructorBase10">testConstructorBase10</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testConstructorBase10">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testConstructorBase16">testConstructorBase16</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testConstructorBase16">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testConstructorBase256">testConstructorBase256</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testConstructorBase256">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testToBytes">testToBytes</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testToBytes">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testToBytesTwosCompliment">testToBytesTwosCompliment</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testToBytesTwosCompliment">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testToHex">testToHex</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testToHex">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testToBits">testToBits</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testToBits">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testAdd">testAdd</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testAdd">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testSubtract">testSubtract</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testSubtract">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testMultiply">testMultiply</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testMultiply">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testDivide">testDivide</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testDivide">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testModPow">testModPow</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testModPow">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testModInverse">testModInverse</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testModInverse">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testExtendedGCD">testExtendedGCD</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testExtendedGCD">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testGCD">testGCD</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testGCD">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testAbs">testAbs</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testAbs">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testEquals">testEquals</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testEquals">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testCompare">testCompare</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testCompare">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testBitwiseAND">testBitwiseAND</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testBitwiseAND">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testBitwiseOR">testBitwiseOR</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testBitwiseOR">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testBitwiseXOR">testBitwiseXOR</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testBitwiseXOR">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testBitwiseNOT">testBitwiseNOT</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testBitwiseNOT">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testBitwiseLeftShift">testBitwiseLeftShift</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testBitwiseLeftShift">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testBitwiseRightShift">testBitwiseRightShift</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testBitwiseRightShift">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testSerializable">testSerializable</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testSerializable">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testClone">testClone</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testClone">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testRandomTwoArgument">testRandomTwoArgument</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testRandomTwoArgument">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testDiffieHellmanKeyAgreement">testDiffieHellmanKeyAgreement</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testDiffieHellmanKeyAgreement">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testDebugInfo">testDebugInfo</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testDebugInfo">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testPrecision">testPrecision</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testPrecision">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testSlidingWindow">testSlidingWindow</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testSlidingWindow">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testRoot">testRoot</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testRoot">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testPow">testPow</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testPow">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testMax">testMax</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testMax">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testMin">testMin</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testMin">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testRandomPrime">testRandomPrime</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testRandomPrime">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testZeros">testZeros</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testZeros">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_test48ToHex">test48ToHex</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_test48ToHex">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testZeroBase10">testZeroBase10</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testZeroBase10">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testNegativePrecision">testNegativePrecision</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testNegativePrecision">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setUpBeforeClass">setUpBeforeClass</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getInstance">getInstance</a>($x = 0, $base = 10)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getStaticClass">getStaticClass</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_tearDown">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_tearDown">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a> at line 17</div>
+        <code>                    
+    <strong>tearDown</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createTempFile">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_createTempFile">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a> at line 39</div>
+        <code>            protected        string
+    <strong>createTempFile</strong>(int $number_of_writes = 0, int $bytes_per_write = 0)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Creates a temporary file on the local filesystem and returns its path.</p></p>                <p><p>The $number_of_writes and $bytes_per_write parameters can be used to
+write $number_of_writes * $bytes_per_write times the character 'a' to the
+temporary file. All files created using this method will be deleted from
+the filesystem on tearDown(), i.e. after each test method was run.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$number_of_writes</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$bytes_per_write</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ensureConstant">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_ensureConstant">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a> at line 61</div>
+        <code>        static    protected        null
+    <strong>ensureConstant</strong>(string $constant, mixed $expected)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$constant</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$expected</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getVar">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_getVar">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a> at line 89</div>
+        <code>        static    protected        
+    <strong>getVar</strong>($obj, $var)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$obj</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$var</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_callFunc">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_callFunc">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a> at line 97</div>
+        <code>        static            
+    <strong>callFunc</strong>($obj, $func, $params = [])
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$obj</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$func</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$params</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assertIsArray">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_assertIsArray">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a> at line 106</div>
+        <code>        static            
+    <strong>assertIsArray</strong>($actual, $message = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$actual</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assertIsString">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_assertIsString">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a> at line 117</div>
+        <code>        static            
+    <strong>assertIsString</strong>($actual, $message = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$actual</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assertIsResource">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_assertIsResource">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a> at line 128</div>
+        <code>        static            
+    <strong>assertIsResource</strong>($actual, $message = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$actual</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assertIsObject">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_assertIsObject">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a> at line 139</div>
+        <code>        static            
+    <strong>assertIsObject</strong>($actual, $message = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$actual</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assertStringContainsString">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_assertStringContainsString">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a> at line 150</div>
+        <code>        static            
+    <strong>assertStringContainsString</strong>($needle, $haystack, $message = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$needle</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$haystack</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assertStringNotContainsString">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_assertStringNotContainsString">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a> at line 161</div>
+        <code>        static            
+    <strong>assertStringNotContainsString</strong>($needle, $haystack, $message = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$needle</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$haystack</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_assertMatchesRegularExpression">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/PhpseclibTestCase.html#method_assertMatchesRegularExpression">
+<abbr title="phpseclib3\Tests\PhpseclibTestCase">PhpseclibTestCase</abbr></a> at line 179</div>
+        <code>        static            void
+    <strong>assertMatchesRegularExpression</strong>(string $pattern, string $string, string $message = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>assertRegExp() was deprecated in favor of assertMatchesRegularExpression().</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$pattern</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testConstructorBase2">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testConstructorBase2">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 15</div>
+        <code>                    
+    <strong>testConstructorBase2</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testConstructorBase10">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testConstructorBase10">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 21</div>
+        <code>                    
+    <strong>testConstructorBase10</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testConstructorBase16">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testConstructorBase16">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 26</div>
+        <code>                    
+    <strong>testConstructorBase16</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testConstructorBase256">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testConstructorBase256">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 34</div>
+        <code>                    
+    <strong>testConstructorBase256</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testToBytes">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testToBytes">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 39</div>
+        <code>                    
+    <strong>testToBytes</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testToBytesTwosCompliment">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testToBytesTwosCompliment">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 44</div>
+        <code>                    
+    <strong>testToBytesTwosCompliment</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testToHex">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testToHex">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 49</div>
+        <code>                    
+    <strong>testToHex</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testToBits">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testToBits">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 54</div>
+        <code>                    
+    <strong>testToBits</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testAdd">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testAdd">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 61</div>
+        <code>                    
+    <strong>testAdd</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testSubtract">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testSubtract">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 76</div>
+        <code>                    
+    <strong>testSubtract</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testMultiply">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testMultiply">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 83</div>
+        <code>                    
+    <strong>testMultiply</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testDivide">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testDivide">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 98</div>
+        <code>                    
+    <strong>testDivide</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testModPow">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testModPow">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 125</div>
+        <code>                    
+    <strong>testModPow</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testModInverse">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testModInverse">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 135</div>
+        <code>                    
+    <strong>testModInverse</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testExtendedGCD">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testExtendedGCD">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 148</div>
+        <code>                    
+    <strong>testExtendedGCD</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testGCD">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testGCD">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 159</div>
+        <code>                    
+    <strong>testGCD</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testAbs">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testAbs">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 166</div>
+        <code>                    
+    <strong>testAbs</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testEquals">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testEquals">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 175</div>
+        <code>                    
+    <strong>testEquals</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testCompare">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testCompare">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 184</div>
+        <code>                    
+    <strong>testCompare</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testBitwiseAND">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testBitwiseAND">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 207</div>
+        <code>                    
+    <strong>testBitwiseAND</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testBitwiseOR">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testBitwiseOR">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 216</div>
+        <code>                    
+    <strong>testBitwiseOR</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testBitwiseXOR">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testBitwiseXOR">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 236</div>
+        <code>                    
+    <strong>testBitwiseXOR</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testBitwiseNOT">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testBitwiseNOT">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 257</div>
+        <code>                    
+    <strong>testBitwiseNOT</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testBitwiseLeftShift">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testBitwiseLeftShift">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 270</div>
+        <code>                    
+    <strong>testBitwiseLeftShift</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testBitwiseRightShift">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testBitwiseRightShift">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 278</div>
+        <code>                    
+    <strong>testBitwiseRightShift</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testSerializable">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testSerializable">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 290</div>
+        <code>                    
+    <strong>testSerializable</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testClone">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testClone">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 302</div>
+        <code>                    
+    <strong>testClone</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testRandomTwoArgument">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testRandomTwoArgument">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 314</div>
+        <code>                    
+    <strong>testRandomTwoArgument</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testDiffieHellmanKeyAgreement">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testDiffieHellmanKeyAgreement">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 330</div>
+        <code>                    
+    <strong>testDiffieHellmanKeyAgreement</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testDebugInfo">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testDebugInfo">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 385</div>
+        <code>                    
+    <strong>testDebugInfo</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testPrecision">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testPrecision">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 392</div>
+        <code>                    
+    <strong>testPrecision</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testSlidingWindow">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testSlidingWindow">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 410</div>
+        <code>                    
+    <strong>testSlidingWindow</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testRoot">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testRoot">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 418</div>
+        <code>                    
+    <strong>testRoot</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testPow">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testPow">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 427</div>
+        <code>                    
+    <strong>testPow</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testMax">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testMax">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 438</div>
+        <code>                    
+    <strong>testMax</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testMin">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testMin">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 447</div>
+        <code>                    
+    <strong>testMin</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testRandomPrime">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testRandomPrime">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 456</div>
+        <code>                    
+    <strong>testRandomPrime</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testZeros">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testZeros">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 466</div>
+        <code>                    
+    <strong>testZeros</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_test48ToHex">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_test48ToHex">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 476</div>
+        <code>                    
+    <strong>test48ToHex</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testZeroBase10">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testZeroBase10">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 482</div>
+        <code>                    
+    <strong>testZeroBase10</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testNegativePrecision">
+        <div class="location">in <a href="../../../../../phpseclib3/Tests/Unit/Math/BigInteger/TestCase.html#method_testNegativePrecision">
+<abbr title="phpseclib3\Tests\Unit\Math\BigInteger\TestCase">TestCase</abbr></a> at line 491</div>
+        <code>                    
+    <strong>testNegativePrecision</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUpBeforeClass">
+        <div class="location">at line 15</div>
+        <code>        static            
+    <strong>setUpBeforeClass</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getInstance">
+        <div class="location">at line 23</div>
+        <code>                    
+    <strong>getInstance</strong>($x = 0, $base = 10)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$x</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$base</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStaticClass">
+        <div class="location">at line 28</div>
+        <code>        static            
+    <strong>getStaticClass</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>

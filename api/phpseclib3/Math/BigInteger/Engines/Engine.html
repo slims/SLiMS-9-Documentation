@@ -1,0 +1,2321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>phpseclib3\Math\BigInteger\Engines\Engine | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/doctum.css">
+        <link rel="stylesheet" type="text/css" href="../../../../fonts/doctum-font.css">
+        <script src="../../../../js/jquery-3.5.1.slim.min.js"></script>
+        <script async defer src="../../../../doctum.js"></script>
+        <script async defer src="../../../../js/bootstrap.min.js"></script>
+        <script async defer src="../../../../js/autocomplete.min.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    </head>
+
+    <body id="class" data-name="class:phpseclib3_Math_BigInteger_Engines_Engine" data-root-path="../../../../" data-search-index-url="../../../../doctum-search.json">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <div class="search-bar hidden" id="search-progress-bar-container">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" id="search-progress-bar"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+            </div>
+        </div>
+        <form id="search-form" action="../../../../search.html">
+            <span class="icon icon-search"></span>
+            <input name="search"
+                   id="doctum-search-auto-complete"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search"
+                   spellcheck="false"
+                   autocorrect="off"
+                   autocomplete="off"
+                   autocapitalize="off">
+            <div class="auto-complete-results" id="auto-complete-results"></div>
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                    <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                    <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../phpseclib3.html">phpseclib3</a></li><li class="backslash">\</li><li><a href="../../../../phpseclib3/Math.html">Math</a></li><li class="backslash">\</li><li><a href="../../../../phpseclib3/Math/BigInteger.html">BigInteger</a></li><li class="backslash">\</li><li><a href="../../../../phpseclib3/Math/BigInteger/Engines.html">Engines</a></li><li class="backslash">\</li><li>Engine</li>
+            </ol>
+        </div>
+                <div id="page-content">
+    <div class="page-header">
+        <h1>Engine    
+            </h1>
+    </div>
+
+    
+    <p>    abstract     class
+    <strong>Engine</strong>        implements        <a target="_blank" rel="noopener" href="https://www.php.net/JsonSerializable">JsonSerializable</a>
+</p>
+
+        
+    
+        
+
+            <div class="description">
+            <p><p>Base Engine.</p></p>                    </div>
+            
+        
+            <h2>Constants</h2>    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                                                                                                        PRIMES
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_zero">
+                    static                    protected                                        
+                                                                                
+                                    </td>
+                <td>$zero</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_one">
+                    static                    protected                                        
+                                                                                
+                                    </td>
+                <td>$one</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_two">
+                    static                    protected                                        
+                                                                                
+                                    </td>
+                <td>$two</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_modexpEngine">
+                    static                    protected                                        
+                                                                                
+                                    </td>
+                <td>$modexpEngine</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_isValidEngine">
+                    static                    protected                                        
+                                                                                
+                                    </td>
+                <td>$isValidEngine</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_value">
+                                        protected                                        GMP|string|array|int
+                                                                                
+                                    </td>
+                <td>$value</td>
+                <td class="last"><p>Holds the BigInteger's value</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_is_negative">
+                                        protected                                        bool
+                                                                                
+                                    </td>
+                <td>$is_negative</td>
+                <td class="last"><p>Holds the BigInteger's sign</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_precision">
+                                        protected                                        int
+                                                                                
+                                    </td>
+                <td>$precision</td>
+                <td class="last">Precision</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_bitmask">
+                                        protected                                        <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>|false
+                                                                                
+                                    </td>
+                <td>$bitmask</td>
+                <td class="last"><p>Precision Bitmask</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_reduce">
+                                        protected                                        callable
+                                                                                
+                                    </td>
+                <td>$reduce</td>
+                <td class="last"><p>Recurring Modulo Function</p></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_hex">
+                                        protected                                        string
+                                                                                
+                                    </td>
+                <td>$hex</td>
+                <td class="last"><p>Mode independent value used for serialization.</p></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___construct">__construct</a>(int|<abbr title="phpseclib3\Math\BigInteger\Engines\numeric-string">numeric-string</abbr> $x = 0, int $base = 10)
+        
+                                            <p><p>Default constructor</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setModExpEngine">setModExpEngine</a>(<abbr title="phpseclib3\Math\BigInteger\Engines\class-string&lt;\phpseclib3\Math\BigInteger\Engines\Engine&gt;">Engine&gt;</abbr> $engine)
+        
+                                            <p><p>Sets engine type.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_toBytesHelper">toBytesHelper</a>()
+        
+                                            <p><p>Converts a BigInteger to a byte string (eg. base-256).</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_toHex">toHex</a>(bool $twos_compliment = false)
+        
+                                            <p><p>Converts a BigInteger to a hex string (eg. base-16).</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_toBits">toBits</a>(bool $twos_compliment = false)
+        
+                                            <p><p>Converts a BigInteger to a bit string (eg. base-2).</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>|false
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_modInverseHelper">modInverseHelper</a>(<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $n)
+        
+                                            <p><p>Calculates modular inverses.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___sleep">__sleep</a>()
+        
+                                            <p>Serialize</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___wakeup">__wakeup</a>()
+        
+                                            <p>Serialize</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_jsonSerialize">jsonSerialize</a>()
+        
+                                            <p><p>JSON Serialize</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___toString">__toString</a>()
+        
+                                            <p><p>Converts a BigInteger to a base-10 number.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___debugInfo">__debugInfo</a>()
+        
+                                            <p><p>__debugInfo() magic method</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setPrecision">setPrecision</a>(int $bits)
+        
+                                            <p><p>Set Precision</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getPrecision">getPrecision</a>()
+        
+                                            <p><p>Get Precision</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setBitmask">setBitmask</a>(int $bits)
+        
+                                            <p><p>Set Bitmask</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>|string
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_bitwise_not">bitwise_not</a>()
+        
+                                            <p><p>Logical Not</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_base256_lshift">base256_lshift</a>(string $x, int $shift)
+        
+                                            <p><p>Logical Left Shift</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_bitwise_leftRotate">bitwise_leftRotate</a>(int $shift)
+        
+                                            <p><p>Logical Left Rotate</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_bitwise_rightRotate">bitwise_rightRotate</a>(int $shift)
+        
+                                            <p><p>Logical Right Rotate</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_minMaxBits">minMaxBits</a>(int $bits)
+        
+                                            <p><p>Returns the smallest and largest n-bit number</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLength">getLength</a>()
+        
+                                            <p><p>Return the size of a BigInteger in bits</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_getLengthInBytes">getLengthInBytes</a>()
+        
+                                            <p><p>Return the size of a BigInteger in bytes</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>|false
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_powModOuter">powModOuter</a>(<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $e, <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $n)
+        
+                                            <p><p>Performs some pre-processing for powMod</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<abbr title="phpseclib3\Math\BigInteger\Engines\T">T</abbr>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_slidingWindow">slidingWindow</a>(<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $x, <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $e, <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $n, <abbr title="phpseclib3\Math\BigInteger\Engines\class-string&lt;\phpseclib3\Math\BigInteger\Engines\T&gt;">T&gt;</abbr> $class)
+        
+                                            <p><p>Sliding Window k-ary Modular Exponentiation</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_random">random</a>(int $size)
+        
+                                            <p><p>Generates a random number of a certain size</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_randomPrime">randomPrime</a>(int $size)
+        
+                                            <p><p>Generates a random prime number of a certain size</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>|false
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_randomRangePrimeOuter">randomRangePrimeOuter</a>(<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $min, <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $max)
+        
+                                            <p><p>Performs some pre-processing for randomRangePrime</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_randomRangeHelper">randomRangeHelper</a>(<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $min, <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $max)
+        
+                                            <p><p>Generate a random number between a range</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>|false
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_randomRangePrimeInner">randomRangePrimeInner</a>(<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $x, <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $min, <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $max)
+        
+                                            <p><p>Performs some post-processing for randomRangePrime</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_setupIsPrime">setupIsPrime</a>()
+        
+                                            <p><p>Sets the $t parameter for primality testing</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_testPrimality">testPrimality</a>(int $t)
+        
+                                            <p><p>Tests Primality</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isPrime">isPrime</a>(int|bool $t = false)
+        
+                                            <p><p>Checks a numer to see if it's prime</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_rootHelper">rootHelper</a>(int $n)
+        
+                                            <p><p>Performs a few preliminary checks on root</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_rootInner">rootInner</a>(int $n)
+        
+                                            <p><p>Calculates the nth root of a biginteger.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_root">root</a>(int $n = 2)
+        
+                                            <p><p>Calculates the nth root of a biginteger.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_minHelper">minHelper</a>(array $nums)
+        
+                                            <p><p>Return the minimum BigInteger between an arbitrary number of BigIntegers.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_maxHelper">maxHelper</a>(array $nums)
+        
+                                            <p><p>Return the minimum BigInteger between an arbitrary number of BigIntegers.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    callable
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_createRecurringModuloFunction">createRecurringModuloFunction</a>()
+        
+                                            <p><p>Create Recurring Modulo Function</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_extendedGCDHelper">extendedGCDHelper</a>(<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $n)
+        
+                                            <p><p>Calculates the greatest common divisor and Bezout's identity.</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>[]
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_bitwise_split">bitwise_split</a>(int $split)
+        
+                                            <p><p>Bitwise Split</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_bitwiseAndHelper">bitwiseAndHelper</a>(<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $x)
+        
+                                            <p><p>Logical And</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_bitwiseOrHelper">bitwiseOrHelper</a>(<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $x)
+        
+                                            <p><p>Logical Or</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_bitwiseXorHelper">bitwiseXorHelper</a>(<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $x)
+        
+                                            <p><p>Logical Exclusive Or</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at line 129</div>
+        <code>                    
+    <strong>__construct</strong>(int|<abbr title="phpseclib3\Math\BigInteger\Engines\numeric-string">numeric-string</abbr> $x = 0, int $base = 10)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Default constructor</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|<abbr title="phpseclib3\Math\BigInteger\Engines\numeric-string">numeric-string</abbr></td>
+                <td>$x</td>
+                <td><p>integer Base-10 number or base-$base number if $base set.</p></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$base</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setModExpEngine">
+        <div class="location">at line 224</div>
+        <code>        static            
+    <strong>setModExpEngine</strong>(<abbr title="phpseclib3\Math\BigInteger\Engines\class-string&lt;\phpseclib3\Math\BigInteger\Engines\Engine&gt;">Engine&gt;</abbr> $engine)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets engine type.</p></p>                <p><p>Throws an exception if the type is invalid</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="phpseclib3\Math\BigInteger\Engines\class-string&lt;\phpseclib3\Math\BigInteger\Engines\Engine&gt;">Engine&gt;</abbr></td>
+                <td>$engine</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toBytesHelper">
+        <div class="location">at line 243</div>
+        <code>            protected        string
+    <strong>toBytesHelper</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Converts a BigInteger to a byte string (eg. base-256).</p></p>                <p><p>Negative numbers are saved as positive numbers, unless $twos_compliment is set to true, at which point, they're
+saved as two's compliment.</p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toHex">
+        <div class="location">at line 270</div>
+        <code>                    string
+    <strong>toHex</strong>(bool $twos_compliment = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Converts a BigInteger to a hex string (eg. base-16).</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$twos_compliment</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_toBits">
+        <div class="location">at line 284</div>
+        <code>                    string
+    <strong>toBits</strong>(bool $twos_compliment = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Converts a BigInteger to a bit string (eg. base-2).</p></p>                <p><p>Negative numbers are saved as positive numbers, unless $twos_compliment is set to true, at which point, they're
+saved as two's compliment.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$twos_compliment</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_modInverseHelper">
+        <div class="location">at line 308</div>
+        <code>            protected        <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>|false
+    <strong>modInverseHelper</strong>(<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $n)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Calculates modular inverses.</p></p>                <p><p>Say you have (30 mod 17 * x mod 17) mod 17 == 1.  x can be found using modular inverses.</p>
+<p>{@internal See <a href="http://www.cacr.math.uwaterloo.ca/hac/about/chap14.pdf#page=21">http://www.cacr.math.uwaterloo.ca/hac/about/chap14.pdf#page=21</a> HAC 14.64} for more information.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+                <td>$n</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___sleep">
+        <div class="location">at line 341</div>
+        <code>                    array
+    <strong>__sleep</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p>Serialize</p>                <p><p>Will be called, automatically, when serialize() is called on a BigInteger object.</p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___wakeup">
+        <div class="location">at line 358</div>
+        <code>                    void
+    <strong>__wakeup</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p>Serialize</p>                <p><p>Will be called, automatically, when unserialize() is called on a BigInteger object.</p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_jsonSerialize">
+        <div class="location">at line 374</div>
+        <code>                    
+    <strong>jsonSerialize</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>JSON Serialize</p></p>                <p><p>Will be called, automatically, when json_encode() is called on a BigInteger object.</p></p>        
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___toString">
+        <div class="location">at line 389</div>
+        <code>                    string
+    <strong>__toString</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Converts a BigInteger to a base-10 number.</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___debugInfo">
+        <div class="location">at line 401</div>
+        <code>                    array
+    <strong>__debugInfo</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>__debugInfo() magic method</p></p>                <p><p>Will be called, automatically, when print_r() or var_dump() are called</p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setPrecision">
+        <div class="location">at line 418</div>
+        <code>                    
+    <strong>setPrecision</strong>(int $bits)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set Precision</p></p>                <p><p>Some bitwise operations give different results depending on the precision being used.  Examples include left
+shift, not, and rotates.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$bits</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPrecision">
+        <div class="location">at line 440</div>
+        <code>                    int
+    <strong>getPrecision</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Get Precision</p></p>                <p><p>Returns the precision if it exists, -1 if it doesn't</p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setBitmask">
+        <div class="location">at line 451</div>
+        <code>        static    protected        <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+    <strong>setBitmask</strong>(int $bits)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Set Bitmask</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$bits</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            \phpseclib3\Math\BigInteger\Engines\self::setPrecision()
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bitwise_not">
+        <div class="location">at line 461</div>
+        <code>                    <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>|string
+    <strong>bitwise_not</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Logical Not</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_base256_lshift">
+        <div class="location">at line 503</div>
+        <code>        static    protected        void
+    <strong>base256_lshift</strong>(string $x, int $shift)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Logical Left Shift</p></p>                <p><p>Shifts binary strings $shift bits, essentially multiplying by 2**$shift.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$x</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$shift</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bitwise_leftRotate">
+        <div class="location">at line 530</div>
+        <code>                    <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+    <strong>bitwise_leftRotate</strong>(int $shift)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Logical Left Rotate</p></p>                <p><p>Instead of the top x bits being dropped they're appended to the shifted bit string.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$shift</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bitwise_rightRotate">
+        <div class="location">at line 574</div>
+        <code>                    <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+    <strong>bitwise_rightRotate</strong>(int $shift)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Logical Right Rotate</p></p>                <p><p>Instead of the bottom x bits being dropped they're prepended to the shifted bit string.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$shift</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_minMaxBits">
+        <div class="location">at line 585</div>
+        <code>        static            
+    <strong>minMaxBits</strong>(int $bits)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Returns the smallest and largest n-bit number</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$bits</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLength">
+        <div class="location">at line 608</div>
+        <code>                    int
+    <strong>getLength</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Return the size of a BigInteger in bits</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLengthInBytes">
+        <div class="location">at line 618</div>
+        <code>                    int
+    <strong>getLengthInBytes</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Return the size of a BigInteger in bytes</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_powModOuter">
+        <div class="location">at line 630</div>
+        <code>            protected        <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>|false
+    <strong>powModOuter</strong>(<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $e, <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $n)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Performs some pre-processing for powMod</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+                <td>$n</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_slidingWindow">
+        <div class="location">at line 663</div>
+        <code>        static    protected        <abbr title="phpseclib3\Math\BigInteger\Engines\T">T</abbr>
+    <strong>slidingWindow</strong>(<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $x, <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $e, <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $n, <abbr title="phpseclib3\Math\BigInteger\Engines\class-string&lt;\phpseclib3\Math\BigInteger\Engines\T&gt;">T&gt;</abbr> $class)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sliding Window k-ary Modular Exponentiation</p></p>                <p><p>Based on <a href="http://www.cacr.math.uwaterloo.ca/hac/about/chap14.pdf#page=27">http://www.cacr.math.uwaterloo.ca/hac/about/chap14.pdf#page=27</a> HAC 14.85 /
+<a href="http://math.libtomcrypt.com/files/tommath.pdf#page=210">http://math.libtomcrypt.com/files/tommath.pdf#page=210</a> MPM 7.7.  In a departure from those algorithims,
+however, this function performs a modular reduction after every multiplication and squaring operation.
+As such, this function has the same preconditions that the reductions being used do.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+                <td>$x</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+                <td>$e</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+                <td>$n</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><abbr title="phpseclib3\Math\BigInteger\Engines\class-string&lt;\phpseclib3\Math\BigInteger\Engines\T&gt;">T&gt;</abbr></td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="phpseclib3\Math\BigInteger\Engines\T">T</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_random">
+        <div class="location">at line 734</div>
+        <code>        static            <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+    <strong>random</strong>(int $size)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Generates a random number of a certain size</p></p>                <p><p>Bit length is equal to $size</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$size</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_randomPrime">
+        <div class="location">at line 752</div>
+        <code>        static            <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+    <strong>randomPrime</strong>(int $size)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Generates a random prime number of a certain size</p></p>                <p><p>Bit length is equal to $size</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$size</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_randomRangePrimeOuter">
+        <div class="location">at line 769</div>
+        <code>        static    protected        <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>|false
+    <strong>randomRangePrimeOuter</strong>(<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $min, <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $max)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Performs some pre-processing for randomRangePrime</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+                <td>$min</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+                <td>$max</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_randomRangeHelper">
+        <div class="location">at line 800</div>
+        <code>        static    protected        <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+    <strong>randomRangeHelper</strong>(<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $min, <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $max)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Generate a random number between a range</p></p>                <p><p>Returns a random number between $min and $max where $min and $max
+can be defined using one of the two methods:</p>
+<p>BigInteger::randomRange($min, $max)
+BigInteger::randomRange($max, $min)</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+                <td>$min</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+                <td>$max</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_randomRangePrimeInner">
+        <div class="location">at line 864</div>
+        <code>        static    protected        <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>|false
+    <strong>randomRangePrimeInner</strong>(<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $x, <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $min, <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $max)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Performs some post-processing for randomRangePrime</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+                <td>$x</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+                <td>$min</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+                <td>$max</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setupIsPrime">
+        <div class="location">at line 908</div>
+        <code>            protected        int
+    <strong>setupIsPrime</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Sets the $t parameter for primality testing</p></p>                        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_testPrimality">
+        <div class="location">at line 940</div>
+        <code>            protected        bool
+    <strong>testPrimality</strong>(int $t)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Tests Primality</p></p>                <p><p>Uses the <a href="http://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test">http://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test</a> Miller-Rabin primality test.
+See <a href="http://www.cacr.math.uwaterloo.ca/hac/about/chap4.pdf#page=8">http://www.cacr.math.uwaterloo.ca/hac/about/chap4.pdf#page=8</a> HAC 4.24 for more info.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$t</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isPrime">
+        <div class="location">at line 984</div>
+        <code>                    bool
+    <strong>isPrime</strong>(int|bool $t = false)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Checks a numer to see if it's prime</p></p>                <p><p>Assuming the $t parameter is not set, this function has an error rate of 2**-80.  The main motivation for the
+$t parameter is distributability.  BigInteger::randomPrime() can be distributed across multiple pageloads
+on a website instead of just one.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|bool</td>
+                <td>$t</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rootHelper">
+        <div class="location">at line 998</div>
+        <code>            protected        <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+    <strong>rootHelper</strong>(int $n)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Performs a few preliminary checks on root</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$n</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rootInner">
+        <div class="location">at line 1023</div>
+        <code>            protected        <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+    <strong>rootInner</strong>(int $n)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Calculates the nth root of a biginteger.</p></p>                <p><p>Returns the nth root of a positive biginteger, where n defaults to 2</p>
+<p>{@internal This function is based off of <a href="http://mathforum.org/library/drmath/view/52605.html">http://mathforum.org/library/drmath/view/52605.html</a> this page} and {@link <a href="http://stackoverflow.com/questions/11242920/calculating-nth-root-with-bcmath-in-php">http://stackoverflow.com/questions/11242920/calculating-nth-root-with-bcmath-in-php</a> this stackoverflow question}.</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$n</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_root">
+        <div class="location">at line 1081</div>
+        <code>                    <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+    <strong>root</strong>(int $n = 2)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Calculates the nth root of a biginteger.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$n</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_minHelper">
+        <div class="location">at line 1092</div>
+        <code>        static    protected        <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+    <strong>minHelper</strong>(array $nums)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Return the minimum BigInteger between an arbitrary number of BigIntegers.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$nums</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_maxHelper">
+        <div class="location">at line 1110</div>
+        <code>        static    protected        <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+    <strong>maxHelper</strong>(array $nums)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Return the minimum BigInteger between an arbitrary number of BigIntegers.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$nums</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createRecurringModuloFunction">
+        <div class="location">at line 1130</div>
+        <code>                    callable
+    <strong>createRecurringModuloFunction</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Create Recurring Modulo Function</p></p>                <p><p>Sometimes it may be desirable to do repeated modulos with the same number outside of
+modular exponentiation</p></p>        
+        </div>
+        <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>callable</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_extendedGCDHelper">
+        <div class="location">at line 1159</div>
+        <code>            protected        
+    <strong>extendedGCDHelper</strong>(<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $n)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Calculates the greatest common divisor and Bezout's identity.</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+                <td>$n</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bitwise_split">
+        <div class="location">at line 1203</div>
+        <code>                    <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>[]
+    <strong>bitwise_split</strong>(int $split)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Bitwise Split</p></p>                <p><p>Splits BigInteger's into chunks of $split bits</p></p>        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$split</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bitwiseAndHelper">
+        <div class="location">at line 1228</div>
+        <code>            protected        <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+    <strong>bitwiseAndHelper</strong>(<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $x)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Logical And</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+                <td>$x</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bitwiseOrHelper">
+        <div class="location">at line 1247</div>
+        <code>            protected        <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+    <strong>bitwiseOrHelper</strong>(<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $x)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Logical Or</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+                <td>$x</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bitwiseXorHelper">
+        <div class="location">at line 1266</div>
+        <code>            protected        <a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a>
+    <strong>bitwiseXorHelper</strong>(<a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a> $x)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p><p>Logical Exclusive Or</p></p>                        
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+                <td>$x</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../phpseclib3/Math/BigInteger/Engines/Engine.html"><abbr title="phpseclib3\Math\BigInteger\Engines\Engine">Engine</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+</div><div id="footer">
+        Generated by <a href="https://github.com/code-lts/doctum">Doctum, a API Documentation generator and fork of Sami</a>.</div></div>
+    </div>
+    </body>
+
+</html>
