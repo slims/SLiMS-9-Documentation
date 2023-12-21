@@ -74,6 +74,7 @@ const BIBLIOGRAPHY_BEFORE_DELETE = 'bibliography_before_delete';
 const BIBLIOGRAPHY_AFTER_DELETE = 'bibliography_after_delete';
 const BIBLIOGRAPHY_CUSTOM_FIELD_DATA = 'advance_custom_field_data';
 const BIBLIOGRAPHY_CUSTOM_FIELD_FORM = 'advance_custom_field_form';
+const BIBLIOGRAPHY_BEFORE_DATAGRID_OUTPUT = 'bibliography_before_datagrid_output';
 const CIRCULATION_AFTER_SUCCESSFUL_TRANSACTION = 'circulation_after_successful_transaction';
 const MEMBERSHIP_INIT = 'membership_init';
 const MEMBERSHIP_BEFORE_UPDATE = 'membership_before_update';
@@ -81,6 +82,9 @@ const MEMBERSHIP_AFTER_UPDATE = 'membership_after_update';
 const MEMBERSHIP_BEFORE_SAVE = 'membership_before_save';
 const MEMBERSHIP_AFTER_SAVE = 'membership_after_save';
 const OVERDUE_NOTICE_INIT = 'overduenotice_init';
+const DUEDATE_NOTICE_INIT = 'duedate_init';
+const MODULE_MAIN_MENU_INIT = 'module_main_menu_init';
+const OAI2_INIT = 'oai2_init';
 ```
 Daftar diatas merupakan operasi hook yang terdaftar secara default di sistem plugin SLiMS. Namun ada beberapa yang tidak terdaftar namun tetap dapat bekerja dengan baik, berikut penjelasannya:
 1. ``` ADMIN_SESSION_AFTER_START ``` : hook akan bekerja ketika sesi login admin dimulaui.
@@ -92,12 +96,13 @@ Daftar diatas merupakan operasi hook yang terdaftar secara default di sistem plu
 7. ``` BIBLIOGRAPHY_AFTER_UPDATE ``` : hook ini beroperasi setelah proses pembaharuan data bibliografi dimulai.
 8. ``` BIBLIOGRAPHY_AFTER_SAVE ``` : hook ini beroperasi setelah proses penyimpanan data bibliografi dimulai.
 9. ``` BIBLIOGRAPHY_CUSTOM_FIELD_DATA ``` : hook ini merupakan operasi yang digunakan untuk mendaftarkan data ruas tambahan secara mahir.
-9. ``` BIBLIOGRAPHY_CUSTOM_FIELD_FORM ``` : hook ini merupakan operasi yang digunakan untuk mendaftarkan ruas tambahan secara mahir.
-10. ``` MEMBERSHIP_INIT ``` : tidak berbeda jauh dengan ``` BIBLIOGRAPHY_INIT ``` hanya saja ini berjalan di modul **membership**
-11. ``` MEMBERSHIP_BEFORE_UPDATE ``` : hook ini mirip seperti ``` BIBLIOGRAPHY_BEFORE_UPDATE ```. Namun hanya pada modul **membership**.
-12. ``` MEMBERSHIP_BEFORE_SAVE ``` : hook ini mirip seperti ``` BIBLIOGRAPHY_BEFORE_SAVE ```. Namun hanya pada modul **membership**.
-13. ``` MEMBERSHIP_AFTER_UPDATE ``` : hook ini mirip seperti ``` BIBLIOGRAPHY_AFTER_UPDATE ```. Namun hanya pada modul **membership**.
-14. ``` MEMBERSHIP_AFTER_SAVE ``` : hook ini mirip seperti ``` BIBLIOGRAPHY_AFTER_SAVE ```. Namun hanya pada modul **membership**.
+10. ``` BIBLIOGRAPHY_CUSTOM_FIELD_FORM ``` : hook ini merupakan operasi yang digunakan untuk mendaftarkan ruas tambahan secara mahir.
+11. ``` MEMBERSHIP_INIT ``` : tidak berbeda jauh dengan ``` BIBLIOGRAPHY_INIT ``` hanya saja ini berjalan di modul **membership**
+12. ``` MEMBERSHIP_BEFORE_UPDATE ``` : hook ini mirip seperti ``` BIBLIOGRAPHY_BEFORE_UPDATE ```. Namun hanya pada modul **membership**.
+13. ``` MEMBERSHIP_BEFORE_SAVE ``` : hook ini mirip seperti ``` BIBLIOGRAPHY_BEFORE_SAVE ```. Namun hanya pada modul **membership**.
+14. ``` MEMBERSHIP_AFTER_UPDATE ``` : hook ini mirip seperti ``` BIBLIOGRAPHY_AFTER_UPDATE ```. Namun hanya pada modul **membership**.
+15. ``` MEMBERSHIP_AFTER_SAVE ``` : hook ini mirip seperti ``` BIBLIOGRAPHY_AFTER_SAVE ```. Namun hanya pada modul **membership**.
+16. ``` OAI2_INIT ``` : hook ini berjalan pada file oai2.php pada halaman utama, dapat digunakan untuk memodifikasi process pertukaran data melalui protokol oai-pmh
 
 Berikut ini cara penggunaan hook yang tersedia pada daftar diatas:
 ```php 
@@ -131,6 +136,8 @@ Operasi ini merupakan cara yang digunakan untuk memodifikas tampilan halaman OPA
 $plugins->registerMenu('opac', 'member', __DIR__ . '/member.inc.php');
 // atau
 Plugins::menu('opac', 'member', __DIR__ . '/member.inc.php');
+// atau
+Plugins::opac('member', __DIR__ . '/member.inc.php');
 ```
 Penjelasan paramter pada fungsi `registerMenu()`:
 1. `opac` : ini menandakan bahwa anda mendaftarkan menu/path baru pada OPAC.
@@ -151,6 +158,8 @@ Tak berbeda dengan sebelumnya, bagian ini merupakan penjelasan bagaimana menamba
 $plugins->registerMenu('membership', 'Bebas Pustaka', __DIR__ . '/sayabebas.inc.php');
 // atau
 Plugins::menu('membership', 'Bebas Pustaka', __DIR__ . '/sayabebas.inc.php');
+// atau
+Plugins::membership('Bebas Pustaka', __DIR__ . '/sayabebas.inc.php');
 ```
 Penjelasan paramter pada fungsi `registerMenu()`:
 1. `membership` : ini menandakan bahwa anda mendaftarkan/merubah menu baru pada modul membership. Anda dapat mendaftarkan pada modul yang lain selama modul itu tersedia dan aktif.
