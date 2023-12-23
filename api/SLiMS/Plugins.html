@@ -215,6 +215,15 @@
             </tr>
                     <tr>
                 <td>
+                                                                                                                        BIBLIOGRAPHY_BEFORE_DATAGRID_OUTPUT
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
                                                                                                                         CIRCULATION_AFTER_SUCCESSFUL_TRANSACTION
                                     </td>
                 <td class="last">
@@ -288,6 +297,15 @@
                     <tr>
                 <td>
                                                                                                                         MODULE_MAIN_MENU_INIT
+                                    </td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>
+                                                                                                                        OAI2_INIT
                                     </td>
                 <td class="last">
                     <p><em></em></p>
@@ -439,7 +457,7 @@
                     void
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_register">register</a>(string $hook, <abbr title="SLiMS\closure">closure</abbr> $callback)
+                    <a href="#method_register">register</a>(string $hook, <abbr title="SLiMS\closure">closure</abbr> $callback, $sequence = 9999)
         
                                             <p><p>A method to listing hook into list</p></p>                </div>
                 <div class="col-md-2"></div>
@@ -449,7 +467,7 @@
                     void
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_registerHook">registerHook</a>(string $hook, <abbr title="SLiMS\closure">closure</abbr> $callback)
+                    <a href="#method_registerHook">registerHook</a>(string $hook, <abbr title="SLiMS\closure">closure</abbr> $callback, $sequence = 9999)
         
                                             <p><p>A shortcut to register method</p></p>                </div>
                 <div class="col-md-2"></div>
@@ -459,7 +477,7 @@
                     static&nbsp;
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_hook">hook</a>($hook, $callback)
+                    <a href="#method_hook">hook</a>($hook, $callback, $sequence = 9999)
         
                                             <p><p>shortcut to 'registerHook'</p></p>                </div>
                 <div class="col-md-2"></div>
@@ -540,7 +558,7 @@ submenut.</p></p>                </div>
                     
                 </div>
                 <div class="col-md-8">
-                    <a href="#method_registerAutoload">registerAutoload</a>($directoryToAutoload)
+                    <a href="#method_registerAutoload">registerAutoload</a>()
         
                                             <p><p>Seperate root composer ('slims-plugin') detector
 and plugin base composer (vendor inside each plugin).</p></p>                </div>
@@ -662,7 +680,7 @@ per module via static method call.</p></p>                </div>
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 74</div>
+        <div class="location">at line 76</div>
         <code>                    
     <strong>__construct</strong>(null $location = null)
         </code>
@@ -695,7 +713,7 @@ per module via static method call.</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getInstance">
-        <div class="location">at line 79</div>
+        <div class="location">at line 81</div>
         <code>        static            <a href="../SLiMS/Plugins.html"><abbr title="SLiMS\Plugins">Plugins</abbr></a>
     <strong>getInstance</strong>()
         </code>
@@ -728,7 +746,7 @@ per module via static method call.</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_addLocation">
-        <div class="location">at line 90</div>
+        <div class="location">at line 92</div>
         <code>                    <a href="../SLiMS/Plugins.html"><abbr title="SLiMS\Plugins">Plugins</abbr></a>
     <strong>addLocation</strong>(array|string $location)
         </code>
@@ -770,7 +788,7 @@ per module via static method call.</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_isDeep">
-        <div class="location">at line 255</div>
+        <div class="location">at line 257</div>
         <code>                    bool
     <strong>isDeep</strong>(string $location)
         </code>
@@ -812,7 +830,7 @@ per module via static method call.</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getPlugins">
-        <div class="location">at line 265</div>
+        <div class="location">at line 267</div>
         <code>                    array
     <strong>getPlugins</strong>()
         </code>
@@ -845,7 +863,7 @@ per module via static method call.</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getActive">
-        <div class="location">at line 277</div>
+        <div class="location">at line 279</div>
         <code>                    array
     <strong>getActive</strong>()
         </code>
@@ -877,7 +895,7 @@ per module via static method call.</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_isActive">
-        <div class="location">at line 284</div>
+        <div class="location">at line 286</div>
         <code>                    bool
     <strong>isActive</strong>($id)
         </code>
@@ -920,7 +938,7 @@ per module via static method call.</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_loadPlugins">
-        <div class="location">at line 296</div>
+        <div class="location">at line 298</div>
         <code>                    void
     <strong>loadPlugins</strong>()
         </code>
@@ -952,9 +970,9 @@ per module via static method call.</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_register">
-        <div class="location">at line 310</div>
+        <div class="location">at line 312</div>
         <code>                    void
-    <strong>register</strong>(string $hook, <abbr title="SLiMS\closure">closure</abbr> $callback)
+    <strong>register</strong>(string $hook, <abbr title="SLiMS\closure">closure</abbr> $callback, $sequence = 9999)
         </code>
     </h3>
     <div class="details">    
@@ -978,6 +996,11 @@ per module via static method call.</p></p>                </div>
                 <td>$callback</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td></td>
+                <td>$sequence</td>
+                <td></td>
+            </tr>
             </table>
 
             
@@ -999,9 +1022,9 @@ per module via static method call.</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_registerHook">
-        <div class="location">at line 322</div>
+        <div class="location">at line 329</div>
         <code>                    void
-    <strong>registerHook</strong>(string $hook, <abbr title="SLiMS\closure">closure</abbr> $callback)
+    <strong>registerHook</strong>(string $hook, <abbr title="SLiMS\closure">closure</abbr> $callback, $sequence = 9999)
         </code>
     </h3>
     <div class="details">    
@@ -1025,6 +1048,11 @@ per module via static method call.</p></p>                </div>
                 <td>$callback</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td></td>
+                <td>$sequence</td>
+                <td></td>
+            </tr>
             </table>
 
             
@@ -1046,9 +1074,9 @@ per module via static method call.</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_hook">
-        <div class="location">at line 330</div>
+        <div class="location">at line 337</div>
         <code>        static            
-    <strong>hook</strong>($hook, $callback)
+    <strong>hook</strong>($hook, $callback, $sequence = 9999)
         </code>
     </h3>
     <div class="details">    
@@ -1072,6 +1100,11 @@ per module via static method call.</p></p>                </div>
                 <td>$callback</td>
                 <td></td>
             </tr>
+                    <tr>
+                <td></td>
+                <td>$sequence</td>
+                <td></td>
+            </tr>
             </table>
 
             
@@ -1084,7 +1117,7 @@ per module via static method call.</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_registerMenu">
-        <div class="location">at line 345</div>
+        <div class="location">at line 352</div>
         <code>                    void
     <strong>registerMenu</strong>(string $module_name, string $label, string $path, string $description = null)
         </code>
@@ -1142,7 +1175,7 @@ submenut.</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_menu">
-        <div class="location">at line 364</div>
+        <div class="location">at line 371</div>
         <code>        static            
     <strong>menu</strong>($module_name, $label, $path, $description = null)
         </code>
@@ -1190,7 +1223,7 @@ submenut.</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_registerModule">
-        <div class="location">at line 378</div>
+        <div class="location">at line 385</div>
         <code>                    void
     <strong>registerModule</strong>(string $module_name, string $path, string $description = &#039;&#039;, string $callback_priv = &#039;&#039;)
         </code>
@@ -1247,7 +1280,7 @@ submenut.</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_module">
-        <div class="location">at line 428</div>
+        <div class="location">at line 435</div>
         <code>        static            void
     <strong>module</strong>(string $module_name, string $path, string $description = &#039;&#039;, string $callback_priv = &#039;&#039;)
         </code>
@@ -1304,7 +1337,7 @@ submenut.</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_registerSearchEngine">
-        <div class="location">at line 439</div>
+        <div class="location">at line 446</div>
         <code>                    void
     <strong>registerSearchEngine</strong>(string $class_name)
         </code>
@@ -1346,7 +1379,7 @@ submenut.</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_registerSessionDriver">
-        <div class="location">at line 450</div>
+        <div class="location">at line 457</div>
         <code>                    void
     <strong>registerSessionDriver</strong>(string $class_name)
         </code>
@@ -1388,7 +1421,7 @@ submenut.</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_registerCommand">
-        <div class="location">at line 461</div>
+        <div class="location">at line 468</div>
         <code>                    void
     <strong>registerCommand</strong>(string $class_name)
         </code>
@@ -1430,9 +1463,9 @@ submenut.</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_registerAutoload">
-        <div class="location">at line 471</div>
+        <div class="location">at line 478</div>
         <code>                    
-    <strong>registerAutoload</strong>($directoryToAutoload)
+    <strong>registerAutoload</strong>()
         </code>
     </h3>
     <div class="details">    
@@ -1444,16 +1477,6 @@ submenut.</p></p>
 and plugin base composer (vendor inside each plugin).</p></p>                <p><p>The autoload.php will be call at plugin_container.php</p></p>        
         </div>
         <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td></td>
-                <td>$directoryToAutoload</td>
-                <td></td>
-            </tr>
-            </table>
-
             
             
             
@@ -1464,7 +1487,7 @@ and plugin base composer (vendor inside each plugin).</p></p>                <p>
             </div>
                     <div class="method-item">
                     <h3 id="method_getAutoload">
-        <div class="location">at line 477</div>
+        <div class="location">at line 485</div>
         <code>                    
     <strong>getAutoload</strong>($pluginPath)
         </code>
@@ -1498,7 +1521,7 @@ and plugin base composer (vendor inside each plugin).</p></p>                <p>
             </div>
                     <div class="method-item">
                     <h3 id="method_group">
-        <div class="location">at line 489</div>
+        <div class="location">at line 497</div>
         <code>        static            <a href="../SLiMS/GroupMenuOrder.html"><abbr title="SLiMS\GroupMenuOrder">GroupMenuOrder</abbr></a>
     <strong>group</strong>(string $group_name, <abbr title="SLiMS\closure">closure</abbr> $callback)
         </code>
@@ -1545,7 +1568,7 @@ and plugin base composer (vendor inside each plugin).</p></p>                <p>
             </div>
                     <div class="method-item">
                     <h3 id="method_setGroupName">
-        <div class="location">at line 497</div>
+        <div class="location">at line 505</div>
         <code>                    
     <strong>setGroupName</strong>($group_name)
         </code>
@@ -1579,7 +1602,7 @@ and plugin base composer (vendor inside each plugin).</p></p>                <p>
             </div>
                     <div class="method-item">
                     <h3 id="method_run">
-        <div class="location">at line 509</div>
+        <div class="location">at line 517</div>
         <code>        static            void
     <strong>run</strong>(string $hook, array $params = [])
         </code>
@@ -1626,7 +1649,7 @@ and plugin base composer (vendor inside each plugin).</p></p>                <p>
             </div>
                     <div class="method-item">
                     <h3 id="method_execute">
-        <div class="location">at line 513</div>
+        <div class="location">at line 522</div>
         <code>                    
     <strong>execute</strong>($hook, $params = [])
         </code>
@@ -1665,7 +1688,7 @@ and plugin base composer (vendor inside each plugin).</p></p>                <p>
             </div>
                     <div class="method-item">
                     <h3 id="method_use">
-        <div class="location">at line 530</div>
+        <div class="location">at line 545</div>
         <code>        static            
     <strong>use</strong>(string $handler_class)
         </code>
@@ -1699,7 +1722,7 @@ method to set up your class.</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_for">
-        <div class="location">at line 542</div>
+        <div class="location">at line 557</div>
         <code>                    
     <strong>for</strong>(<abbr title="SLiMS\closure">closure</abbr> $hooks)
         </code>
@@ -1733,7 +1756,7 @@ handler</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_getMenus">
-        <div class="location">at line 552</div>
+        <div class="location">at line 567</div>
         <code>                    array
     <strong>getMenus</strong>(null $module = null)
         </code>
@@ -1776,7 +1799,7 @@ handler</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_registerPages">
-        <div class="location">at line 582</div>
+        <div class="location">at line 597</div>
         <code>        static            void
     <strong>registerPages</strong>(string $pathToPages = &#039;pages&#039;)
         </code>
@@ -1831,7 +1854,7 @@ hierarchical directory.</p></p>                <p><p>Description :</p>
             </div>
                     <div class="method-item">
                     <h3 id="method___callStatic">
-        <div class="location">at line 654</div>
+        <div class="location">at line 671</div>
         <code>        static            void|object
     <strong>__callStatic</strong>(string $method, array $arguments)
         </code>

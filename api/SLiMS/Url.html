@@ -96,21 +96,6 @@
             
         
     
-            <h2>Properties</h2>
-
-            <table class="table table-condensed">
-                    <tr>
-                <td class="type" id="property_forceHttps">
-                    static                                                            bool
-                                                                                
-                                    </td>
-                <td>$forceHttps</td>
-                <td class="last"><p>If SLiMS behind reverse proxy
-you must set this property to true</p></td>
-                <td></td>
-            </tr>
-            </table>
-
     
             <h2>Methods</h2>
 
@@ -211,6 +196,39 @@ from RCE etc, via URL.</p></p>                </div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isAdmin">isAdmin</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isOpac">isOpac</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_inXml">inXml</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     static&nbsp;string|null
                 </div>
                 <div class="col-md-8">
@@ -249,7 +267,7 @@ from RCE etc, via URL.</p></p>                </div>
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_getDomain">
-        <div class="location">at line 51</div>
+        <div class="location">at line 43</div>
         <code>        static            string
     <strong>getDomain</strong>(bool $strict = true)
         </code>
@@ -291,7 +309,7 @@ from RCE etc, via URL.</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getPort">
-        <div class="location">at line 62</div>
+        <div class="location">at line 61</div>
         <code>        static            string
     <strong>getPort</strong>()
         </code>
@@ -355,7 +373,7 @@ from RCE etc, via URL.</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getPath">
-        <div class="location">at line 83</div>
+        <div class="location">at line 84</div>
         <code>        static            string
     <strong>getPath</strong>($callBack = &#039;&#039;)
         </code>
@@ -397,7 +415,7 @@ from RCE etc, via URL.</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getSelf">
-        <div class="location">at line 94</div>
+        <div class="location">at line 95</div>
         <code>        static            string
     <strong>getSelf</strong>($callBack = &#039;&#039;)
         </code>
@@ -439,7 +457,7 @@ from RCE etc, via URL.</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getQuery">
-        <div class="location">at line 106</div>
+        <div class="location">at line 107</div>
         <code>        static            string
     <strong>getQuery</strong>(string $callBack = &#039;&#039;)
         </code>
@@ -481,7 +499,7 @@ from RCE etc, via URL.</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getReferer">
-        <div class="location">at line 115</div>
+        <div class="location">at line 116</div>
         <code>        static            string
     <strong>getReferer</strong>()
         </code>
@@ -514,7 +532,7 @@ from RCE etc, via URL.</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_isValid">
-        <div class="location">at line 124</div>
+        <div class="location">at line 125</div>
         <code>        static            bool
     <strong>isValid</strong>(string $url)
         </code>
@@ -557,7 +575,7 @@ from RCE etc, via URL.</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_isSelf">
-        <div class="location">at line 137</div>
+        <div class="location">at line 138</div>
         <code>        static            bool
     <strong>isSelf</strong>(string $url)
         </code>
@@ -600,8 +618,80 @@ from RCE etc, via URL.</p></p>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_parse">
+                    <h3 id="method_isAdmin">
+        <div class="location">at line 143</div>
+        <code>        static            
+    <strong>isAdmin</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isOpac">
         <div class="location">at line 148</div>
+        <code>        static            
+    <strong>isOpac</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inXml">
+        <div class="location">at line 153</div>
+        <code>        static            
+    <strong>inXml</strong>()
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parse">
+        <div class="location">at line 164</div>
         <code>        static            string|null
     <strong>parse</strong>(string $url)
         </code>
@@ -643,7 +733,7 @@ from RCE etc, via URL.</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 163</div>
+        <div class="location">at line 179</div>
         <code>                    
     <strong>__construct</strong>(string $url)
         </code>
@@ -677,7 +767,7 @@ from RCE etc, via URL.</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method___call">
-        <div class="location">at line 168</div>
+        <div class="location">at line 184</div>
         <code>                    
     <strong>__call</strong>($method, $arguments)
         </code>

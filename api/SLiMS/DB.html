@@ -151,7 +151,7 @@ this Object.</p></p>                </div>
                 <div class="col-md-8">
                     <a href="#method_connection">connection</a>(string $name, string $driver = &#039;pdo&#039;)
         
-                                            <p><p>Connection profiling</p></p>                </div>
+                                            <p><p>Switching database connection</p></p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -175,6 +175,28 @@ this Object.</p></p>                </div>
                                     </div>
                 <div class="col-md-2"></div>
             </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_registerExtension">registerExtension</a>(string $name, string $class, object|null $instance = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method___callStatic">__callStatic</a>($method, $params)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
             </div>
 
 
@@ -183,7 +205,7 @@ this Object.</p></p>                </div>
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_getInstance">
-        <div class="location">at line 79</div>
+        <div class="location">at line 86</div>
         <code>        static            <a target="_blank" rel="noopener" href="https://www.php.net/PDO">PDO</a>|<abbr title="SLiMS\MySQLi">MySQLi</abbr>
     <strong>getInstance</strong>(string $driver = &#039;pdo&#039;, $connectionName = &#039;&#039;)
         </code>
@@ -231,7 +253,7 @@ based on database driver PDO | MySQLi</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_backup">
-        <div class="location">at line 108</div>
+        <div class="location">at line 116</div>
         <code>        static            <abbr title="Ifsnop\Mysqldump\Mysqldump">Mysqldump</abbr>
     <strong>backup</strong>()
         </code>
@@ -265,7 +287,7 @@ this Object.</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_connection">
-        <div class="location">at line 121</div>
+        <div class="location">at line 128</div>
         <code>        static            void
     <strong>connection</strong>(string $name, string $driver = &#039;pdo&#039;)
         </code>
@@ -275,7 +297,7 @@ this Object.</p></p>
             
 
         <div class="method-description">
-                            <p><p>Connection profiling</p></p>                        
+                            <p><p>Switching database connection</p></p>                        
         </div>
         <div class="tags">
                             <h4>Parameters</h4>
@@ -312,7 +334,7 @@ this Object.</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_hasBackup">
-        <div class="location">at line 142</div>
+        <div class="location">at line 149</div>
         <code>        static            bool
     <strong>hasBackup</strong>($by = self::BACKUP_BASED_ON_DAY)
         </code>
@@ -354,7 +376,7 @@ this Object.</p></p>
             </div>
                     <div class="method-item">
                     <h3 id="method_getCredential">
-        <div class="location">at line 195</div>
+        <div class="location">at line 205</div>
         <code>        static            
     <strong>getCredential</strong>(string $name)
         </code>
@@ -374,6 +396,89 @@ this Object.</p></p>
                     <tr>
                 <td>string</td>
                 <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_registerExtension">
+        <div class="location">at line 225</div>
+        <code>        static            
+    <strong>registerExtension</strong>(string $name, string $class, object|null $instance = null)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$class</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>object|null</td>
+                <td>$instance</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___callStatic">
+        <div class="location">at line 254</div>
+        <code>        static            
+    <strong>__callStatic</strong>($method, $params)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$params</td>
                 <td></td>
             </tr>
             </table>

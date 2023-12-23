@@ -173,6 +173,17 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    static&nbsp;bool|Generator
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_isExists">isExists</a>(<abbr title="SLiMS\string|array">string|array</abbr> $nameOrNames)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     static&nbsp;void
                 </div>
                 <div class="col-md-8">
@@ -180,6 +191,17 @@
         
                                             <p><p>Create some configuration file
 into <slims-root>/config/</p></p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8">
+                    <a href="#method_createFromSample">createFromSample</a>(string $configName)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -201,7 +223,7 @@ to database</p></p>                </div>
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 34</div>
+        <div class="location">at line 35</div>
         <code>                    
     <strong>__construct</strong>()
         </code>
@@ -225,7 +247,7 @@ to database</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getInstance">
-        <div class="location">at line 45</div>
+        <div class="location">at line 46</div>
         <code>        static            <a href="../SLiMS/Config.html"><abbr title="SLiMS\Config">Config</abbr></a>|null
     <strong>getInstance</strong>()
         </code>
@@ -257,7 +279,7 @@ to database</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_load">
-        <div class="location">at line 57</div>
+        <div class="location">at line 58</div>
         <code>                    
     <strong>load</strong>($directory, array $ignore = [])
         </code>
@@ -295,7 +317,7 @@ to database</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_loadFromDatabase">
-        <div class="location">at line 76</div>
+        <div class="location">at line 75</div>
         <code>                    
     <strong>loadFromDatabase</strong>()
         </code>
@@ -318,7 +340,7 @@ to database</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_get">
-        <div class="location">at line 100</div>
+        <div class="location">at line 99</div>
         <code>                    mixed|null
     <strong>get</strong>($key, null $default = null)
         </code>
@@ -365,7 +387,7 @@ to database</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getGlobal">
-        <div class="location">at line 130</div>
+        <div class="location">at line 129</div>
         <code>                    array|null
     <strong>getGlobal</strong>(string $key, <abbr title="SLiMS\stirng">stirng</abbr> $default = null)
         </code>
@@ -412,7 +434,7 @@ to database</p></p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getFile">
-        <div class="location">at line 153</div>
+        <div class="location">at line 152</div>
         <code>        static            
     <strong>getFile</strong>(string $filename)
         </code>
@@ -444,8 +466,51 @@ to database</p></p>                </div>
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_isExists">
+        <div class="location">at line 157</div>
+        <code>        static            bool|Generator
+    <strong>isExists</strong>(<abbr title="SLiMS\string|array">string|array</abbr> $nameOrNames)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="SLiMS\string|array">string|array</abbr></td>
+                <td>$nameOrNames</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|Generator</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_create">
-        <div class="location">at line 166</div>
+        <div class="location">at line 178</div>
         <code>        static            void
     <strong>create</strong>(string $filename, string $content = &#039;&#039;)
         </code>
@@ -492,8 +557,42 @@ into <slims-root>/config/</p></p>
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_createFromSample">
+        <div class="location">at line 184</div>
+        <code>        static            
+    <strong>createFromSample</strong>(string $configName)
+        </code>
+    </h3>
+    <div class="details">    
+    
+            
+
+        <div class="method-description">
+                            <p class="no-description">No description</p>
+                    
+        </div>
+        <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$configName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_createOrUpdate">
-        <div class="location">at line 180</div>
+        <div class="location">at line 199</div>
         <code>        static            bool
     <strong>createOrUpdate</strong>(string $name, mixed $value)
         </code>
