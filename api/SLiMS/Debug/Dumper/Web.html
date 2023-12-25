@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>SLiMS\Debug\Handler\Cli | API</title>
+    <title>SLiMS\Debug\Dumper\Web | API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -19,7 +19,7 @@
 
     </head>
 
-    <body id="class" data-name="class:SLiMS_Debug_Handler_Cli" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
+    <body id="class" data-name="class:SLiMS_Debug_Dumper_Web" data-root-path="../../../" data-search-index-url="../../../doctum-search.json">
             <div id="content">
         <div id="left-column">
                 <div id="control-panel">
@@ -75,18 +75,18 @@
                         <div class="namespace-breadcrumbs">
             <ol class="breadcrumb">
                 <li><span class="label label-default">class</span></li>
-                        <li><a href="../../../SLiMS.html">SLiMS</a></li><li class="backslash">\</li><li><a href="../../../SLiMS/Debug.html">Debug</a></li><li class="backslash">\</li><li><a href="../../../SLiMS/Debug/Handler.html">Handler</a></li><li class="backslash">\</li><li>Cli</li>
+                        <li><a href="../../../SLiMS.html">SLiMS</a></li><li class="backslash">\</li><li><a href="../../../SLiMS/Debug.html">Debug</a></li><li class="backslash">\</li><li><a href="../../../SLiMS/Debug/Dumper.html">Dumper</a></li><li class="backslash">\</li><li>Web</li>
             </ol>
         </div>
                 <div id="page-content">
     <div class="page-header">
-        <h1>Cli    
+        <h1>Web    
             </h1>
     </div>
 
     
     <p>        class
-    <strong>Cli</strong>        extends <abbr title="Symfony\Component\VarDumper\Dumper\CliDumper">CliDumper</abbr>
+    <strong>Web</strong>        extends <abbr title="Symfony\Component\VarDumper\Dumper\HtmlDumper">HtmlDumper</abbr>
 </p>
 
         
@@ -102,20 +102,20 @@
 
             <table class="table table-condensed">
                     <tr>
-                <td class="type" id="property_defaultColors">
+                <td class="type" id="property_defaultOutput">
                     static                                                            
                                                                                 
                                     </td>
-                <td>$defaultColors</td>
+                <td>$defaultOutput</td>
                 <td class="last"></td>
                 <td></td>
             </tr>
                     <tr>
-                <td class="type" id="property_defaultOutput">
-                    static                                                            callable|resource|string|null
+                <td class="type" id="property_styles">
+                                        protected                                        
                                                                                 
                                     </td>
-                <td>$defaultOutput</td>
+                <td>$styles</td>
                 <td class="last"></td>
                 <td></td>
             </tr>
@@ -136,17 +136,6 @@
                                     </div>
                 <div class="col-md-2"></div>
             </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    void
-                </div>
-                <div class="col-md-8">
-                    <a href="#method_dumpLine">dumpLine</a>(int $depth, bool $endOfValue = false)
-        
-                                            <p class="no-description">No description</p>
-                                    </div>
-                <div class="col-md-2"></div>
-            </div>
             </div>
 
 
@@ -155,7 +144,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at line 36</div>
+        <div class="location">at line 37</div>
         <code>                    
     <strong>__construct</strong>($output = null, string $charset = null, int $flags = 0)
         </code>
@@ -190,54 +179,6 @@
             </table>
 
             
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_dumpLine">
-        <div class="location">at line 45</div>
-        <code>            protected        void
-    <strong>dumpLine</strong>(int $depth, bool $endOfValue = false)
-        </code>
-    </h3>
-    <div class="details">    
-    
-            
-
-        <div class="method-description">
-                            <p class="no-description">No description</p>
-                    
-        </div>
-        <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>int</td>
-                <td>$depth</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>bool</td>
-                <td>$endOfValue</td>
-                <td></td>
-            </tr>
-            </table>
-
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>void</td>
-            <td></td>
-        </tr>
-    </table>
-
             
             
             

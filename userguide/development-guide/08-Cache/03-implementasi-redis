@@ -1,0 +1,51 @@
+# Implementasi Cache dengan Redis
+Pada tulisan ini kita akan membahas tentang bagaimana mengimplementasi redis sebagai database cache di SLiMS menggunakan pustaka ```predis/predis```. Ada dua cara yang dapat anda gunakan.
+1. Memasang pustaka tersebut di folder utama SLiMS
+    ```bash
+    cd folder/slims/anda/
+    composer require predis/predis
+    ```
+2. Atau via folder plugins:
+    * Buat folder beranam redis_cache
+    * Buat file beranam redis_cache.plugin.php
+    * Masuk ke direktori tersebut dan install pustaka ```predis/predis```
+        ```bash
+        composer require predis/predis
+        ```
+## RedisCache
+1. Buka file redis_cache.plugin.php, lalu isikan sebagai berikut
+    ```php
+    <?php
+    /**
+    * Plugin Name: Redis Cache
+    * Plugin URI: -
+    * Description: Caching data
+    * Version: 1.0.0
+    * Author: <Ganti Nama Anda>
+    * Author URI: <Medsos Anda>
+    */
+
+    require __DIR__ . '/vendor/autoload.php';
+    require __DIR__ . '/RedisCache.php';
+    ```
+2. Buat sebuah file beranama RedisCache.php, lalu isi dari file tersebut dapat anda sali dari [laman sebelumnya](/development-guide/Cache/membuat-provider)
+3. Buka file config/cache.php
+4. Ubah konfigurasi cache Redis dari:
+    ```php
+    /*'Redis' => [
+        'class' => <another-cache-provider-namespace>
+        'options' => [
+            'prefix' => 'SLiMSCache:'
+        ]
+    ]*/
+    ```
+5. Menjadi:
+    ```php
+    'Redis' => [
+        'class' => RedisCache::class,
+        'options' => [
+            'prefix' => 'SLiMSCache:'
+            'ttl' => 300
+        ]
+    ]
+    ```
