@@ -9,8 +9,8 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background-color: white;
-  color: black !important;
+  /* background-color: white;
+  color: black !important; */
 }
 
 @media screen and (max-width: 996px) {

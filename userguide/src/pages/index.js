@@ -9,10 +9,9 @@ import Footer from '@theme/Footer';
 import styles from './index.module.css';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <section>
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      <header className={clsx('hero', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">SLiMS Documentation</h1>
           <p className="hero__subtitle">What is your role?</p>
@@ -26,25 +25,12 @@ function HomepageHeader() {
           </div>
         </div>
       </header>
-      <Footer style="position:fiexed"/>
+      <Footer/>
     </section>
   );
 }
 
-// export default function Home() {
-//   const {siteConfig} = useDocusaurusContext();
-//   return (
-//     <Layout title={`Welcome to SLiMS Documentation`}description="SLiMS Documentation such as APi, User Guide, How To, Development guide, Code documentation etc">
-//       <Head>
-//         <meta property="keywords" content="SLiMS Documentation, SLiMS Doc"/>
-//         <meta property="og:image" content="https://slims.web.id/web/site/assets/files/1023/slims9small.png"/>
-//       </Head>
-//     </Layout>
-//   );
-// }
-
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <LayoutProvider>
       <Head>
