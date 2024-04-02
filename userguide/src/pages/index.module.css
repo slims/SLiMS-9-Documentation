@@ -4,10 +4,13 @@
  */
 
 .heroBanner {
+  height: 100vh;
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  background-color: white;
+  color: black !important;
 }
 
 @media screen and (max-width: 996px) {
@@ -21,3 +24,19 @@
   align-items: center;
   justify-content: center;
 }
+.navbarHideable {
+  transition: transform var(--ifm-transition-fast) ease;
+}
+
+.navbarHidden {
+  transform: translate3d(0, calc(-100% - 2px), 0);
+}
+
+.navbarHideable {
+  transition: transform var(--ifm-transition-fast) ease;
+}
+
+.navbarHidden {
+  transform: translate3d(0, calc(-100% - 2px), 0);
+}
+

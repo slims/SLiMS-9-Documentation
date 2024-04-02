@@ -79,7 +79,7 @@ const config = {
             title: 'SLiMS',
             logo: {
                 alt: 'SLiMS Logo',
-                src: 'https://camo.githubusercontent.com/7421e31ba39c8515a134363c478a3496837b903fe65f13486a3b02eb46580291/68747470733a2f2f6c68342e676f6f676c6575736572636f6e74656e742e636f6d2f344d4a7037496a5551724d305a2d487a475a494b68464b31413272313753337a486866356a5f734a7a454a33636d525576454536574f584a6e775a5a6c7a4e414b3643435432357a6b5f7947487a4a3730796e4c4146327063377a6a6e55693454312d30666f7677784f4a427a30724255417652434a63777957647a49454e62543062626b757435',
+                src: 'https://slims.web.id/web/site/templates/assets/images/logo.png',
             },
             items: [{
                     type: 'doc',
