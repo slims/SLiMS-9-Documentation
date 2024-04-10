@@ -10,7 +10,7 @@ keywords: [plugins slims, slims plugin, dokumentasi plugin SLiMS]
 Sistem plugin merupakan inovasi yang dihadirkan sejak versi SLiMS Bulian 9.3.0 oleh Mas [Ido Alit](https://github.com/idoalit/). Tujuan dari inovasi ini yaitu untuk mempermudah kerja dari pengembang SLiMS (dari sisi pengguna atau pihak yang membantu pengguna) dalam melakukan proses upgrade SLiMS dari versi sekarang ke versi yang lebih mutakhir.
 
 ### Persiapan
-Hal yang perlu disiapkan (minimal) untuk membuat sebuah plugin seperti:
+Hal yang perlu disiapkan (minimal) untuk membuat sebuah plugi n seperti:
 * Pengetahuan mengenai bahasa pemrograman **HTML (termasuk CSS), PHP, JS, dan SQL**
 * Pemahaman mengenai penggunaan library dan tool seperti **composer (opsional)**
 
