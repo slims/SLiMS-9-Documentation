@@ -9,27 +9,27 @@ SLiMS hadir dengan berbagai macam fungsi PHP yang dapat digunakan untuk mempermu
 * [debugBox](#debugbox)
 * [dd](#dd)
 * [dump](#dump)
-* [getArrayData](#getArrayData)
-* [isCli](#isCli)
-* [isDev](#isDev)
+* [getArrayData](#getarraydata)
+* [isCli](#iscli)
+* [isDev](#isdev)
 * [ip](#ip)
-* [writeLog](#writeLog)
-* [xssFree](#writeLog)
+* [writeLog](#writelog)
+* [xssFree](#xssfree)
 ### Angka dan Huruf
 * [currency](#currency)
 * [number](#number)
 * [v](#v)
 ### Tampilan
-* [commonList](#commonList)
-* [jQuery](#jQuery)
+* [commonList](#commonlist)
+* [jQuery](#jquery)
 * [toastr](#toastr)
 ### Http
 #### Pengalihan
 * [flash](#flash)
 * [redirect](#redirect)
 #### Url
-* [pluginUrl](#pluginUrl)
-* [pluginUrl](#pluginUrl)
+* [pluginUrl](#pluginurl)
+* [pluginNavigateTo](#pluginnavigateto)
 
 ## Sistem
 ##### ```__()```
@@ -123,7 +123,113 @@ untuk dapat mengakses konten yang berada pada indeks ```isi1``` maka kita perlu 
 ```php
 echo $array['level_1']['level_2']['level_3']['isi1'];
 ```
-cara pemanggilan diatas akan berdampak galat apabila kita salah memasukan indeks pada level tertentu. Maka dengan mengguna fungsi ini kita dapat menentukan ```output``` apa yang akan keluar jika apa yang kita cari tidak ditemukan. Misal saja kita salah memasukan indeks ```array```
+cara pemanggilan diatas akan berdampak galat apabila kita salah memasukan indeks pada level tertentu. Maka dengan mengguna fungsi ini kita dapat menentukan ```output``` apa yang akan keluar jika apa yang kita cari tidak ditemukan. Misal saja kita salah memasukan indeks ```array```.
 ```php
-echo $array['level_1']['level_20']['level_3']['isi1']; // akan muncul error undefine index level_20
-``` 
+echo $array['level_1']['level_20']['level_3']['isi1']; // akan muncul error undefined index level_20
+
+// jika anda ingin menghindarinya maka perlu membuat seperti ini:
+$default = '';
+if (isset($array['level_1'])) {
+        if (isset($array['level_1']['level_2'])) {
+                if (isset($array['level_1']['level_2']['level_3'])) {
+                        if (isset($array['level_1']['level_2']['level_3']['isi1'])) {
+                               $value = $array['level_1']['level_2']['level_3']['isi1']; 
+                        }         
+                }        
+        }
+}
+echo $value??$default;
+// atau dengan versi yang lainnya
+```
+Maka dengan fungsi ini anda dapat menghindari penulisan skrip seperti diatas dengan ini:
+```php
+echo getArrayData($array, 'level_1.level_2.level_3.isi1'); // output satu jika tidak ditemukan maka akan kosong
+
+// atau jika anda ingin default output yang lain maka anda dapat menulis seperti ini
+echo getArrayData($array, 'level_1.level_20.level_3.isi1', 'output_lain'); // output satu jika tidak ditemukan maka akan kosong
+```
+
+##### ```isCli()```
+fungsi yang digunakan untuk mengetahui apakah lingkungan kerja yang sedang anda gunakan apakah berada di ```Cli```(***Command Line Interface***) atau tidak.
+```php
+if (isCli()) {
+  // tulis kode anda disini
+}
+```
+
+##### ```isDev()```
+fungsi ini digunakan untuk mengetahui kondisi ```environment```/lingkungan SLiMS anda saat ini apakah ada dalam lingkungan ```development```/pengembangan atau ```production```/produksi.
+```php
+if (isDev()) {
+   // kode yang ada didalam kondisi ini akan berjalan
+   // jika SLiMS dalam mode enviroment development
+}
+```
+
+##### ```ip()```
+fungsi ini digunakan untuk mendapatkan alamat ip yang mengakses SLiMS anda dengan memanfaatkan pustaka ```slims/ip```. Selain mengambil alamat ip fungsi ini juga dapat dikondisikan ketika SLiMS anda berada di balik ```server proxy```.
+```php
+// mendapatkan informasi alamat ip 
+echo ip()->get();
+
+// atau cukup
+echo ip(); // contoh : 36.125.25.100
+
+// mendeteksi apakah SLiMS berada di balik server Proxy atau tidak.
+if (ip()->isBehindProxy()) {
+     // tulisak kode ingin anda terapkan
+     // jika berada di balik server proxy
+}
+
+// mendapatkan alamat ip server proxy
+echo ip()->getProxyIp();
+
+// menetapkan informasi mengenai bagaimana mendapat
+// alamat ip pengakses (secara bawaan: REMOTE_ADDR)
+ip()->setSourceRemoteIp('CF-Connecting-IP'); // contoh disini menggunakan Cloud Flare
+
+// menetapkan informasi bagaimana mengetahui apakah
+// berada di balik server proxy atau tidak (secara bawaan: HTTP_X_FORWARDED_FOR)
+ip()->setProxyKey('CF-Connecting-IP');
+```
+
+##### ```writeLog()```
+fungsi ini digunakan untuk membuat catatan sistem. Berikut penggunaannya:
+
+```php
+writeLog('tipe log, contoh system|member|staff', 'id bisa merujuk ke user_id dll', 'lokasi dimana catatan dibuat. Contoh: bibliography|circulation', 'pesan yang ingin dicatat');
+```
+
+##### ```xssFree()```
+fungsi ini berguna untuk memfilter karakter agar terbeas dari karakter html.
+```php
+echo xssFree('<h1>Hai</h1>'); // output : Hai
+```
+
+## Angka dan Huruf
+##### ```currency()```
+fungsi berguna untuk memformat sebuah karakter angka menjadi angka yang lengkap dengan format mata uang, menggunakan pustaka ```slims/currency``` yang bergantung dengan ekstensi ```php-intl``` berdasarkan bahasa yang digunakan oleh SLiMS atau jenis mata uang yang diatur pada submenu ```currency settings``` pada modul sistem.
+```php
+echo currency(3000); // output : Rp. 3.000,00
+
+// apabila ekstensi php-intl tidak tersedia
+// maka outputnya akan dikembalikan seperti apa yang diinputkan
+echo currency(3000); // output : 3000
+```
+##### ```number()```
+fungsi ini digunakan untuk memformat sebuah inputan menjadi tipe data tertentu seperti, ```float```,```currency```,```integer```,```decimal```.
+
+```php
+number("3.125")->toFloat(); // output: 3.125
+number(3125)->toCurrency(); // output: Rp. 3.125,00
+number(3.125)->toInteger(); // output: 3
+number(3125)->toDecimal(decimalNumber: 3, decimalSeparator: '.', thousand: ','); // output: 3,125.000
+```
+
+Selain mengubah sebuah inputan menjadi tipe data tertentu maka fungsi ini juga bisa digunakan  untuk mengetahui bagaimana mengambil posisi, memecah  dari karakter yang diinputkan.
+
+```php
+$input = number(30000);
+
+echo $input->len(); // output : 5
+```
