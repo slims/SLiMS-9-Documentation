@@ -1,7 +1,7 @@
 ---
 title: Pengantar
 description: Sistem plugin merupakan inovasi yang dihadirkan sejak versi SLiMS Bulian 9.3.0 oleh Mas....
-image: https://slims.web.id/web/site/templates/assets/images/logo.png
+image: https://static.slims.web.id/docs/4.1-plugin.png
 keywords: [plugins slims, slims plugin, dokumentasi plugin SLiMS]
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: OPAC
+image: https://static.slims.web.id/docs/3.1-alur-opac.png
 description: Proses kerja dari OPAC SLiMS
 keywords: [SLiMS Flowchart, OPAC Flow, SLiMS Flow]
 ---

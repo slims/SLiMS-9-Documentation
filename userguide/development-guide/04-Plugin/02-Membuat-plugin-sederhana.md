@@ -1,3 +1,9 @@
+---
+title: Membuat Plugin Sederhana
+description: Kita mulai dengan hal yang mudah terlebih dahulu. Berikut langkahnya....
+image: https://static.slims.web.id/docs/4.2-buat-pugin-hello-world.png
+keywords: [plugins slims, slims plugin, dokumentasi plugin SLiMS]
+---
 # Membuat plugin "Hello World"
 Kita mulai dengan hal yang mudah terlebih dahulu. Berikut langkahnya
 1. Buatlah sebuah file bernama `hello_world.plugin.php` pada folder `plugins/` yang ada di folder utama SLiMS anda.

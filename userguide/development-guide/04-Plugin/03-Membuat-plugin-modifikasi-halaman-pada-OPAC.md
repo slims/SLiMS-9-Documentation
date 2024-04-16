@@ -1,3 +1,10 @@
+---
+title: Membuat plugin modifikasi halaman tertentu di OPAC
+### Pengantar
+description: Kadang kala kita membutuhkan fitur yang tidak tersedia secara bawaan di SLiMS seperti bebas pustaka dll. Beruntung nya SLiMS terkini sudah....
+image: https://static.slims.web.id/docs/4.3-buat-pugin-opac.png
+keywords: [plugins slims, slims plugin, dokumentasi plugin SLiMS]
+---
 # Membuat plugin modifikasi halaman tertentu di OPAC
 ### Pengantar
 Kadang kala kita membutuhkan fitur yang tidak tersedia secara bawaan di SLiMS seperti bebas pustaka dll. Beruntung nya SLiMS terkini sudah mendukung hal tersebut dimana anda dimudahkan untuk proses pembuatannya yaitu dengan sistem plugin. Berdasarkan artikel sebelumnya sistem plugin SLiMS **mendukung manipulasi/membuat** halaman yang **sudah/belum** ada di SLiMS menjadi halaman kustom yang kita inginkan tanpa perlu repot mengutak-utik file aslinya.

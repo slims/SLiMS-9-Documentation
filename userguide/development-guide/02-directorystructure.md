@@ -1,3 +1,7 @@
+---
+image: https://static.slims.web.id/docs/2-structure-directory.png
+description: Halaman ini berisi informais mengenai folder-folder yang ada di SLiMS.
+---
 # Struktur Direktori
 ```bash
 /your-slims-path/

@@ -1,3 +1,7 @@
+---
+image: https://static.slims.web.id/docs/1-pengantar.png
+description: Halaman ini berisi dokumentasi untuk membangun SLiMS anda menjadi seperti apa yang anda inginkan, seperti membuat datagrid, reportgrid, grid yang dapat di cetak dan formulr melalui sistem plugin secara native atau berbasis composer
+---
 # Preambul
 ### Pengantar
 Halaman ini berisi dokumentasi untuk membangun SLiMS anda menjadi seperti apa yang anda inginkan, seperti membuat datagrid, reportgrid, grid yang dapat di cetak dan formulr melalui sistem plugin secara native atau berbasis composer

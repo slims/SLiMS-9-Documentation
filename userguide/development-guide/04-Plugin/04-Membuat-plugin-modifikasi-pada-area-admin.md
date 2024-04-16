@@ -2,6 +2,7 @@
 title: Cara membuat plugin diarea admin
 description: Langkah-langkah membuat plugin untuk memodifikasi menu yang ada diarea admin
 keywords: [Plugin, Admin, SLiMS Plugin Admin]
+image: https://static.slims.web.id/docs/4.4-buat-pugin-admin.png
 ---
 # Membuat Plugin Modifikasi Pada Area Admin
 ### Pengantar

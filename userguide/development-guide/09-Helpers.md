@@ -20,13 +20,11 @@ SLiMS hadir dengan berbagai macam fungsi PHP yang dapat digunakan untuk mempermu
 * [number](#number)
 * [v](#v)
 ### Tampilan
-* [commonList](#commonlist)
-* [jQuery](#jquery)
 * [toastr](#toastr)
 ### Http
 #### Pengalihan
-* [flash](#flash)
 * [redirect](#redirect)
+* [flash](#flash)
 #### Url
 * [pluginUrl](#pluginurl)
 * [pluginNavigateTo](#pluginnavigateto)
@@ -229,7 +227,169 @@ number(3125)->toDecimal(decimalNumber: 3, decimalSeparator: '.', thousand: ',');
 Selain mengubah sebuah inputan menjadi tipe data tertentu maka fungsi ini juga bisa digunakan  untuk mengetahui bagaimana mengambil posisi, memecah  dari karakter yang diinputkan.
 
 ```php
-$input = number(30000);
+$input = number(31250);
 
+// mendapatkan panjang karakter
 echo $input->len(); // output : 5
+
+// mendapatkan posisi tertentu dari $input
+echo $input->get(0,3); // output : 312
+
+$input->chunk(2); // output array : [31,50]
+
+echo $input->mod(5); // output : 0
+```
+
+Selain posisi fungsi ini juga bisa membulatkan atau menyederhanakan angka.
+
+```php
+$input = number('3.8655');
+
+// pembulatan dengan angka desimal tertentu
+echo $input->round(); // output : 4
+
+// pembulatan dengan jumlah angka desimal tertentu
+echo $input->round(2); // output : 3.87
+
+// pembulatan keatas tanpa mempertimbangkan aturan desimal
+echo $input->ceil(); // output : 4
+```
+
+##### ```v()```
+fungsi ini digunakan untuk membuat karakter acak yang nanti akan digabungkan dengan nama file statis seperti file dengan ekstensi ```.js``` dan ```.css``` dengan tujuan untuk memperbaharui ***caching*** file statis di ***Web Browser***/Peramban Web. Tiap karakter yang dihasilkan akan tetap sama selama ***environment*** dalam mode ***production*** dan akan berubah ketika anda masuk ke dalam modul sistem pada menu pengaturan sistem karena pada ***event*** tersebut akan menghasilkan nomor acak pada konfigurasi ```$sysconf['static_file_version']``` yang dibutuhkan oleh fungsi ini.
+
+```php
+$script = '<script src="' . v('app.js') . '"/>';
+
+echo $script; // contoh output : <script src="app.js?v=a5f86"/>
+```
+
+## Tampilan
+##### ```toastr()```
+fungsi ini digunakan untuk menampilkan notifikasi khusus yang memanfaatkan pustaka javascript yaitu ```toastr```. Gaya yang ditampilkan seperti ```success```,```info```,```warning```, dan ```error```.
+
+```php
+toastr('Tulisa pesan anda disini')->success();
+
+// atau jika anda ingin judul notifikasi yang berbeda 
+toastr('Tulisa pesan anda disini')->success('Yay Berhasi');
+
+// metode success(), dapat diganti menjadi info(), warning(), dan error()
+
+// Apabila anda salah mengetikan gaya notifikasi nya
+// maka yang akan tampil adalah notifikasi bawaan dari
+// browser yang sedang digunakan.
+
+toastr('Tulisa pesan anda disini')->sukses();
+```
+
+## Http
+### Pengalihan
+##### ```redirect()```
+fungsi ini digunakan untuk mengalihkan suatu halaman ke halaman lain yang memanfaatkan pustaka ```slims/redirect```.
+
+```php
+// pengalihan ke laman lain
+redirect('https://foo.com');
+
+// pengalihan ke halaman tertentu didomain
+// yang sama
+redirect('/page/login');
+
+// Ke path/page tertentu di SLiMS
+redirect()->toPath('login'); // domain.com/?p=login
+
+// Mengalihkan dengan metode refresh
+redirect()->refresh('?p=login');
+
+// Mengalihkan ke halaman sebelumnya
+// misal akses dari halamanform $_POST dari ?p=member ke ?p=login
+redirect()->back();
+
+// menghalihkan dengan mengikutkan 
+// informasi response header
+redirect()->withHeader('X-Rate-Limit', 59)->to('/');
+// atau
+redirect()->withHeader([
+   ['X-Custom-Header', 'foo'],
+   ['X-Rate-Limit', 59]
+])->to('/');
+
+// mengalihkan halaman dengan meninggalkan pesan,
+// memanfaatkan pustaka slims/flash
+redirect()->withMessage('login_error', 'Maaf username dan password salah')->back();
+
+// mengalihkan halaman tertentu via pustaka jQuery SimbioAJAX
+redirect()->simbioAJAX('url yang akan dirujuk');
+
+// mengalihkan dengan metode http POST
+redirect()->simbioAJAX(url: 'url yang akan dirujuk', data: json_encode(['age' => 20, 'name' => 'Foo']));
+
+// mengalihkan pada selector tertentu
+redirect()->simbioAJAX(selector: '#preview', url: 'url yang akan dirujuk');
+
+// pada posisi tertentu
+redirect()->simbioAJAX(position: 'parent.', selector: '#preview', url: 'url yang akan dirujuk');
+
+// pengalihan dengan waktu delay dakan detik
+redirect()->simbioAJAX(timeout: 5, url: 'url yang akan dirujuk');
+```
+
+
+##### ```flash()```
+fungsi ini digunakan untuk menampilkan pesan sementara atau temporer ketika proses ```http``` telah selesai. Pada SLiMS ini digunakan ketika proses ```login``` tidak berhasil atau dapat digunakan untuk kebutuhan lain.
+
+```php
+$login = false;
+
+if ($login === false) {
+    flash('login_error', 'Maaf login tidak berhasil');
+    redirect()->back();
+}
+
+// mengecek apakah ada pesan login error atau tidak
+if (flash()->has($key = 'login_error')) {
+    echo flash()->get($key);
+}
+
+// atau jika anda ingin mengecek untuk lebih dari satu
+// pesan
+if ($key = flash()->inlcudes('wrong_password','csrf_failed','empty_field','captchaInvalid')) {
+    echo flash()->get($key);
+}
+
+// atau jika anda ingin menampilkan pesan dengan template
+// tertentu berdasarkan kategori seperti danger,warning,success, info
+if ($key = flash()->inlcudes('wrong_password','csrf_failed','empty_field','captchaInvalid')) {
+    flash()->danger($key); // ganti dengan gaya yang disebutkan diatas
+}
+```
+
+### Url
+##### ```pluginUrl()```
+fungsi ini berguna untuk membuat url pada plugin yang aktif/sedang digunakan.
+
+```php
+echo pluginUrl(); // output : /admin/plugin_container.php?mod=system&id=a86efea58....
+
+echo pluginUrl(['action' => 'delete']); // output : /admin/plugin_container.php?mod=system&id=a86efea58....&action=delete
+
+// mereset url dengan format plugin_container.php?id=<id>&mod=<mod>
+echo pluginUrl(reset: true);
+```
+
+##### ```pluginNavigateTo()```
+fungsi ini digunakan untuk menghasilkan url yang berkaitan dengan plugin yang sedang aktif baik berada dalam folder yang sama atau berbeda.
+
+```php
+/**
+ * Struktuer direktori
+ * /plugins
+ * --- /satu
+ * ------ satu.plugins.php
+ * ------ satu_menu_pertama.php
+ * ------ satu_menu_kedua.php
+ */
+// didalam file satu_menu_pertama.php
+redirect()->simbioAJAX(pluginNavigateTo('satu_menu_kedua.php')); // maka halaman akan teralihkan ke file satu_menu_kedua.php
 ```

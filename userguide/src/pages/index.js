@@ -35,7 +35,8 @@ export default function Home() {
     <LayoutProvider>
       <Head>
         <meta property="keywords" content="SLiMS Documentation, SLiMS Doc"/>
-        <meta property="og:image" content="https://slims.web.id/web/site/assets/files/1023/slims9small.png"/>
+        <meta property="og:image" content="https://static.slims.web.id/docs/0-base.png"/>
+        <meta property="twitter:image" content="https://static.slims.web.id/docs/0-base.png"/>
       </Head>
       <HomepageHeader />
     </LayoutProvider>

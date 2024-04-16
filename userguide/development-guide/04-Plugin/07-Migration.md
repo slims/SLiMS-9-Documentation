@@ -1,3 +1,9 @@
+---
+title: Migration
+description: Ini merupakan bagian dari fitur ```Plugin``` yang digunakan untuk melakukan proses migrasi basis data atau akrab dikenal sebagai Database Migr...
+keywords: [Migration,database,SLiMS]
+image: https://static.slims.web.id/docs/4.5-migration.png
+---
 Ini merupakan bagian dari fitur ```Plugin``` yang digunakan untuk melakukan proses migrasi basis data atau akrab dikenal sebagai Database Migration. Sebuah proses dimana anda sebagai pengembang/*developer* plugin dapat dengan leluasa memindahkan struktur tabel yang anda buat khusus untuk plugin anda tanpa perlu repot memindahkan manual dengan mengekspor file .sql dll kedalam database anda.
 ### Langkah-Langkah
 1. Buat sebuah folder bernama ```migration``` didalam folder anda
