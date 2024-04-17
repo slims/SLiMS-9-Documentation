@@ -1,3 +1,9 @@
+---
+title: Penggunaan Database
+description: Sejak versi 9 (Bulian), SLiMS hadir dengan dua cara untuk berkomunikasi dengan database yaitu MySQLi dan PDO. Adapun kedua nya sama-sama berfungsi untuk mengambil data dari MySQL/MariaDB via PHP dengan penulisan sintak yang berbeda....
+image: https://static.slims.web.id/docs/5.2-penggunaan.png
+keywords: [database slins, konfigurasi database di SLiMS]
+---
 Sejak versi 9 (Bulian), SLiMS hadir dengan dua cara untuk berkomunikasi dengan database yaitu MySQLi dan PDO. Adapun kedua nya sama-sama berfungsi untuk mengambil data dari MySQL/MariaDB via PHP dengan penulisan sintak yang berbeda. Berikut contohnya:
 #### MySQLi
 ```php

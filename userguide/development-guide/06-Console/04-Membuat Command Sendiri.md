@@ -1,3 +1,8 @@
+---
+title: Membuat Command Anda Sendiri
+description: Command meruapakan bagian dari fitur ```console``` yang berbentuk program yang berisi perintah-perintah yang digunakan untuk menyelesaikan pekerjaan tertentu yang berjalan di lingkungan antarmuka baris perintah / Command Line Interface...
+image: https://static.slims.web.id/docs/6.4-praktek.png
+---
 *Command* meruapakan bagian dari fitur ```console``` yang berbentuk program yang berisi perintah-perintah yang digunakan untuk menyelesaikan pekerjaan tertentu yang berjalan di lingkungan antarmuka baris perintah / *Command Line Interface*. Secara bawaan SLiMS sudah hadir dengan *Command* seperti *backup database*,*Plugin Info*,*SLiMS Info*, dan *Command Maker*. Pada laman ini akan dibahas bagaimana membuat *Command* anda sendiri.
 ### Langkah-Langkah
 1. Siapkan terminal anda terlebih dahulu, lalu  masuk ke dalam direktori SLiMS

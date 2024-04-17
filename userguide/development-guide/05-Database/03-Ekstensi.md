@@ -1,4 +1,10 @@
-Fitur ini merupakan bagian dari pustaka ```SLiMS\DB``` yang membantu anda dalam mengelola data yang hendak diambil dari *database*, anda dapat menggunakan ekstensi bawaan dari SLiMS yaitu ```SLiMS\Query``` untuk mengambil data berdasarkan kueri yang anda tulis;
+---
+title: Ekstensi Database
+description: Fitur ini merupakan bagian dari pustaka SLiMS\DB yang membantu anda dalam mengelola data yang hendak diambil dari database, anda dapat menggunakan ekstensi bawaan dari SLiMS yaitu SLiMS\Query untuk mengambil data berdasarkan kueri yang anda tulis....
+image: https://static.slims.web.id/docs/5.3-ekstensi.png
+keywords: [database slins, konfigurasi database di SLiMS]
+---
+Fitur ini merupakan bagian dari pustaka ```SLiMS\DB``` yang membantu anda dalam mengelola data yang hendak diambil dari *database*, anda dapat menggunakan ekstensi bawaan dari SLiMS yaitu ```SLiMS\Query``` untuk mengambil data berdasarkan kueri yang anda tulis.
 
 ## Query
 Ekstensi ini memanfaatkan **PDO** sebagai media untuk berinteraksi dengan *database*.

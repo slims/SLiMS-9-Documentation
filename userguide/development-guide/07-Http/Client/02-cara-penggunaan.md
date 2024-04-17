@@ -1,3 +1,8 @@
+---
+title: Cara Penggunaan
+description: Untuk menggunakan pustaka HttpClient anda menggunakan sintak sebagai berikut...
+image: https://static.slims.web.id/docs/7.1.2-penggunaan.png
+---
 # Cara Penggunaan
 Untuk menggunakan pustaka ```HttpClient``` anda menggunakan sintak sebagai berikut:
 #### Permintaan dengan metoda ```GET```

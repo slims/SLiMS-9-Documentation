@@ -1,3 +1,9 @@
+---
+title: Schema
+description: Fitur yang digunakan untuk mengelola struktur basis data SLiMS seperti menambah, menghapus, merubah dll. Fitur ini biasa digunakan pada proses migra....
+image: https://static.slims.web.id/docs/5.5-schema.png
+keywords: [database slins, konfigurasi database di SLiMS]
+---
 Fitur yang digunakan untuk mengelola struktur basis data SLiMS seperti menambah, menghapus, merubah dll. Fitur ini biasa digunakan pada proses migrasi di sistem plugin.
 ## Penggunaan
 ### Membuat tabel

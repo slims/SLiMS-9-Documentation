@@ -1,7 +1,7 @@
 ---
 title: Cara penggunaan
 description: Penjelasan teknis terkait cara menggunakan fitur SLIMS console.
-image: '/docs/static/img/console-meta-image.png'
+image: https://static.slims.web.id/docs/6.2-penggunaan.png
 ---
 ### Pengantar
 Fitur ini membutuhkan antarmuka berbasis perintah atau sering dikenal dengan CLi. Maka anda diwajibkan sudah paham terkait penggunaan aplikasi pendukung fitur ini seperti pada Micrsoft Windows: Command Prompt, Windows Terminal atau PowerShell, pada GNU Linux: Terminal, Konsol, dll.

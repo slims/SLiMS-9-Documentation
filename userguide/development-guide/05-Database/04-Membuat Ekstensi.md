@@ -1,3 +1,10 @@
+---
+title: Membuat Ekstensi Database Anda Sendiri
+description: maka ekstensi yang akan anda buat juga tidak akan lepas dari sistem tersebut agar perubahan yang dibuat tersenteralisasi di satu tempat yaitu direk....
+image: https://static.slims.web.id/docs/5.4-membuat-ekstensi.png
+keywords: [database slins, konfigurasi database di SLiMS]
+---
+
 Apabila anda memiliki ide atau gagasan lain mengenai cara mengambil data dari *database*
 dengan menggunakan pustaka ```SLiMS\DB``` sesuai gaya anda, SLiMS memfasilitasi hal tersebut dengan fitur ini sebagai contoh mengintegrasikan dengan [Laravel Database Query Builder](https://laravel.com/docs/queries).
 

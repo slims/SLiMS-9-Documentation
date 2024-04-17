@@ -1,3 +1,8 @@
+---
+title: Download File
+description: Dengan menggunakan pustaka SLiMS\Http\Client anda dapat dengan mudah mengunduh sebuah file dari layanan tertentu.....
+image: https://static.slims.web.id/docs/7.1.3-download.png
+---
 # Download File
 Dengan menggunakan pustaka ```SLiMS\Http\Client``` anda dapat dengan mudah mengunduh sebuah file dari layanan tertentu.
 ### Penggunaan

@@ -1,3 +1,8 @@
+---
+title: Penggunaan
+description: Pustaka ini berkaitan dengan konfigurasi file pada config/cache.php, secara bawaan akan menggunakan salah satu "Provider" yang tercantum pada opsi "default". Provider yang tersedia yaitu...
+image: https://static.slims.web.id/docs/8.1-cache.png
+---
 Pustaka ini berkaitan dengan konfigurasi file pada config/cache.php, secara bawaan akan menggunakan salah satu "Provider" yang tercantum pada opsi "default". Provider yang tersedia yaitu **Files** dan **Database**. Berikut ringkasan penggunaannya :
 
 ## Metoda yang tersedia (Pada Provider Files dan Database)

@@ -1,3 +1,8 @@
+---
+title: Tarsius
+description: Tarsius atau Krabuku merupakan nama hewan primata khas asia tenggara yang menjadi maskot dari SLiMS. Tak hanya menjadi maskot nama tarsius juga digunakan sebagai prog...
+image: https://static.slims.web.id/docs/6.3-tarsius.png
+---
 Tarsius atau Krabuku merupakan nama hewan primata khas asia tenggara yang menjadi maskot dari SLiMS. Tak hanya menjadi maskot nama tarsius juga digunakan sebagai program baris perintah/*Command Line Interface* untuk melakukab proses kerja di balik layar / *background process* seperti menyalin basisdata / *backup database*, mengirim surel/* E-Mail *. 
 
 Pada mulanya anda diperkenalkan fitur ```Console``` sebagai berikut pada terminal/konsol anda:

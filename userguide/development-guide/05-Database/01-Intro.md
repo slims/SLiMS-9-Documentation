@@ -1,3 +1,9 @@
+---
+title: Pengantar
+description: SLiMS menggunakan MySQL/MariaDB sebagai default RDMS (*Relational Database Management System*) untuk menyimpan data.oleh Mas....
+image: https://static.slims.web.id/docs/5.1-database.png
+keywords: [database slins, konfigurasi database di SLiMS]
+---
 # Permulaan
 ### Ihwal
 SLiMS menggunakan MySQL/MariaDB sebagai default RDMS (*Relational Database Management System*) untuk menyimpan data. Adapun ini tidak menutup bahwa SLiMS tidak dapat menggunakan *database* selain RDBMS. Pada kasus tertentu SLiMS dapat diintegrasikan dengan *database* No-SQL seperti Redis, ElasticSearch, SOLR, dan MeiliSearch dll bergantung kepada kebutuhan masing-masing pengguna.
