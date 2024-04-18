@@ -9,8 +9,18 @@ rm env.js
 cp env.prod.js env.js
 echo "Truncating build folder"
 rm -rf ./build/*
+echo "Building Documentation"
 npm run build
-echo "Deploy to web server"
-#rm -rf $1 && cp -vR ./build/* $1
+if [ ! -d ../userdoc-git/ ]; then
+  git clone git@github.com:slims/slims.github.io/ ../userdoc-git/
+fi
+echo "Deploy to github and prepare to push"
+rm -rf ../userdoc-git/docs/*
+mv ./build/* ../userdoc-git/docs/
+cd ../userdoc-git/
+now="$(date +'%d/%m/%Y %r')"
+git add .
+git commit -m "Update doc $now"
+git push origin main
 echo "Done"
 cp env.sample.js env.js

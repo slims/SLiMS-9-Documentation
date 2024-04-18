@@ -1,3 +1,8 @@
+---
+title: Helpers
+description: Contoh kita akan membuat provider terkait Cache yang disimpan pada...
+image: https://static.slims.web.id/docs/helpers.png
+---
 SLiMS hadir dengan berbagai macam fungsi PHP yang dapat digunakan untuk mempermudah anda dalam membangun sistem otomasi anda.
 
 ## Fungsi yang tersedia
