@@ -28,3 +28,11 @@
   --ifm-color-primary-lightest: #8ab5ff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+.img_node_modules-\@docusaurus-theme-classic-lib-theme-MDXComponents-Img-styles-module {
+  width: 100%;
+}
+
+p {
+  text-align: justify
+}

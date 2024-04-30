@@ -1,7 +1,7 @@
 ---
 title: Mengkonfigurasi VirtualHost di Nginx
-description: ok
-image: https://static.slims.web.id/docs/helpers.png
+description: Sesuaikan isi file tersebut dengan skrip dibawah ini...
+image: https://static.slims.web.id/docs/9.1.4-nginx.png
 ---
 ### Pada distro Debian dan variannya
 1. Masuk ke dalam sistem operasi Debian/Ubuntu anda.
@@ -42,27 +42,5 @@ location ~ \.php$ {
     include /etc/nginx/fastcgi.conf;	
 }
 ```
-5. Keluar dengan menekan kombinasi tombol ```Ctrl + O``` untuk menyimpan dan ```Ctrl + X``` untuk keluar dari editor nano.
-6. Masuk ke dalam direktori ```/var/www/html/``` dengan perintah berikut:
-```bash
-cd /var/www/html/
-```
-7. Merubah *owner* dari direktori pada poin 7 dengan perintah berikut:
-```bash
-sudo chown $UID -R /var/www/html/
-# perintah diatas digunakan agar anda dapat mengubah isi file
-# yang ada di SLiMS.
-
-# Berikutnya anda perlu mengatur permission beberapa direktori
-# yang digunakan untuk menyimpan file yang diunggah oleh pengguna
-# seperti repository/ files/ images/ dan config/
-sudo chown www-data:www-data -R /var/www/html/slims9_bulian/{config/,files/,images/,repository/}
-```
-8. Mengunduh *source code* SLiMS dari github dengan perintah ```git```
-```bash
-git clone https://github.com/slims/slims9_bulian
-```
-9. Merestart aplikasi Apache2
-```bash
-sudo systemctl restart apache2
-```
+5. opsi ```fastcgi_pass unix:/var/run/php/php8.1-fpm.sock;``` bisa diganti dengan yang diatas nya yaitu ```fastcgi_pass 127.0.0.1:9000;``` bergantung bagaimana paket ```php-fpm``` anda pada server yang digunakan.
+6. Keluar dengan menekan kombinasi tombol ```Ctrl + O``` untuk menyimpan dan ```Ctrl + X``` untuk keluar dari editor nano.

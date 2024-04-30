@@ -1,7 +1,7 @@
 ---
 title: Mengkonfigurasi VirtualHost di Apache2
-description: ok
-image: https://static.slims.web.id/docs/helpers.png
+description: Masuk ke dalam sistem operasi Debian/Ubuntu anda
+image: https://static.slims.web.id/docs/9.1.3-apache2.png
 ---
 ### Pada distro Debian dan variannya
 1. Masuk ke dalam sistem operasi Debian/Ubuntu anda.
@@ -51,7 +51,3 @@ sudo nano /etc/apache2/sites-available/000-default.conf
 </VirtualHost>
 ```
 5. Keluar dengan menekan kombinasi tombol ```Ctrl + O``` untuk menyimpan dan ```Ctrl + X``` untuk keluar dari editor nano.
-6. Merestart aplikasi Apache2
-```bash
-sudo systemctl restart apache2
-```

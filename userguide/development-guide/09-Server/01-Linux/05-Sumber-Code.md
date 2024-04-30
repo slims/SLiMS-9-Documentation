@@ -1,7 +1,7 @@
 ---
-title: Mengunduh dan mengatur perizinan source code SLiMS pada distro Debian 11/Ubuntu 22.04 LTS
-description: ok
-image: https://static.slims.web.id/docs/helpers.png
+title: Mengunduh Source Code
+description: mengunduh SLiMS dari github...
+image: https://static.slims.web.id/docs/9.1.5-source-code.png
 ---
 1. Masuk ke dalam direktori ```/var/www/html/``` dengan perintah berikut:
 ```bash
@@ -22,3 +22,13 @@ git clone https://github.com/slims/slims9_bulian
 # seperti repository/ files/ images/ dan config/
 sudo chown www-data:www-data -R ./slims9_bulian/{config/,files/,images/,repository/}
 ```
+5. Menyalakan ulang ***web server*** yang anda gunakan:
+
+    * #### Apache2
+    ```bash
+    sudo systemctl restart apache2
+    ```
+    * #### Nginx
+    ```bash
+    sudo systemctl restart nginx php8.1-fpm
+    ```
