@@ -10,6 +10,33 @@ Contoh:
 ```
 perpustakaan.com/opac/
 perpustakaan.com/repository/
-perpustakaan.com/gallery/
 ```
-Pada Nginx sangat mudah untuk
+
+## Menginstall Nginx
+Pada Nginx sangat mudah untuk merealisasikan hal tersebut. Langkah awalnya anda perlu memasang aplikasi ```Nginx```, artikel ini menggunakan sistem operasi Ubuntu GNU/Linux versi 22.04.4 LTS.
+```bash
+sudo apt update
+sudo apt install -y nginx
+```
+
+## Mengkonfigurasi Nginx
+Buka file ```default``` pada direktori ```/etc/nginx/sites-available/```. Lalu ubah isinya sebagai berikut:
+```basb
+server {
+    location / {
+        return 301 /opac$request_uri;
+    }
+
+    server_name perpustakaan.com;
+
+    location /opac/ {
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header Host $host;
+        proxy_http_version 1.1;
+        proxy_pass http://172.17.0.1:6001/;
+        access_log /var/log/nginx/access-web.log;
+    }
+```
+

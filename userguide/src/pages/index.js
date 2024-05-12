@@ -14,7 +14,7 @@ function HomepageHeader() {
       <header className={clsx('hero', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">SLiMS Documentation</h1>
-          <p className="hero__subtitle">What is your role?</p>
+          <p className="hero__subtitle text-center">What is your role?</p>
           <div className={styles.buttons}>
             <Link className="button button--secondary button--lg" to="/user-guide/about" title="librarian or end user">
               User
